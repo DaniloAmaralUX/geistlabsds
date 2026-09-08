@@ -1,3 +1,4 @@
+import { registryItemUrl } from "@/constants/origin";
 import { SUPERNOVA_SHADCN_THEMES } from "@/constants/themes";
 import type { ThemePreset } from "@/constants/themes";
 import { RADIUS, SEMANTIC } from "@/constants/tokens";
@@ -13,7 +14,7 @@ export const LAB_DESIGN_THEME: ThemePreset = {
   dependencies: [],
   description:
     "O tema do LAB / DESIGN: cinza neutro, azul para ação, raio de 6px. Gerado de constants/tokens.ts.",
-  installUrl: "https://geistlabsds.vercel.app/r/lab-design-theme.json",
+  installUrl: registryItemUrl("lab-design-theme"),
   origin: "lab-design",
   slug: "lab-design",
   title: "LAB / DESIGN",

@@ -1,4 +1,6 @@
-export const FALLBACK_SITE_ORIGIN = "https://geistlabsds.vercel.app" as const;
+import { PUBLIC_ORIGIN } from "@/constants/origin";
+
+export const FALLBACK_SITE_ORIGIN = PUBLIC_ORIGIN;
 
 const getBaseUrl = () => {
   if (process.env.NODE_ENV !== "production") {
