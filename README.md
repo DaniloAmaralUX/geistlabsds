@@ -1,37 +1,50 @@
-<a href="https://interfaces.dev/">
-  <img width="320" height="168" alt="interfaces.dev" src="https://ho1jr3x2dcwdu3t5.public.blob.vercel-storage.com/interfaces-og-image.png" />
-</a>
+# LAB / DESIGN — o nosso Geist
 
-[![skills.sh](https://skills.sh/b/jakubkrehel/skills)](https://skills.sh/jakubkrehel/skills)
+Design system do LAB / DESIGN: fundamentos, componentes com demonstração
+interativa e código instalável pelo shadcn, com referência visual no
+[Geist](https://vercel.com/geist/introduction). Implementação própria sobre
+shadcn, Radix e Tailwind; nada é copiado da Vercel.
 
-A collection of agent skills that help you build a great interface. They cover UI, typography, colors, accessibility, layout, product writing and more.
+Esta é a **POC 1**. Rodada atual: fundações (cores, tipografia, espaçamento e
+raio) e cinco componentes ponta a ponta: Button, Badge, Input, Note e Snippet.
+O inventário completo do Geist e o estado de cada item ficam em
+`/docs/fundamentos/cobertura`.
 
-## Skills
-
-- [**better-interface**](skills/better-interface/SKILL.md): A user-invoked, cross-discipline interface review that coordinates every skill below.
-- [**interface-review**](skills/interface-review/SKILL.md): A user-invoked review of your uncommitted changes, current branch or a pull request against every skill below.
-- [**better-ui**](skills/better-ui/SKILL.md): Design engineering details that make interfaces feel polished: border radius, shadows, animations and micro-interactions.
-- [**better-typography**](skills/better-typography/SKILL.md): Web typography from choosing fonts to spacing, wrapping and accessibility.
-- [**better-colors**](skills/better-colors/SKILL.md): OKLCH color space: palette generation, contrast, gamut handling and theming.
-- [**better-accessibility**](skills/better-accessibility/SKILL.md): Focus states, keyboard support, ARIA, forms, screen readers, hit areas and motion.
-- [**better-layout**](skills/better-layout/SKILL.md): Layout structure, grouping, alignment, reading order, progressive disclosure and adaptive breakpoints.
-- [**better-writing**](skills/better-writing/SKILL.md): UX writing and interface copy, from button labels to errors, settings and empty states.
-
-## Install
-
-### CLI
-
-Works in Claude Code, Codex, Opencode and other agents. You can choose which skills to install or install all of them.
+## Rodar
 
 ```bash
-npx skills add jakubkrehel/skills
+pnpm install
+pnpm dev          # gera tokens e sobe em http://localhost:3000
+pnpm build        # tokens → registry → next build
+pnpm check        # lint e formato (oxlint/oxfmt via ultracite)
+pnpm typecheck    # depois do build, como na CI
 ```
 
-### Claude Code plugin
+## Instalar um componente em outro projeto
 
-Installs every skill in this repository together and updates in place. Run these inside Claude Code:
-
-```text
-/plugin marketplace add jakubkrehel/skills
-/plugin install interfaces@interfaces
+```bash
+npx shadcn@latest add https://geistlabsds-danilos-projects-94eff717.vercel.app/r/lab-design-theme.json
+npx shadcn@latest add https://geistlabsds-danilos-projects-94eff717.vercel.app/r/button.json
 ```
+
+## Onde as coisas vivem
+
+| O quê                   | Onde                                                                         |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| Tokens (fonte única)    | `constants/tokens.ts` → gera `styles/tokens.css` e o tema do `registry.json` |
+| Inventário do Geist     | `constants/geist-inventory.ts` → página de cobertura e contagens             |
+| Componentes instaláveis | `registry/new-york/*.tsx` + `registry.json` → `public/r/*.json`              |
+| Exemplos das docs       | `examples/*.tsx`                                                             |
+| Documentação (pt-BR)    | `content/docs/**/*.mdx`                                                      |
+
+## Memória e decisões
+
+O contexto do projeto (pesquisa, decisões, diário) vive na memória interna do
+repositório `DaniloAmaralUX/supernova-ui`, em `.claude/memory/`. Veja o
+`CLAUDE.md` aqui.
+
+## Créditos
+
+Template [startercn](https://github.com/shadcn-labs/startercn) (MIT, Shadcn
+Labs). [shadcn/ui](https://ui.shadcn.com), [Radix](https://www.radix-ui.com),
+[Fumadocs](https://fumadocs.dev). Fontes Geist Sans e Geist Mono (Vercel, OFL).

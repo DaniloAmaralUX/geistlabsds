@@ -1,0 +1,67 @@
+---
+title: Badge
+description: Rótulo curto com seis cores, aparência sólida ou suave, três tamanhos e forma de pílula.
+---
+
+import { BadgeDemo } from "@/examples/badge";
+import { BadgeSubtleDemo } from "@/examples/badge-subtle";
+import { BadgeSizesDemo } from "@/examples/badge-sizes";
+import { BadgePillDemo } from "@/examples/badge-pill";
+
+<ComponentPreview name="badge">
+  <BadgeDemo />
+</ComponentPreview>
+
+## Instalação
+
+<InstallCommand name="badge" />
+
+## Uso
+
+```tsx
+import { Badge } from "@/components/ui/badge";
+
+export function Exemplo() {
+  return <Badge color="green">Publicado</Badge>;
+}
+```
+
+## Suave
+
+`appearance="subtle"` usa fundo claro e texto escuro da mesma cor. Prefira quando houver muitos badges juntos.
+
+<ComponentPreview name="badge-subtle">
+  <BadgeSubtleDemo />
+</ComponentPreview>
+
+## Tamanhos
+
+<ComponentPreview name="badge-sizes">
+  <BadgeSizesDemo />
+</ComponentPreview>
+
+## Pílula e ícone
+
+`shape="pill"` arredonda por completo. Ícones dentro do badge têm 12px.
+
+<ComponentPreview name="badge-pill">
+  <BadgePillDemo />
+</ComponentPreview>
+
+## Props
+
+| Prop         | Tipo                                                          | Padrão      |
+| ------------ | ------------------------------------------------------------- | ----------- |
+| `color`      | `"gray" \| "blue" \| "green" \| "red" \| "amber" \| "violet"` | `"gray"`    |
+| `appearance` | `"solid" \| "subtle"`                                         | `"solid"`   |
+| `size`       | `"sm" \| "md" \| "lg"`                                        | `"md"`      |
+| `shape`      | `"default" \| "pill"`                                         | `"default"` |
+| `asChild`    | `boolean`                                                     | `false`     |
+
+## Acessibilidade
+
+O badge é texto; a cor nunca é a única informação. Combine com a palavra ou o ícone certo.
+
+## Diferenças em relação ao Geist
+
+O Geist separa "Badge" e "Pill" em páginas; aqui a pílula é a prop `shape`. As variantes `contrast` e o ícone à direita ficaram de fora.

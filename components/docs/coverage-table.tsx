@@ -1,0 +1,161 @@
+import { ArrowUpRightIcon } from "lucide-react";
+import Link from "next/link";
+
+import {
+  ESTADO_LABEL,
+  GEIST_INVENTORY,
+  INVENTORY_SOURCE,
+  SECTION_LABEL,
+  countByEstado,
+  inventoryBySection,
+} from "@/constants/geist-inventory";
+import type {
+  Estado,
+  InventoryItem,
+  Section,
+} from "@/constants/geist-inventory";
+import { Badge } from "@/registry/new-york/badge";
+
+const ESTADO_COLOR: Record<Estado, "amber" | "blue" | "gray" | "green"> = {
+  "em-adaptacao": "blue",
+  "em-revisao": "amber",
+  inventariado: "gray",
+  publicado: "green",
+};
+
+const SECTIONS: Section[] = ["foundations", "brands", "components"];
+
+const InstallStatus = ({ entry }: { entry: InventoryItem }) => {
+  if (entry.instalacao === "cli") {
+    return (
+      <span className="text-green-700 dark:text-green-400">
+        validada pelo CLI
+      </span>
+    );
+  }
+  if (entry.instalacao === "build") {
+    return (
+      <span className="text-green-700 dark:text-green-400">
+        build no consumidor
+      </span>
+    );
+  }
+  if (entry.estado === "publicado") {
+    return <span className="text-muted-foreground">pendente</span>;
+  }
+  return <span className="text-muted-foreground">—</span>;
+};
+
+const Totals = () => {
+  const totals = countByEstado();
+  const total = GEIST_INVENTORY.length;
+
+  return (
+    <dl className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-5">
+      <div className="rounded-lg border p-3">
+        <dt className="text-[12px] text-muted-foreground">Itens no Geist</dt>
+        <dd className="text-2xl font-semibold tabular-nums">{total}</dd>
+      </div>
+      {(Object.keys(ESTADO_LABEL) as Estado[]).map((estado) => (
+        <div key={estado} className="rounded-lg border p-3">
+          <dt className="text-[12px] text-muted-foreground">
+            {ESTADO_LABEL[estado]}
+          </dt>
+          <dd className="text-2xl font-semibold tabular-nums">
+            {totals[estado]}
+          </dd>
+        </div>
+      ))}
+    </dl>
+  );
+};
+
+/** Matriz de cobertura: cada item do Geist, seu estado e a rota local. */
+export const CoverageTable = () => (
+  <div className="flex flex-col gap-8">
+    <p className="mt-4 text-[13px] text-muted-foreground">
+      Fonte do inventário: {INVENTORY_SOURCE.description} Estado:{" "}
+      <Badge appearance="subtle" color="green" size="sm">
+        {INVENTORY_SOURCE.status}
+      </Badge>{" "}
+      em {INVENTORY_SOURCE.date}.
+    </p>
+    <Totals />
+    {SECTIONS.map((section) => {
+      const items = inventoryBySection(section);
+      const totals = countByEstado(items);
+      return (
+        <section key={section}>
+          <h2 className="mb-3 text-xl font-medium tracking-tight" id={section}>
+            {SECTION_LABEL[section]}{" "}
+            <span className="text-base text-muted-foreground tabular-nums">
+              {totals.publicado}/{items.length}
+            </span>
+          </h2>
+          <div className="no-scrollbar w-full overflow-x-auto rounded-xl border">
+            <table className="w-full text-sm">
+              <thead className="bg-muted/50 text-left text-[12px] text-muted-foreground">
+                <tr>
+                  <th className="px-3 py-2 font-medium">Item</th>
+                  <th className="px-3 py-2 font-medium">Estado</th>
+                  <th className="px-3 py-2 font-medium">Aqui</th>
+                  <th className="px-3 py-2 font-medium">Instalação</th>
+                  <th className="px-3 py-2 font-medium">Geist</th>
+                </tr>
+              </thead>
+              <tbody>
+                {items.map((entry) => (
+                  <tr key={entry.slug} className="border-t">
+                    <td className="px-3 py-2">
+                      <span className="font-medium">{entry.name}</span>
+                      {entry.nota ? (
+                        <span className="block text-[12px] text-muted-foreground">
+                          {entry.nota}
+                        </span>
+                      ) : null}
+                    </td>
+                    <td className="px-3 py-2">
+                      <Badge
+                        appearance="subtle"
+                        color={ESTADO_COLOR[entry.estado]}
+                        size="sm"
+                        shape="pill"
+                      >
+                        {ESTADO_LABEL[entry.estado]}
+                      </Badge>
+                    </td>
+                    <td className="px-3 py-2">
+                      {entry.rota ? (
+                        <Link
+                          href={entry.rota}
+                          className="underline underline-offset-4"
+                        >
+                          {entry.rota}
+                        </Link>
+                      ) : (
+                        <span className="text-muted-foreground">—</span>
+                      )}
+                    </td>
+                    <td className="px-3 py-2 text-[13px]">
+                      <InstallStatus entry={entry} />
+                    </td>
+                    <td className="px-3 py-2">
+                      <a
+                        href={entry.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 text-muted-foreground hover:text-foreground"
+                      >
+                        referência <ArrowUpRightIcon className="size-3" />
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      );
+    })}
+  </div>
+);

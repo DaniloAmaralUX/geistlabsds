@@ -19,9 +19,11 @@ import { getAllPagesFromFolder, getPagesFromFolder } from "@/lib/page-tree";
 import type { source } from "@/lib/source";
 
 const TOP_LEVEL_SECTIONS = [
-  { href: ROUTES.DOCS, name: "Introduction" },
-  { href: ROUTES.DOCS_INSTALLATION, name: "Installation" },
-  { href: ROUTES.DOCS_COMPONENTS, name: "Components" },
+  { href: ROUTES.DOCS, name: "Introdução" },
+  { href: ROUTES.DOCS_INSTALLATION, name: "Instalação" },
+  { href: ROUTES.DOCS_FOUNDATIONS, name: "Fundamentos" },
+  { href: ROUTES.DOCS_COMPONENTS, name: "Componentes" },
+  { href: ROUTES.DOCS_COVERAGE, name: "Cobertura" },
   { href: ROUTES.LLMS, name: "llms.txt" },
 ];
 
@@ -86,7 +88,7 @@ export const DocsSidebar = ({
       <SidebarContent className="mx-auto no-scrollbar w-(--sidebar-menu-width) overflow-x-hidden px-2">
         <SidebarGroup className="pt-6">
           <SidebarGroupLabel className="text-muted-foreground font-medium">
-            Sections
+            Seções
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
@@ -123,7 +125,9 @@ export const DocsSidebar = ({
             ? getAllPagesFromFolder(item).filter(
                 (page) => page.url !== ROUTES.DOCS_COMPONENTS
               )
-            : getPagesFromFolder(item);
+            : getPagesFromFolder(item).filter(
+                (page) => page.url !== item.index?.url
+              );
 
           return (
             <SidebarPageGroup

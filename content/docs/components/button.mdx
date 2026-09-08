@@ -1,0 +1,98 @@
+---
+title: Button
+description: Botão com cinco intenções, três tamanhos, formas circular e quadrada, carregamento e prefixo/sufixo.
+---
+
+import { ButtonDemo } from "@/examples/button";
+import { ButtonVariantsDemo } from "@/examples/button-variants";
+import { ButtonSizesDemo } from "@/examples/button-sizes";
+import { ButtonShapesDemo } from "@/examples/button-shapes";
+import { ButtonPrefixDemo } from "@/examples/button-prefix";
+import { ButtonLoadingDemo } from "@/examples/button-loading";
+import { ButtonDisabledDemo } from "@/examples/button-disabled";
+
+<ComponentPreview name="button">
+  <ButtonDemo />
+</ComponentPreview>
+
+## Instalação
+
+<InstallCommand name="button" />
+
+## Uso
+
+```tsx
+import { Button } from "@/components/ui/button";
+
+export function Exemplo() {
+  return <Button variant="secondary">Continuar</Button>;
+}
+```
+
+## Intenções
+
+`primary` para a ação principal da tela, `secondary` para as demais, `tertiary` quando o botão não deve pesar. `error` e `warning` só para ações destrutivas ou arriscadas.
+
+<ComponentPreview name="button-variants">
+  <ButtonVariantsDemo />
+</ComponentPreview>
+
+## Tamanhos
+
+Três alturas, as mesmas do Input: 32, 40 e 48px.
+
+<ComponentPreview name="button-sizes">
+  <ButtonSizesDemo />
+</ComponentPreview>
+
+## Formas
+
+`square` e `circle` para botões só de ícone. Nesses casos, `aria-label` é obrigatório.
+
+<ComponentPreview name="button-shapes">
+  <ButtonShapesDemo />
+</ComponentPreview>
+
+## Prefixo e sufixo
+
+<ComponentPreview name="button-prefix">
+  <ButtonPrefixDemo />
+</ComponentPreview>
+
+## Carregando
+
+`loading` troca o prefixo pelo indicador, marca `aria-busy` e desabilita o clique sem mudar a largura de forma brusca.
+
+<ComponentPreview name="button-loading">
+  <ButtonLoadingDemo />
+</ComponentPreview>
+
+## Desabilitado
+
+<ComponentPreview name="button-disabled">
+  <ButtonDisabledDemo />
+</ComponentPreview>
+
+## Props
+
+| Prop                | Tipo                                                             | Padrão      |
+| ------------------- | ---------------------------------------------------------------- | ----------- |
+| `variant`           | `"primary" \| "secondary" \| "tertiary" \| "error" \| "warning"` | `"primary"` |
+| `size`              | `"sm" \| "md" \| "lg"`                                           | `"md"`      |
+| `shape`             | `"default" \| "square" \| "circle"`                              | `"default"` |
+| `loading`           | `boolean`                                                        | `false`     |
+| `prefix` / `suffix` | `ReactNode`                                                      | —           |
+| `asChild`           | `boolean`                                                        | `false`     |
+
+Aceita todas as props de `button`.
+
+## Acessibilidade
+
+- Foco pelo teclado com anel de 2px e deslocamento, visível sobre qualquer fundo.
+- `loading` aplica `aria-busy` e `disabled`; o indicador é `aria-hidden`.
+- Botões só de ícone precisam de `aria-label`.
+- As cores `error` e `warning` mantêm contraste AA com o texto.
+
+## Diferenças em relação ao Geist
+
+O Geist tem `shadow` e `ghost` como variantes extras e a prop `svgOnly`. Aqui `shape` cobre o caso de ícone e as sombras ficaram de fora até haver um caso de uso.

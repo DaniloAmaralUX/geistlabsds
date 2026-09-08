@@ -5,6 +5,26 @@ import { SITE, UTM_PARAMS } from "@/constants/site";
 import { useFeedback } from "@/hooks/use-feedback";
 import { addQueryParams } from "@/lib/url";
 
+const FooterLink = ({
+  href,
+  children,
+  onClick,
+}: {
+  href: string;
+  children: React.ReactNode;
+  onClick: () => void;
+}) => (
+  <a
+    href={addQueryParams(href, UTM_PARAMS)}
+    target="_blank"
+    rel="noreferrer"
+    className="font-medium underline underline-offset-4"
+    onClick={onClick}
+  >
+    {children}
+  </a>
+);
+
 export const SiteFooter = () => {
   const playClick = useFeedback({ sound: "click" });
 
@@ -16,26 +36,18 @@ export const SiteFooter = () => {
       <div className="container-wrapper px-4 xl:px-6">
         <div className="flex h-(--footer-height) items-center justify-between">
           <div className="text-muted-foreground w-full px-1 text-center text-xs leading-loose sm:text-sm">
-            Built by{" "}
-            <a
-              href={addQueryParams(LINK.PORTFOLIO, UTM_PARAMS)}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-              onClick={playClick}
-            >
-              {SITE.AUTHOR.NAME}
-            </a>
-            . The source code is available on{" "}
-            <a
-              href={addQueryParams(LINK.GITHUB, UTM_PARAMS)}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-              onClick={playClick}
-            >
+            {SITE.NAME} · referência visual no{" "}
+            <FooterLink href={LINK.GEIST} onClick={playClick}>
+              Geist
+            </FooterLink>
+            , sobre o template{" "}
+            <FooterLink href={LINK.STARTERCN} onClick={playClick}>
+              startercn
+            </FooterLink>
+            . Código no{" "}
+            <FooterLink href={LINK.GITHUB} onClick={playClick}>
               GitHub
-            </a>
+            </FooterLink>
             .
           </div>
         </div>

@@ -1,0 +1,77 @@
+---
+title: Snippet
+description: Comando de terminal com prompt, várias linhas, fundo escuro e botão de copiar acessível.
+---
+
+import { SnippetDemo } from "@/examples/snippet";
+import { SnippetMultilineDemo } from "@/examples/snippet-multiline";
+import { SnippetNoPromptDemo } from "@/examples/snippet-no-prompt";
+import { SnippetDarkDemo } from "@/examples/snippet-dark";
+import { SnippetWidthDemo } from "@/examples/snippet-width";
+
+<ComponentPreview name="snippet">
+  <SnippetDemo />
+</ComponentPreview>
+
+## Instalação
+
+<InstallCommand name="snippet" />
+
+## Uso
+
+```tsx
+import { Snippet } from "@/components/ui/snippet";
+
+export function Exemplo() {
+  return <Snippet text="pnpm dlx shadcn@latest add button" />;
+}
+```
+
+## Várias linhas
+
+Passe um array; cada item vira uma linha e o botão copia todas, separadas por quebra de linha.
+
+<ComponentPreview name="snippet-multiline">
+  <SnippetMultilineDemo />
+</ComponentPreview>
+
+## Sem prompt
+
+<ComponentPreview name="snippet-no-prompt">
+  <SnippetNoPromptDemo />
+</ComponentPreview>
+
+## Escuro
+
+`dark` fixa o fundo escuro independentemente do tema.
+
+<ComponentPreview name="snippet-dark">
+  <SnippetDarkDemo />
+</ComponentPreview>
+
+## Largura
+
+<ComponentPreview name="snippet-width" align="start">
+  <SnippetWidthDemo />
+</ComponentPreview>
+
+## Props
+
+| Prop        | Tipo                     | Padrão             |
+| ----------- | ------------------------ | ------------------ |
+| `text`      | `string \| string[]`     | —                  |
+| `prompt`    | `boolean`                | `true`             |
+| `dark`      | `boolean`                | `false`            |
+| `width`     | `string`                 | `100%`             |
+| `onCopy`    | `(text: string) => void` | —                  |
+| `copyLabel` | `string`                 | `"Copiar comando"` |
+
+## Acessibilidade
+
+- O botão tem `aria-label` e foco visível; o `$` é decorativo (`aria-hidden`).
+- Ao copiar, uma região `aria-live` anuncia "Copiado".
+- O texto é selecionável e rola horizontalmente quando não cabe.
+
+## Diferenças em relação ao Geist
+
+O Geist tem os tipos `success`, `error`, `warning` e `lite`. Aqui só `dark`; as cores por intenção ficam para quando houver uso.

@@ -1,0 +1,31 @@
+---
+title: Cores
+description: Seis escalas de dez passos em OKLCH, em claro e escuro, e os tokens semânticos que os componentes usam.
+---
+
+As cores são definidas em OKLCH, que mantém a luminosidade perceptual constante entre matizes. Cada escala tem dez passos; no modo escuro a ordem inverte, então o passo 100 é sempre o mais próximo do fundo e o 1000 o mais próximo do texto.
+
+A coluna de contraste mostra a razão WCAG de cada passo sobre o fundo daquele modo. "AA" é 4,5:1 ou mais, o mínimo para texto normal; "AA grande" é 3:1, suficiente para texto grande e ícones.
+
+## Escalas
+
+<ColorScale hue="gray" />
+<ColorScale hue="blue" />
+<ColorScale hue="red" />
+<ColorScale hue="amber" />
+<ColorScale hue="green" />
+<ColorScale hue="violet" />
+
+## Tokens semânticos
+
+Os componentes não usam a escala diretamente. Usam tokens com nome de função, no vocabulário do shadcn, para que qualquer componente do ecossistema receba o mesmo visual. O tema instalável entrega exatamente estes valores.
+
+<SemanticTokens />
+
+## No código
+
+No Tailwind, as escalas ficam disponíveis como `bg-ds-gray-100`, `text-ds-blue-700` e assim por diante. Os tokens semânticos seguem o shadcn: `bg-background`, `text-muted-foreground`, `border-border`, `ring-ring`.
+
+Para instalar as cores num projeto:
+
+<InstallCommand name="lab-design-theme" />

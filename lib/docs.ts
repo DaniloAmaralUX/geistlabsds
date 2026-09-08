@@ -10,6 +10,7 @@ export const isComponentsFolder = (folder: PageTreeFolder) =>
   folder.$id === "components" || folder.name === "Components";
 
 const TITLE_OVERRIDES: Record<string, string> = {
+  fundamentos: "Fundamentos",
   json: "JSON",
   "qr-code": "QR Code",
 };

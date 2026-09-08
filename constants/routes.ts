@@ -5,6 +5,8 @@ export const ROUTES = {
   API_STATUS: "/api/status",
   DOCS: "/docs",
   DOCS_COMPONENTS: "/docs/components",
+  DOCS_COVERAGE: "/docs/fundamentos/cobertura",
+  DOCS_FOUNDATIONS: "/docs/fundamentos",
   DOCS_INSTALLATION: "/docs/installation",
   HOME: "/",
   LLMS: "/llms.txt",
@@ -18,5 +20,4 @@ export const ROUTES = {
   ROBOTS: "/robots.txt",
   RSS: "/rss.xml",
   SITEMAP: "/sitemap.xml",
-  SPONSOR: "/sponsor",
 } as const;

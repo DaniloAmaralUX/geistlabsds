@@ -158,7 +158,9 @@ export const MobileNav = ({
               ? getAllPagesFromFolder(item).filter(
                   (page) => page.url !== ROUTES.DOCS_COMPONENTS
                 )
-              : getPagesFromFolder(item);
+              : getPagesFromFolder(item).filter(
+                  (page) => page.url !== item.index?.url
+                );
 
             return (
               <MobileNavGroup

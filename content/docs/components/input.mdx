@@ -1,0 +1,80 @@
+---
+title: Input
+description: Campo de texto com rótulo, descrição, prefixo, sufixo, erro acessível e três tamanhos.
+---
+
+import { InputDemo } from "@/examples/input";
+import { InputPrefixDemo } from "@/examples/input-prefix";
+import { InputErrorDemo } from "@/examples/input-error";
+import { InputSizesDemo } from "@/examples/input-sizes";
+import { InputDisabledDemo } from "@/examples/input-disabled";
+
+<ComponentPreview name="input">
+  <InputDemo />
+</ComponentPreview>
+
+## Instalação
+
+<InstallCommand name="input" />
+
+## Uso
+
+```tsx
+import { Input } from "@/components/ui/input";
+
+export function Exemplo() {
+  return <Input label="E-mail" type="email" placeholder="voce@exemplo.com" />;
+}
+```
+
+## Prefixo e sufixo
+
+Blocos fixos antes e depois do texto, com fundo `muted`.
+
+<ComponentPreview name="input-prefix">
+  <InputPrefixDemo />
+</ComponentPreview>
+
+## Erro e descrição
+
+`error` pinta a borda, mostra a mensagem e marca `aria-invalid`. `description` fica abaixo quando não há erro.
+
+<ComponentPreview name="input-error">
+  <InputErrorDemo />
+</ComponentPreview>
+
+## Tamanhos
+
+<ComponentPreview name="input-sizes">
+  <InputSizesDemo />
+</ComponentPreview>
+
+## Desabilitado
+
+<ComponentPreview name="input-disabled">
+  <InputDisabledDemo />
+</ComponentPreview>
+
+## Props
+
+| Prop                | Tipo                   | Padrão |
+| ------------------- | ---------------------- | ------ |
+| `label`             | `ReactNode`            | —      |
+| `description`       | `ReactNode`            | —      |
+| `error`             | `ReactNode`            | —      |
+| `prefix` / `suffix` | `ReactNode`            | —      |
+| `size`              | `"sm" \| "md" \| "lg"` | `"md"` |
+| `wrapperClassName`  | `string`               | —      |
+
+Aceita todas as props de `input`, exceto `size` (que aqui é o tamanho visual).
+
+## Acessibilidade
+
+- `label` vira `<label for>` ligado ao campo por `id` gerado.
+- `description` e `error` entram em `aria-describedby`.
+- `error` ativa `aria-invalid`.
+- Foco pelo teclado com anel de 2px no contêiner.
+
+## Diferenças em relação ao Geist
+
+O Geist tem variantes de busca e limpeza como componentes separados (Search Input, Clearable Input). Ficam para as próximas rodadas.
