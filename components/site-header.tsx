@@ -22,6 +22,7 @@ const navItems = [
   { href: ROUTES.DOCS_BLOCKS, label: "Blocos" },
   { href: ROUTES.DOCS_THEMES, label: "Temas" },
   { href: ROUTES.DOCS_ROADMAP, label: "Roteiro" },
+  { href: ROUTES.PESQUISA, label: "Pesquisa" },
 ];
 
 export const SiteHeader = () => (

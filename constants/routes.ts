@@ -19,6 +19,7 @@ export const ROUTES = {
   MCP: "/mcp",
   OG: "/og",
   OPENAPI: "/openapi.json",
+  PESQUISA: "/pesquisa",
   REGISTRY: "/r/registry.json",
   ROBOTS: "/robots.txt",
   RSS: "/rss.xml",
