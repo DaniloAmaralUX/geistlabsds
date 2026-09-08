@@ -1,14 +1,17 @@
-# LAB / DESIGN — comece aqui
+# Supernova — comece aqui
 
-O nosso Geist: design system com referência visual no Geist da Vercel e
-implementação própria sobre shadcn, Radix e Tailwind. **Nunca copie código,
-CSS ou texto do Geist**; ele é referência de inventário e de aparência.
+Supernova é o design system do LAB / DESIGN: fundamentos, componentes, blocos e
+temas com prévia real e código que entra no projeto de quem usa pelo CLI do
+shadcn. A implementação é própria, sobre shadcn, Radix e Tailwind. A voz e o
+vocabulário são os do Supernova (`docs/product/BRAND-VOICE.md` em
+`supernova-ui`): pt-BR, verbo na frente, sentence case, proveniência nomeada
+onde aparece.
 
 ## Memória
 
 O contexto (material do responsável, decisões, diário) vive em
 `DaniloAmaralUX/supernova-ui`, em `.claude/memory/` (comece por `INDEX.md` e
-`decisoes.md`) e `.claude/work/poc-geist-1/progress.md`. Leia antes de propor.
+`decisoes.md`) e `.claude/work/<tarefa>/progress.md`. Leia antes de propor.
 
 ## Fontes únicas
 
@@ -17,6 +20,15 @@ O contexto (material do responsável, decisões, diário) vive em
   edite os gerados.
 - `constants/roadmap.ts` é o roteiro de componentes do Supernova. A página do
   roteiro e toda contagem derivam dele. Nenhum número é escrito à mão.
+- `constants/blocks.ts` lista os blocos; o código de cada um fica em
+  `registry/new-york/blocks/<slug>/` e `blocks/index.ts` mapeia slug → página
+  da prévia.
+- `constants/themes.ts` guarda os presets e `scripts/build-themes.ts` gera
+  `styles/palettes.css` e `public/themes/*.css` via `pnpm themes:build`. O tema
+  padrão é `SUPERNOVA_THEME` em `lib/theme-presets.ts`.
+- `data/acervo/*.json` são instantâneos com data dos registries do Supernova.
+  A página do acervo e suas contagens saem deles; atualize copiando os
+  arquivos de novo, nunca editando.
 
 ## Um componente ponta a ponta
 
@@ -26,9 +38,10 @@ Guia completo, com o que aprendemos das bibliotecas de amostra:
 `registry/new-york/<nome>.tsx` (só depende de `@/lib/utils`, `radix-ui`,
 `class-variance-authority`, `lucide-react`) → item em `registry.json` →
 `examples/<nome>*.tsx` → `content/docs/components/<nome>.mdx` com
-`ComponentPreview`, `InstallCommand`, props, acessibilidade e "diferenças em
-relação ao Geist" → `meta.json` da pasta → inventário com `estado: "publicado"`
-e `rota` → instalação validada num consumidor limpo → `instalacao: "cli" | "build"` (veja o guia).
+`ComponentPreview`, `InstallCommand`, props, acessibilidade e notas de
+implementação quando houver → `meta.json` da pasta → roteiro com
+`estado: "publicado"` e `rota` → instalação validada num consumidor limpo →
+`instalacao: "cli" | "build"` (veja o guia).
 
 ## Gates
 

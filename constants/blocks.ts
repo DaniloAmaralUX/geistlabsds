@@ -5,8 +5,8 @@ import { ROUTES } from "@/constants/routes";
  *
  * Origem: cinco pacotes exportados do `shadcn-examples` (código base do
  * shadcn/ui, MIT), enviados pelo responsável em 2026-09-08 como JSON de
- * registry. O código foi adaptado ao LAB / DESIGN: API dos nossos componentes,
- * ícones lucide, textos em pt-BR, sem imagens externas. A licença do
+ * registry. O código foi adaptado ao Supernova: API dos componentes do
+ * Supernova, ícones lucide, textos em pt-BR, sem imagens externas. A licença do
  * repositório de origem fica registrada como "a confirmar" até ser lida.
  */
 

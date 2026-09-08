@@ -1,11 +1,11 @@
 /**
  * Temas: presets de tokens no vocabulário do shadcn, em claro e escuro.
  *
- * O primeiro é o tema do Supernova, gerado de constants/tokens.ts. Os
- * demais são os presets publicados pelo Supernova Shadcn
+ * O tema padrão, Supernova, é gerado de constants/tokens.ts e fica em
+ * lib/theme-presets.ts. Os presets abaixo são os do Supernova Shadcn
  * (https://supernovacn.vercel.app, registry em /r/<name>.json), do mesmo
  * responsável, com uso autorizado em 2026-09-08; cada um traz a atribuição
- * de origem registrada no Supernova. Os valores abaixo foram copiados do
+ * de origem registrada no Supernova Shadcn. Os valores foram copiados do
  * registry publicado nessa data; `scripts/build-themes.ts` gera o CSS.
  */
 
@@ -32,7 +32,7 @@ const SUPERNOVA = "https://supernovacn.vercel.app";
 export const SUPERNOVA_THEMES: ThemePreset[] = [
   {
     attribution: {
-      name: "DialectCN by Kapish Dima",
+      name: "DialectCN, de Kapish Dima",
       url: "https://github.com/kapishdima/dialectcn",
     },
     cssVars: {
@@ -130,7 +130,7 @@ export const SUPERNOVA_THEMES: ThemePreset[] = [
   },
   {
     attribution: {
-      name: "DialectCN by Kapish Dima",
+      name: "DialectCN, de Kapish Dima",
       url: "https://github.com/kapishdima/dialectcn",
     },
     cssVars: {
@@ -221,7 +221,7 @@ export const SUPERNOVA_THEMES: ThemePreset[] = [
   },
   {
     attribution: {
-      name: "DialectCN by Kapish Dima",
+      name: "DialectCN, de Kapish Dima",
       url: "https://github.com/kapishdima/dialectcn",
     },
     cssVars: {
@@ -316,7 +316,7 @@ export const SUPERNOVA_THEMES: ThemePreset[] = [
   },
   {
     attribution: {
-      name: "DialectCN by Kapish Dima",
+      name: "DialectCN, de Kapish Dima",
       url: "https://github.com/kapishdima/dialectcn",
     },
     cssVars: {
@@ -412,7 +412,7 @@ export const SUPERNOVA_THEMES: ThemePreset[] = [
   },
   {
     attribution: {
-      name: "DialectCN by Kapish Dima",
+      name: "DialectCN, de Kapish Dima",
       url: "https://github.com/kapishdima/dialectcn",
     },
     cssVars: {
@@ -509,7 +509,7 @@ export const SUPERNOVA_THEMES: ThemePreset[] = [
   },
   {
     attribution: {
-      name: "DialectCN by Kapish Dima",
+      name: "DialectCN, de Kapish Dima",
       url: "https://github.com/kapishdima/dialectcn",
     },
     cssVars: {
@@ -605,7 +605,7 @@ export const SUPERNOVA_THEMES: ThemePreset[] = [
   },
   {
     attribution: {
-      name: "DialectCN by Kapish Dima",
+      name: "DialectCN, de Kapish Dima",
       url: "https://github.com/kapishdima/dialectcn",
     },
     cssVars: {
@@ -700,7 +700,7 @@ export const SUPERNOVA_THEMES: ThemePreset[] = [
   },
   {
     attribution: {
-      name: "DialectCN by Kapish Dima",
+      name: "DialectCN, de Kapish Dima",
       url: "https://github.com/kapishdima/dialectcn",
     },
     cssVars: {
@@ -786,7 +786,7 @@ export const SUPERNOVA_THEMES: ThemePreset[] = [
       "@fontsource-variable/geist",
       "@fontsource-variable/geist-mono",
     ],
-    description: "Monocromático, preciso e construído com a Geist.",
+    description: "Monocromático, preciso e construído com a fonte Geist.",
     installUrl: `${SUPERNOVA}/r/supernova-vercel-theme.json`,
     origin: "supernova-shadcn",
     slug: "supernova-vercel",

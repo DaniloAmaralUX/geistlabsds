@@ -1,6 +1,6 @@
 ---
 title: Criar um componente
-description: O ciclo ponta a ponta de um componente do nosso Geist, do arquivo no registry à instalação validada, com o que aprendemos das bibliotecas de amostra.
+description: O ciclo ponta a ponta de um componente do Supernova, do arquivo no registry à instalação validada, com o que aprendemos das bibliotecas de amostra.
 ---
 
 O gabarito é `registry/new-york/button.tsx`, `examples/button*.tsx` e `content/docs/components/button.mdx`; leia antes de começar.
@@ -9,13 +9,13 @@ O gabarito é `registry/new-york/button.tsx`, `examples/button*.tsx` e `content/
 
 <Steps>
 
-<Step>Escolha o item no inventário</Step>
+<Step>Escolha o item no roteiro</Step>
 
 Em `constants/roadmap.ts`, mude `estado` para `"em-adaptacao"`. Componente fora do roteiro inicial entra em `ROADMAP` com `section: "extras"` e `nota`.
 
 <Step>Escreva o arquivo do registry</Step>
 
-`registry/new-york/<nome>.tsx` só pode importar `react`, `@/lib/utils`, `radix-ui`, `class-variance-authority` e `lucide-react`. JSDoc `<Nome> — LAB / DESIGN.` com a frase "Implementação própria com referência visual no Geist". Exporte `<Nome>` e `<nome>Variants` no fim.
+`registry/new-york/<nome>.tsx` só pode importar `react`, `@/lib/utils`, `radix-ui`, `class-variance-authority` e `lucide-react`. JSDoc `<Nome> — Supernova.` com a frase "Implementação própria sobre shadcn, Radix e Tailwind" e o crédito da fonte MIT que moldou a anatomia, quando houver. Exporte `<Nome>` e `<nome>Variants` no fim.
 
 <Step>Registre o item</Step>
 
@@ -37,7 +37,7 @@ Um arquivo por prévia em `examples/`: `<nome>.tsx` a principal, `<nome>-<varian
 
 <Step>Escreva a página</Step>
 
-`content/docs/components/<nome>.mdx`, nesta ordem: `description` igual à do `registry.json`; `ComponentPreview` principal; `## Instalação` com `InstallCommand`; `## Uso` importando de `@/components/ui/<nome>`; uma seção por recurso com `ComponentPreview name="<nome>-<variante>"`; `## Props`; `## Acessibilidade`; `## Diferenças em relação ao Geist` (em extras, `## Origem`, com a referência usada).
+`content/docs/components/<nome>.mdx`, nesta ordem: `description` igual à do `registry.json`; `ComponentPreview` principal; `## Instalação` com `InstallCommand`; `## Uso` importando de `@/components/ui/<nome>`; uma seção por recurso com `ComponentPreview name="<nome>-<variante>"`; `## Props`; `## Acessibilidade`; `## Notas de implementação` quando houver o que registrar (em extras, `## Origem`, com a referência usada).
 
 `## Acessibilidade` abre com o que a garantia cobre (primitivo Radix, como foi conferido) e lista três eixos: **Teclado** (Tab, Enter/Space, Escape em sobreposição), **Foco** (anel visível nos dois temas, ordem com `asChild`), **Leitor de tela** (`aria-*`, `aria-live`). Nada de "WCAG" ou "contraste AA" sem método. A página entra sozinha em `/llms.txt`; a lista fixa de itens em `lib/agent-discovery/site-agent-skill.ts` deveria derivar de `registry.json` (pendente).
 
@@ -45,7 +45,7 @@ Um arquivo por prévia em `examples/`: `<nome>.tsx` a principal, `<nome>-<varian
 
 Acrescente o slug em `content/docs/components/meta.json`; sem isso a página fica fora da barra lateral e da `ComponentsList`.
 
-<Step>Atualize o inventário</Step>
+<Step>Atualize o roteiro</Step>
 
 `estado: "publicado"`, `rota` e `instalacao: "pendente"`, o valor honesto antes de instalar. Roteiro e contagens derivam daqui.
 
@@ -64,7 +64,7 @@ Quatro registries MIT do shadcn-labs, lidos inteiros.
 - **Uniões nomeadas por eixo** (`ButtonVariant` mapeado com `Record`). **Adaptar:** seguimos com `cva`, mas exportamos a união quando um composto precisa, como `NoteType`.
 - **Manifesto à mão sem auditoria.** `sidebar.tsx` importa `@/hooks/use-mobile`, não entregue. **Adotar** um check que derive `dependencies` dos imports e barre `@/hooks` e `@/components` em `registry:ui`.
 - **Contexto de tamanho em compostos** (`card.tsx`). **Adotar** quando houver compostos.
-- **Badges `links: { doc, api }`.** Não adotar: o link do Geist vive no `href` do inventário.
+- **Badges `links: { doc, api }`.** Não adotar: o roteiro não guarda links externos; a proveniência fica no JSDoc e na página.
 
 ### pdfcn
 
@@ -116,9 +116,9 @@ Bloco é item `registry:block`, com um `files[]` por arquivo (`registry/new-york
 
 ## Regras de origem
 
-- O Geist é referência visual e de inventário. Nunca copie código, CSS ou texto de `vercel.com/geist`; escreva a partir da função, dos estados e dos tamanhos.
+- A implementação é própria, sobre shadcn, Radix e Tailwind. Escreva a partir da função, dos estados e dos tamanhos; nunca copie código, CSS ou texto de fonte restrita.
 - Nada de fonte comercial no pacote: Pace UI e similares não entram como código, CSS, captura convertida nem trecho em prompt. Pôr código num prompt é distribuir código.
-- A partir de agora, padrão vindo de fonte MIT (shadcn/ui, startercn, as quatro acima) recebe crédito no JSDoc e, quando molda a página, na seção de diferenças; créditos gerais na [introdução](/docs). Proveniência em três lugares: JSDoc, "Diferenças em relação ao Geist" e `href` no inventário, com `nota` quando houver o que registrar (`note`: "No Geist é uma seção da página Badge").
+- A partir de agora, padrão vindo de fonte MIT (shadcn/ui, startercn, as quatro acima) recebe crédito no JSDoc e, quando molda a página, nas notas de implementação; créditos gerais na [introdução](/docs). Proveniência em dois lugares: JSDoc e `## Notas de implementação` (ou `## Origem`), mais a `nota` do item no roteiro quando houver o que registrar (Pill: "Forma de pílula, prevista na página do Badge.").
 
 ## Checklist de publicação
 
@@ -139,7 +139,7 @@ Bloco é item `registry:block`, com um `files[]` por arquivo (`registry/new-york
 - **Três mecanismos de variante.** Button e Badge usam `cva`; Input e Note, `Record<Tipo, string>`; Snippet, ternário; PromptInput não tem eixo de variante. Input, Note e Snippet migram.
 - **`data-*` parcial.** `badge.tsx` não emite `data-size` nem `data-shape`; `note.tsx` não emite `data-size`.
 - **Button e Badge fora da anatomia.** `animate-spin` e `transition-[…]` sem `motion-reduce:` em `button.tsx`; anatomia do startercn sem crédito no JSDoc nos dois; `"use client"` no Button sem hook e ausente no Badge com o mesmo `Slot`. Migram.
-- **Doc que não bate com o arquivo.** `snippet.mdx` dá a `width` um padrão `100%` que `snippet.tsx` não define; `prompt-input.mdx` tem `description` diferente do `registry.json` e o item em `ROADMAP` não tem `instalacao`. Migram.
+- **Doc que não bate com o arquivo.** `snippet.mdx` dá a `width` um padrão `100%` que `snippet.tsx` não define. Migra.
 - **Nome de prévia sem arquivo.** `components/component-source.tsx` devolve `null` em silêncio; até haver check, renderize `Note type="error"` apontando `examples/<name>.tsx`.
 - **Import exibido errado.** `lib/format-code.ts` troca `@/registry/new-york/` por `"@/components/"`; deve ser `"@/components/ui/"`. Pendente.
 - **Fork no site.** `components/ui/button.tsx` diverge do registry (`sound`, `haptic`). Compare as cópias num check.

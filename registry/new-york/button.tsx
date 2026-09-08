@@ -8,11 +8,11 @@ import { Slot } from "radix-ui";
 import { cn } from "@/lib/utils";
 
 /**
- * Button — LAB / DESIGN.
+ * Button — Supernova.
  *
- * Implementação própria com referência visual no Geist: cinco intenções
- * (primary, secondary, tertiary, error, warning), três tamanhos, formas
- * circular e quadrada, estado de carregamento e prefixo/sufixo.
+ * Cinco intenções (primary, secondary, tertiary, error, warning), três
+ * tamanhos, formas circular e quadrada, estado de carregamento e
+ * prefixo/sufixo. Implementação própria do Supernova.
  */
 const buttonVariants = cva(
   "relative inline-flex shrink-0 select-none items-center justify-center gap-2 whitespace-nowrap rounded-md border font-medium outline-none transition-[background-color,border-color,color,box-shadow] duration-150 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:border-border disabled:bg-muted disabled:text-muted-foreground aria-busy:cursor-progress data-[shape=circle]:px-0 data-[shape=square]:px-0 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",

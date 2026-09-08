@@ -93,6 +93,7 @@ Aceita todas as props de `button`.
 - Botões só de ícone precisam de `aria-label`.
 - As cores `error` e `warning` mantêm contraste AA com o texto.
 
-## Diferenças em relação ao Geist
+## Notas de implementação
 
-O Geist tem `shadow` e `ghost` como variantes extras e a prop `svgOnly`. Aqui `shape` cobre o caso de ícone e as sombras ficaram de fora até haver um caso de uso.
+- `shape` cobre o botão só de ícone; não há prop separada para isso.
+- Não há variantes com sombra nem variante fantasma. Entram quando houver caso de uso.

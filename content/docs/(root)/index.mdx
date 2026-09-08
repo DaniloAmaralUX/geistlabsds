@@ -1,38 +1,37 @@
 ---
 title: Introdução
-description: O design system do LAB / DESIGN, com referência visual no Geist e código instalável pelo shadcn.
+description: Supernova, o design system do LAB / DESIGN. Fundamentos, componentes, blocos e temas com prévia real e código que entra no seu projeto pelo CLI do shadcn.
 ---
 
-**LAB / DESIGN** é o lugar onde a equipe encontra fundamentos, componentes e código pronto para usar. Esta é a primeira entrega, a **POC 1**: o nosso Geist.
+**Supernova** é o design system do LAB / DESIGN. Reúne fundamentos, componentes, blocos e temas com prévia real e código que entra no seu projeto pelo CLI do shadcn. A implementação é própria, sobre shadcn, Radix e Tailwind, e é compatível com o ecossistema shadcn.
 
-## O que é
+## O que existe hoje
 
-- **Fundamentos**: cores, tipografia, espaçamento e raio, com os valores que o CSS realmente usa.
-- **Componentes**: cada um com demonstração interativa, código e comando de instalação.
-- **Cobertura**: a lista completa do Geist e o estado de cada item aqui.
+- [Fundamentos](/docs/fundamentos): cores, tipografia, espaçamento e raio, lidos de `constants/tokens.ts`, o mesmo arquivo que gera o CSS do site e o tema instalável.
+- [Componentes](/docs/components): cada um com prévia interativa, código, props, acessibilidade e comando de instalação.
+- [Blocos](/docs/blocos): páginas e composições prontas, com prévia em tela cheia e instalação pelo shadcn.
+- [Temas](/docs/temas): o tema do Supernova e os presets do Supernova Shadcn, para instalar, trocar ao vivo e ajustar no Theme Studio.
+- [Acervo](/docs/blocos/acervo): blocos, layouts e efeitos que os repositórios do Supernova já publicam, com o comando de instalação de cada item.
+- [Roteiro](/docs/fundamentos/roteiro): os componentes previstos e o estado de cada um. Os totais derivam do roteiro; nenhum número é escrito à mão.
 
-A referência visual é o [Geist](https://vercel.com/geist/introduction), o design system da Vercel. O código é implementação própria sobre shadcn, Radix e Tailwind; nada é copiado da Vercel.
-
-## O que está pronto nesta rodada
-
-<Callout title="Escopo da POC 1">
-  Fundações e cinco componentes ponta a ponta: Button, Badge, Input, Note e
-  Snippet. Os demais itens do Geist estão inventariados na [página do
-  roteiro](/docs/fundamentos/roteiro) e entram nas rodadas seguintes.
+<Callout title="Estado atual">
+  A primeira rodada entregou os fundamentos e os primeiros componentes ponta a
+  ponta. O [roteiro](/docs/fundamentos/roteiro) mostra o que está publicado, o
+  que está em adaptação e o que ainda só consta na lista.
 </Callout>
 
 ## Como usar
 
 1. Instale o tema para receber as cores e o raio no seu projeto shadcn.
-2. Instale os componentes que precisar, um a um.
+2. Instale os componentes e os blocos que precisar, um a um.
 3. Importe de `@/components/ui/<nome>`.
 
-Veja a [instalação](/docs/installation) para os comandos.
+Veja a [instalação](/docs/installation) para os comandos. Cada bloco traz o próprio comando na sua página.
 
 ## Para agentes
 
-O site publica `llms.txt`, `llms-full.txt`, versões em Markdown de cada página (basta acrescentar `.md` à URL) e o índice do registry em `/r/registry.json`. O MCP oficial do shadcn lê este registry.
+O site publica `llms.txt`, `llms-full.txt`, versões em Markdown de cada página (acrescente `.md` à URL) e o índice do registry em `/r/registry.json`. O MCP oficial do shadcn lê esse registry. O texto é o mesmo para pessoas e agentes.
 
 ## Créditos
 
-Template [startercn](https://github.com/shadcn-labs/startercn) (MIT), [shadcn/ui](https://ui.shadcn.com), [Radix](https://www.radix-ui.com), fontes [Geist](https://vercel.com/font) (OFL). O Geist é referência visual; a Vercel não participa deste projeto.
+Template [startercn](https://github.com/shadcn-labs/startercn) (Shadcn Labs, MIT), [shadcn/ui](https://ui.shadcn.com) (MIT), [Radix](https://www.radix-ui.com), fontes Geist Sans e Geist Mono ([Vercel](https://vercel.com/font), OFL). A origem dos blocos, dos temas e do acervo está registrada na página de cada um. O shadcn e a Vercel não participam deste projeto.

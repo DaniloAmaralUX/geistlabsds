@@ -28,7 +28,7 @@ export const BrandContextMenu = ({
 
   const handleCopy = useCallback(() => {
     copyToClipboard(logoMarkSvgString);
-    toast.success("Icon as SVG copied");
+    toast.success("Marca copiada como SVG");
   }, [logoMarkSvgString, copyToClipboard]);
 
   const handleDownload = useCallback(() => {
@@ -41,7 +41,7 @@ export const BrandContextMenu = ({
     a.download = "icon.svg";
     a.click();
     URL.revokeObjectURL(url);
-    toast.success("Icon as SVG downloaded");
+    toast.success("Marca baixada como SVG");
   }, [logoMarkSvgString]);
 
   return (
@@ -51,11 +51,11 @@ export const BrandContextMenu = ({
       <ContextMenuContent>
         <ContextMenuItem onClick={handleCopy}>
           <LogoMark />
-          Copy as SVG
+          Copiar como SVG
         </ContextMenuItem>
 
         <ContextMenuItem onClick={handleDownload}>
-          <DownloadIcon /> Download as SVG
+          <DownloadIcon /> Baixar como SVG
         </ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>

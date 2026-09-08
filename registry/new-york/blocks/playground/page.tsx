@@ -24,7 +24,7 @@ import { models, types } from "./data/models";
 import { presets } from "./data/presets";
 
 /**
- * Playground — LAB / DESIGN.
+ * Playground — Supernova.
  *
  * Área de prompt com três modos (completar, inserir, editar), painel de
  * parâmetros do modelo e ações de predefinição. Base: `shadcn-examples`
