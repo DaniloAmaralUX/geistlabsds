@@ -1,103 +1,60 @@
 ---
-title: Installation
-description: How to use this template to build your own shadcn component.
+title: Instalação
+description: Como levar o tema e os componentes do LAB / DESIGN para um projeto shadcn.
 ---
 
-## Building Your Component
+## Pré-requisitos
 
-### 1. Fork the Template
-
-Click "Use this template" on [GitHub](https://github.com/shadcn-labs/startercn).
-
-### 2. Install Dependencies
+Um projeto com o shadcn configurado (`components.json` presente). Se ainda não tiver:
 
 ```bash
-pnpm install
+npx shadcn@latest init
 ```
 
-### 3. Create Your Component
+## 1. Tema
 
-Replace the placeholder at `registry/new-york/your-component.tsx`:
+O tema aplica as cores e o raio do LAB / DESIGN aos tokens do shadcn, em claro e escuro. Instale uma vez por projeto.
+
+<InstallCommand name="lab-design-theme" />
+
+## 2. Componentes
+
+Cada componente é um item do registry. Instale só o que for usar.
+
+<InstallCommand name="button" />
+
+<Callout title="Sobrescreve o arquivo do shadcn">
+  Button, Badge e Input usam os mesmos caminhos do shadcn
+  (`components/ui/button.tsx` etc.). Ao instalar, o CLI pergunta se pode
+  sobrescrever; responda sim ou passe `--overwrite`.
+</Callout>
+
+## 3. Uso
 
 ```tsx
-import { forwardRef, HTMLAttributes } from "react";
-import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Note } from "@/components/ui/note";
 
-export interface MyButtonProps extends HTMLAttributes<HTMLButtonElement> {
-  variant?: "default" | "outline";
-}
-
-const MyButton = forwardRef<HTMLButtonElement, MyButtonProps>(
-  ({ className, variant = "default", ...props }, ref) => {
-    return (
-      <button
-        ref={ref}
-        className={cn(
-          "rounded-md px-4 py-2 font-medium",
-          variant === "default" && "bg-primary text-primary-foreground",
-          variant === "outline" && "border border-input",
-          className
-        )}
-        {...props}
-      />
-    );
-  }
-);
-
-MyButton.displayName = "MyButton";
-
-export { MyButton };
-```
-
-### 4. Update registry.json
-
-```json
-{
-  "name": "your-name/your-registry",
-  "homepage": "https://your-site.com",
-  "items": [
-    {
-      "name": "my-button",
-      "type": "registry:ui",
-      "title": "My Button",
-      "description": "A custom button component.",
-      "files": [
-        {
-          "path": "registry/new-york/my-button.tsx",
-          "type": "registry:ui",
-          "target": "components/ui/my-button.tsx"
-        }
-      ]
-    }
-  ]
+export function Exemplo() {
+  return (
+    <Note
+      type="success"
+      action={
+        <Button size="sm" variant="secondary">
+          Ver
+        </Button>
+      }
+    >
+      Publicado com sucesso.
+    </Note>
+  );
 }
 ```
 
-### 5. Build & Deploy
+## Dependências
 
-```bash
-pnpm registry:build
-pnpm build
-```
+Os componentes usam `class-variance-authority`, `radix-ui` e `lucide-react`, que o CLI instala quando faltam. Não há dependência além das que um projeto shadcn já tem.
 
-Deploy your app and your component is live!
+## Validação
 
----
-
-## Installing Components
-
-To install a component from any registry built with this template:
-
-```bash
-npx shadcn@latest add https://example.com/r/my-button.json
-```
-
-Then use it:
-
-```tsx
-import { MyButton } from "@/components/ui/my-button";
-
-export function Demo() {
-  return <MyButton variant="outline">Click me</MyButton>;
-}
-```
+A instalação de cada componente publicado é conferida num projeto consumidor limpo, com build. O estado aparece na coluna "Instalação" da [cobertura](/docs/fundamentos/cobertura).

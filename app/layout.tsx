@@ -19,7 +19,7 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => (
-  <html lang="en" suppressHydrationWarning>
+  <html lang="pt-BR" suppressHydrationWarning>
     <head>
       <JsonLdScripts />
       <script

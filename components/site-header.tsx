@@ -2,21 +2,23 @@ import Link from "next/link";
 
 import { BrandContextMenu } from "@/components/brand-context-menu";
 import { CommandMenu } from "@/components/command-menu";
+import { GithubIcon } from "@/components/icons";
 import { LogoMark } from "@/components/logo";
 import { MainNav } from "@/components/main-nav";
 import { MobileNav } from "@/components/mobile-nav";
 import { ModeSwitcher } from "@/components/mode-switcher";
-import { NavItemGithub } from "@/components/nav-item-github";
 import { SiteSettings } from "@/components/site-settings";
-import { SponsorLink } from "@/components/sponsor-link";
 import { Button } from "@/components/ui/button";
+import { LINK } from "@/constants/links";
 import { ROUTES } from "@/constants/routes";
 import { SITE } from "@/constants/site";
 import { source } from "@/lib/source";
 
 const navItems = [
   { href: ROUTES.DOCS, label: "Docs" },
-  { href: ROUTES.DOCS_COMPONENTS, label: "Components" },
+  { href: ROUTES.DOCS_FOUNDATIONS, label: "Fundamentos" },
+  { href: ROUTES.DOCS_COMPONENTS, label: "Componentes" },
+  { href: ROUTES.DOCS_COVERAGE, label: "Cobertura" },
 ];
 
 export const SiteHeader = () => (
@@ -50,8 +52,18 @@ export const SiteHeader = () => (
           <div className="hidden w-full flex-1 md:flex md:w-auto md:flex-none">
             <CommandMenu navItems={navItems} tree={source.pageTree} />
           </div>
-          <NavItemGithub />
-          <SponsorLink />
+          <Button
+            asChild
+            variant="ghost"
+            size="icon"
+            className="extend-touch-target size-8"
+            sound="click"
+          >
+            <a href={LINK.GITHUB} target="_blank" rel="noreferrer">
+              <GithubIcon />
+              <span className="sr-only">GitHub</span>
+            </a>
+          </Button>
           <ModeSwitcher />
           <SiteSettings />
         </div>

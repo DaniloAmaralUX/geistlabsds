@@ -1,12 +1,14 @@
 "use client";
 
-import { SquarePenIcon } from "lucide-react";
+import { ExternalLinkIcon, SquarePenIcon } from "lucide-react";
 
-import { DiscordIcon, XIcon } from "@/components/icons";
 import { GITHUB, LINK } from "@/constants/links";
 import { DOCS_DIR } from "@/lib/docs";
 import { trackEvent } from "@/lib/events";
 import { cn } from "@/lib/utils";
+
+const LINK_CLS =
+  "transition-colors text-[0.8rem] hover:text-foreground text-muted-foreground [&_svg]:size-3 flex gap-1.5 items-center";
 
 export const DocsTocFooter = ({
   docId,
@@ -21,7 +23,7 @@ export const DocsTocFooter = ({
         href={`${LINK.GITHUB}/edit/${GITHUB.branch}/${DOCS_DIR}/${docId}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="transition-colors text-[0.8rem] hover:text-foreground text-muted-foreground [&_svg]:size-3 flex gap-1.5 items-center"
+        className={LINK_CLS}
         onClick={() =>
           trackEvent({
             name: "click_edit_page",
@@ -30,26 +32,17 @@ export const DocsTocFooter = ({
         }
       >
         <SquarePenIcon />
-        Edit this page
+        Editar esta página
       </a>
     )}
     <a
-      href={LINK.X_SHADCN_LABS}
+      href={LINK.GEIST}
       target="_blank"
       rel="noopener noreferrer"
-      className="transition-colors text-[0.8rem] hover:text-foreground text-muted-foreground [&_svg]:size-3 flex gap-1.5 items-center"
+      className={LINK_CLS}
     >
-      <XIcon />
-      Follow @shadcnlabs
-    </a>
-    <a
-      href={LINK.DISCORD}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="transition-colors text-[0.8rem] hover:text-foreground text-muted-foreground [&_svg]:size-3 flex gap-1.5 items-center"
-    >
-      <DiscordIcon />
-      Join community
+      <ExternalLinkIcon />
+      Referência: Geist
     </a>
   </div>
 );

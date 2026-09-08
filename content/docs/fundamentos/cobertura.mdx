@@ -1,0 +1,19 @@
+---
+title: Cobertura do Geist
+description: Todos os itens da navegação do Geist e o estado de cada um neste design system.
+---
+
+Esta é a lista de cobertura da POC. Cada item do Geist tem um estado editorial: **inventariado** (só listado), **em adaptação**, **em revisão** ou **publicado** (com página, exemplo e código aqui). Os totais são calculados a partir do inventário.
+
+<CoverageTable />
+
+## Como um item avança
+
+1. **Inventariado**: consta na navegação do Geist.
+2. **Em adaptação**: há implementação própria em andamento.
+3. **Em revisão**: página, exemplos e código existem; falta conferir estados, teclado e instalação.
+4. **Publicado**: tudo acima conferido, incluindo a instalação num projeto consumidor.
+
+A coluna "Instalação" registra a conferência num projeto consumidor limpo (Next.js e Tailwind 4, criado do zero): **build no consumidor** significa que os arquivos do registry foram gravados nos destinos que o CLI usa e o projeto compilou; **validada pelo CLI** significa o `npx shadcn add` completo. Na primeira rodada o CLI resolveu os itens e instalou as dependências, mas a etapa de gravação consulta `ui.shadcn.com`, indisponível na rede em que a POC foi construída; por isso a conferência ficou em "build no consumidor".
+
+As marcas (Vercel, Next.js, Turbo, v0, eve, AI SDK) são de terceiros e ficam listadas por completude; não entram como marca própria do LAB / DESIGN.

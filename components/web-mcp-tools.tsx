@@ -77,7 +77,7 @@ export const WebMcpTools = () => {
         },
         type: "object",
       },
-      name: `${SITE.NAME}_open_docs`,
+      name: `${SITE.SLUG}_open_docs`,
     });
 
     register({
@@ -94,7 +94,7 @@ export const WebMcpTools = () => {
         return res.json();
       },
       inputSchema: { properties: {}, type: "object" },
-      name: `${SITE.NAME}_fetch_registry`,
+      name: `${SITE.SLUG}_fetch_registry`,
     });
 
     register({
@@ -105,7 +105,7 @@ export const WebMcpTools = () => {
         return Promise.resolve({ ok: true, path: ROUTES.LLMS });
       },
       inputSchema: { properties: {}, type: "object" },
-      name: `${SITE.NAME}_open_llms_index`,
+      name: `${SITE.SLUG}_open_llms_index`,
     });
 
     return () => {

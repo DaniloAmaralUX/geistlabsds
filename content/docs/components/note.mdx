@@ -1,0 +1,74 @@
+---
+title: Note
+description: Aviso em linha com seis tipos, rótulo, preenchimento sólido e ação opcional.
+---
+
+import { NoteDemo } from "@/examples/note";
+import { NoteTypesDemo } from "@/examples/note-types";
+import { NoteFillDemo } from "@/examples/note-fill";
+import { NoteActionDemo } from "@/examples/note-action";
+import { NoteLabelDemo } from "@/examples/note-label";
+
+<ComponentPreview name="note">
+  <NoteDemo />
+</ComponentPreview>
+
+## Instalação
+
+<InstallCommand name="note" />
+
+## Uso
+
+```tsx
+import { Note } from "@/components/ui/note";
+
+export function Exemplo() {
+  return <Note type="success">Publicado com sucesso.</Note>;
+}
+```
+
+## Tipos
+
+<ComponentPreview name="note-types">
+  <NoteTypesDemo />
+</ComponentPreview>
+
+## Preenchida
+
+<ComponentPreview name="note-fill">
+  <NoteFillDemo />
+</ComponentPreview>
+
+## Com ação
+
+<ComponentPreview name="note-action">
+  <NoteActionDemo />
+</ComponentPreview>
+
+## Rótulo
+
+O rótulo padrão segue o tipo ("Nota:", "Sucesso:", "Erro:", "Aviso:"). Passe outro texto ou `false` para remover.
+
+<ComponentPreview name="note-label">
+  <NoteLabelDemo />
+</ComponentPreview>
+
+## Props
+
+| Prop     | Tipo                                                                        | Padrão         |
+| -------- | --------------------------------------------------------------------------- | -------------- |
+| `type`   | `"default" \| "secondary" \| "success" \| "error" \| "warning" \| "violet"` | `"default"`    |
+| `label`  | `ReactNode \| false`                                                        | rótulo do tipo |
+| `fill`   | `boolean`                                                                   | `false`        |
+| `action` | `ReactNode`                                                                 | —              |
+| `size`   | `"sm" \| "md" \| "lg"`                                                      | `"md"`         |
+
+## Acessibilidade
+
+- `error` e `warning` usam `role="alert"` e são anunciados ao aparecer.
+- `success` usa `role="status"`; os demais, `role="note"`.
+- A cor acompanha o rótulo; a mensagem nunca depende só dela.
+
+## Diferenças em relação ao Geist
+
+Mesmos tipos e a mesma prop `fill`. O Geist tem `disabled`; aqui não há caso de uso ainda.

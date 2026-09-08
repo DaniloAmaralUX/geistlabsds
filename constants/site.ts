@@ -1,4 +1,4 @@
-export const FALLBACK_SITE_ORIGIN = "https://startercn.vercel.app" as const;
+export const FALLBACK_SITE_ORIGIN = "https://geistlabsds.vercel.app" as const;
 
 const getBaseUrl = () => {
   if (process.env.NODE_ENV !== "production") {
@@ -16,30 +16,34 @@ const baseUrl = getBaseUrl();
 
 export const SITE = {
   AUTHOR: {
-    NAME: "Aniket Pawar",
-    TWITTER: "@alaymanguy",
+    NAME: "LAB / DESIGN",
   },
   DESCRIPTION: {
-    LONG: "A starter kit for building and publishing your own shadcn registry components.",
-    SHORT: "Build your own shadcn registry",
+    LONG: "O design system do LAB / DESIGN: fundamentos, componentes com demonstração interativa e código instalável pelo shadcn, com referência visual no Geist.",
+    SHORT: "O nosso Geist",
   },
   KEYWORDS: [
+    "design system",
+    "lab design",
+    "geist",
     "shadcn",
     "shadcn registry",
-    "component registry",
-    "shadcn components",
+    "componentes",
+    "react",
     "next.js",
     "tailwindcss",
-    "npx shadcn add",
   ] as const,
-  NAME: "startercn",
+  LOCALE: "pt-BR",
+  NAME: "LAB / DESIGN",
   OG_IMAGE: `${baseUrl}/og`,
   REGISTRY: baseUrl,
+  /** Identificador seguro para nomes de ferramenta, arquivos e chaves. */
+  SLUG: "lab-design",
   URL: baseUrl,
 };
 
 export const META_THEME_COLORS = {
-  dark: "#09090b",
+  dark: "#0a0a0a",
   light: "#ffffff",
 };
 

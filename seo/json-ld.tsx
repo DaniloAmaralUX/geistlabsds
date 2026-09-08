@@ -15,7 +15,7 @@ export const WebsiteJsonLd = () => (
       "@context": "https://schema.org",
       "@type": "WebSite",
       description: SITE.DESCRIPTION.LONG,
-      inLanguage: "en-US",
+      inLanguage: "pt-BR",
       name: SITE.NAME,
       url: SITE.URL,
     }}
@@ -29,9 +29,9 @@ export const SoftwareSourceCodeJsonLd = () => (
       "@type": "SoftwareSourceCode",
       applicationCategory: "DeveloperApplication",
       author: {
-        "@type": "Person",
+        "@type": "Organization",
         name: SITE.AUTHOR.NAME,
-        url: LINK.PORTFOLIO,
+        url: SITE.URL,
       },
       codeRepository: LINK.GITHUB,
       description: SITE.DESCRIPTION.LONG,
@@ -39,17 +39,11 @@ export const SoftwareSourceCodeJsonLd = () => (
       keywords: SITE.KEYWORDS,
       license: LINK.LICENSE,
       maintainer: {
-        "@type": "Person",
+        "@type": "Organization",
         name: SITE.AUTHOR.NAME,
-        url: LINK.PORTFOLIO,
+        url: SITE.URL,
       },
       name: SITE.NAME,
-      offers: {
-        "@type": "Offer",
-        availability: "https://schema.org/InStock",
-        price: "0",
-        priceCurrency: "USD",
-      },
       programmingLanguage: ["TypeScript", "React", "Next.js"],
       runtimePlatform: "Node.js",
       url: SITE.URL,
@@ -62,14 +56,9 @@ export const OrganizationJsonLd = () => (
     data={{
       "@context": "https://schema.org",
       "@type": "Organization",
-      founder: {
-        "@type": "Person",
-        name: SITE.AUTHOR.NAME,
-        url: LINK.PORTFOLIO,
-      },
       logo: SITE.OG_IMAGE,
       name: SITE.NAME,
-      sameAs: [LINK.GITHUB, LINK.PORTFOLIO, LINK.X],
+      sameAs: [LINK.GITHUB],
       url: SITE.URL,
     }}
   />

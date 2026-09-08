@@ -1,17 +1,165 @@
 {
-  "name": "startercn",
-  "homepage": "https://github.com/shadcn-labs/startercn",
+  "name": "lab-design",
+  "homepage": "https://geistlabsds.vercel.app",
   "items": [
     {
-      "name": "your-component",
+      "name": "lab-design-theme",
+      "type": "registry:theme",
+      "title": "Tema LAB / DESIGN",
+      "description": "Tokens semânticos do LAB / DESIGN (cores, raio) no vocabulário do shadcn, em claro e escuro. Gerado a partir de constants/tokens.ts.",
+      "cssVars": {
+        "dark": {
+          "accent": "oklch(0.24 0 0)",
+          "accent-foreground": "oklch(0.93 0 0)",
+          "background": "oklch(0.13 0 0)",
+          "border": "oklch(0.28 0 0)",
+          "card": "oklch(0.2 0 0)",
+          "card-foreground": "oklch(0.93 0 0)",
+          "chart-1": "oklch(0.42 0.14 258)",
+          "chart-2": "oklch(0.64 0.2 258)",
+          "chart-3": "oklch(0.64 0.2 148)",
+          "chart-4": "oklch(0.64 0.2 72)",
+          "chart-5": "oklch(0.64 0.2 295)",
+          "code": "oklch(0.2 0 0)",
+          "code-foreground": "oklch(0.8 0 0)",
+          "code-highlight": "oklch(0.28 0 0)",
+          "code-number": "oklch(0.52 0 0)",
+          "destructive": "oklch(0.64 0.2 25)",
+          "foreground": "oklch(0.93 0 0)",
+          "input": "oklch(0.28 0 0)",
+          "muted": "oklch(0.2 0 0)",
+          "muted-foreground": "oklch(0.72 0 0)",
+          "popover": "oklch(0.2 0 0)",
+          "popover-foreground": "oklch(0.93 0 0)",
+          "primary": "oklch(0.93 0 0)",
+          "primary-foreground": "oklch(0.13 0 0)",
+          "ring": "oklch(0.64 0.2 258)",
+          "secondary": "oklch(0.24 0 0)",
+          "secondary-foreground": "oklch(0.93 0 0)",
+          "selection": "oklch(0.28 0.075 258)",
+          "selection-foreground": "oklch(0.93 0 0)",
+          "sidebar": "oklch(0.13 0 0)",
+          "sidebar-accent": "oklch(0.24 0 0)",
+          "sidebar-accent-foreground": "oklch(0.93 0 0)",
+          "sidebar-border": "oklch(0.28 0 0)",
+          "sidebar-foreground": "oklch(0.93 0 0)",
+          "sidebar-primary": "oklch(0.64 0.2 258)",
+          "sidebar-primary-foreground": "oklch(0.93 0 0)",
+          "sidebar-ring": "oklch(0.64 0.2 258)",
+          "surface": "oklch(0.2 0 0)",
+          "surface-foreground": "oklch(0.8 0 0)"
+        },
+        "light": {
+          "accent": "oklch(0.945 0 0)",
+          "accent-foreground": "oklch(0.205 0 0)",
+          "background": "oklch(1 0 0)",
+          "border": "oklch(0.875 0 0)",
+          "card": "oklch(1 0 0)",
+          "card-foreground": "oklch(0.205 0 0)",
+          "chart-1": "oklch(0.8 0.14 258)",
+          "chart-2": "oklch(0.6 0.2 258)",
+          "chart-3": "oklch(0.6 0.2 148)",
+          "chart-4": "oklch(0.6 0.2 72)",
+          "chart-5": "oklch(0.6 0.2 295)",
+          "code": "oklch(0.97 0 0)",
+          "code-foreground": "oklch(0.45 0 0)",
+          "code-highlight": "oklch(0.915 0 0)",
+          "code-number": "oklch(0.6 0 0)",
+          "destructive": "oklch(0.6 0.2 25)",
+          "foreground": "oklch(0.205 0 0)",
+          "input": "oklch(0.875 0 0)",
+          "muted": "oklch(0.97 0 0)",
+          "muted-foreground": "oklch(0.45 0 0)",
+          "popover": "oklch(1 0 0)",
+          "popover-foreground": "oklch(0.205 0 0)",
+          "primary": "oklch(0.205 0 0)",
+          "primary-foreground": "oklch(1 0 0)",
+          "ring": "oklch(0.6 0.2 258)",
+          "secondary": "oklch(0.945 0 0)",
+          "secondary-foreground": "oklch(0.205 0 0)",
+          "selection": "oklch(0.945 0.045 258)",
+          "selection-foreground": "oklch(0.205 0 0)",
+          "sidebar": "oklch(1 0 0)",
+          "sidebar-accent": "oklch(0.945 0 0)",
+          "sidebar-accent-foreground": "oklch(0.205 0 0)",
+          "sidebar-border": "oklch(0.875 0 0)",
+          "sidebar-foreground": "oklch(0.205 0 0)",
+          "sidebar-primary": "oklch(0.6 0.2 258)",
+          "sidebar-primary-foreground": "oklch(1 0 0)",
+          "sidebar-ring": "oklch(0.6 0.2 258)",
+          "surface": "oklch(0.97 0 0)",
+          "surface-foreground": "oklch(0.45 0 0)"
+        },
+        "theme": {
+          "radius": "6px"
+        }
+      }
+    },
+    {
+      "name": "button",
       "type": "registry:ui",
-      "title": "Your Component",
-      "description": "A placeholder component. Replace this with your custom shadcn component.",
+      "title": "Button",
+      "description": "Botão com cinco intenções, três tamanhos, formas circular e quadrada, carregamento e prefixo/sufixo.",
+      "dependencies": ["class-variance-authority", "lucide-react", "radix-ui"],
       "files": [
         {
-          "path": "registry/new-york/your-component.tsx",
+          "path": "registry/new-york/button.tsx",
           "type": "registry:ui",
-          "target": "components/ui/your-component.tsx"
+          "target": "components/ui/button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "Rótulo curto com seis cores, aparência sólida ou suave, três tamanhos e forma de pílula.",
+      "dependencies": ["class-variance-authority", "radix-ui"],
+      "files": [
+        {
+          "path": "registry/new-york/badge.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/badge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "Campo de texto com rótulo, descrição, prefixo, sufixo, erro acessível e três tamanhos.",
+      "files": [
+        {
+          "path": "registry/new-york/input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/input.tsx"
+        }
+      ]
+    },
+    {
+      "name": "note",
+      "type": "registry:ui",
+      "title": "Note",
+      "description": "Aviso em linha com seis tipos, rótulo, preenchimento sólido e ação opcional.",
+      "files": [
+        {
+          "path": "registry/new-york/note.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/note.tsx"
+        }
+      ]
+    },
+    {
+      "name": "snippet",
+      "type": "registry:ui",
+      "title": "Snippet",
+      "description": "Comando de terminal com prompt, várias linhas, fundo escuro e botão de copiar acessível.",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "registry/new-york/snippet.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/snippet.tsx"
         }
       ]
     }

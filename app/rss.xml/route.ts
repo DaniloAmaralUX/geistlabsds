@@ -32,7 +32,7 @@ export const GET = () => {
     <title>${SITE.NAME} Changelog</title>
     <link>${SITE.URL}</link>
     <description>${SITE.DESCRIPTION.LONG}</description>
-    <language>en-us</language>
+    <language>pt-br</language>
     <atom:link href="${SITE.URL}${ROUTES.RSS}" rel="self" type="application/rss+xml"/>
 ${items}
   </channel>

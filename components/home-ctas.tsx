@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { ROUTES } from "@/constants/routes";
 import { cn } from "@/lib/utils";
 
-const GetStartedButton = () => {
+const FoundationsButton = () => {
   const arrowRightRef = useRef<ArrowRightIconHandle>(null);
 
   const handleMouseEnter = useCallback(() => {
@@ -30,15 +30,15 @@ const GetStartedButton = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link href={ROUTES.DOCS_INSTALLATION} transitionTypes={["nav-forward"]}>
-        Get Started
+      <Link href={ROUTES.DOCS_FOUNDATIONS} transitionTypes={["nav-forward"]}>
+        Fundamentos
         <ArrowRightIcon className="hidden sm:inline" ref={arrowRightRef} />
       </Link>
     </Button>
   );
 };
 
-const BrowseComponentsButton = () => {
+const ComponentsButton = () => {
   const componentIconRef = useRef<ComponentIconHandle>(null);
 
   const handleMouseEnter = useCallback(() => {
@@ -64,7 +64,7 @@ const BrowseComponentsButton = () => {
           ref={componentIconRef}
           size={22}
         />
-        Browse Components
+        Componentes
       </Link>
     </Button>
   );
@@ -77,7 +77,7 @@ export const HomeCtas = ({ className }: { className?: string }) => (
       className
     )}
   >
-    <GetStartedButton />
-    <BrowseComponentsButton />
+    <FoundationsButton />
+    <ComponentsButton />
   </div>
 );

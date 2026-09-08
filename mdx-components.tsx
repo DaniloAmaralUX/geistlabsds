@@ -9,6 +9,12 @@ import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 import { ComponentsList } from "@/components/components-list";
 import { CopyButton } from "@/components/copy-button";
+import { ColorScale } from "@/components/docs/color-scale";
+import { CoverageTable } from "@/components/docs/coverage-table";
+import { InstallCommand } from "@/components/docs/install-command";
+import { SemanticTokens } from "@/components/docs/semantic-tokens";
+import { RadiusScale, SpacingScale } from "@/components/docs/spacing-scale";
+import { TypeScale } from "@/components/docs/type-scale";
 import { getIconForLanguageExtension } from "@/components/icons";
 import {
   Accordion,
@@ -37,9 +43,11 @@ export const mdxComponents = {
   Button,
   Callout,
   CodeTabs,
+  ColorScale,
   ComponentPreview,
   ComponentSource,
   ComponentsList,
+  CoverageTable,
   FeatureCard: ({
     icon: Icon,
     title,
@@ -84,6 +92,7 @@ export const mdxComponents = {
       {...props}
     />
   ),
+  InstallCommand,
   Link: ({ className, ...props }: React.ComponentProps<typeof Link>) => (
     <Link
       className={cn("font-medium underline underline-offset-4", className)}
@@ -99,6 +108,9 @@ export const mdxComponents = {
       {...props}
     />
   ),
+  RadiusScale,
+  SemanticTokens,
+  SpacingScale,
   Step: ({ className, children, ...props }: React.ComponentProps<"h3">) => (
     <h3
       className={cn(
@@ -159,6 +171,7 @@ export const mdxComponents = {
       {...props}
     />
   ),
+  TypeScale,
   a: ({ className, children, ...props }: React.ComponentProps<"a">) => (
     <a
       className={cn("font-medium underline underline-offset-4", className)}

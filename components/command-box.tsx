@@ -81,7 +81,7 @@ export const CommandBox = ({ className }: { className?: string }) => {
               </TabsContent>
             ))}
 
-            <span>{SITE.REGISTRY}/</span>
+            <span>{SITE.REGISTRY}/r/</span>
 
             <TextFlip
               className="text-foreground"
@@ -96,7 +96,7 @@ export const CommandBox = ({ className }: { className?: string }) => {
                 currentItemRef.current = registryItemNames[index];
               }}
             >
-              {registryItemNames}
+              {registryItemNames.map((name) => `${name}.json`)}
             </TextFlip>
           </code>
         </pre>
@@ -112,7 +112,7 @@ export const CommandBox = ({ className }: { className?: string }) => {
       <CopyButton
         className="absolute top-2 right-2 z-10 size-7 opacity-70 hover:opacity-100 focus-visible:opacity-100"
         value={() =>
-          `${pmCommands[packageManager]} shadcn@latest add ${SITE.REGISTRY}/${currentItemRef.current}`
+          `${pmCommands[packageManager]} shadcn@latest add ${SITE.REGISTRY}/r/${currentItemRef.current}.json`
         }
         event="copy_npm_command"
       />

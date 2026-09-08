@@ -2,14 +2,15 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2022",
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "isolatedModules": false,
     "allowImportingTsExtensions": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": ["node"]
   },
-  "include": ["scripts/**/*.{ts,mts}"],
+  "include": ["scripts/**/*.ts", "scripts/**/*.mts"],
   "exclude": ["node_modules"]
 }

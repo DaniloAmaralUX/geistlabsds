@@ -8,7 +8,7 @@ export const SITE_AGENT_SKILL_MD = `# ${SITE.NAME}
 
 ## Summary
 
-Help users discover, inspect, and install components from this public shadcn registry starter and its documentation site.
+Help users discover, inspect, and install components from the LAB / DESIGN design system (visual reference: Vercel's Geist; original implementation). Documentation is in Brazilian Portuguese.
 
 ## Registry
 
@@ -22,7 +22,7 @@ This site is a shadcn-compatible registry. For MCP workflows, use the maintained
 ## Install
 
 \`\`\`bash
-npx shadcn@latest add ${SITE.URL}/r/your-component.json
+npx shadcn@latest add ${SITE.URL}/r/button.json
 \`\`\`
 
 Prefer following the on-site installation guide: ${ROUTES.DOCS_INSTALLATION}
