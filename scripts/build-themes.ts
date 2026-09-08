@@ -9,7 +9,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-import { SUPERNOVA_THEMES } from "../constants/themes.ts";
+import { SUPERNOVA_SHADCN_THEMES } from "../constants/themes.ts";
 import type { ThemePreset, ThemeVars } from "../constants/themes.ts";
 import { RADIUS, SEMANTIC } from "../constants/tokens.ts";
 
@@ -19,7 +19,7 @@ const root = join(import.meta.dirname, "..");
  * Mesmo objeto de lib/theme-presets.ts, campo a campo; repetido aqui porque o
  * script roda no Node sem o alias @/. Mudou lá, mude aqui.
  */
-const SUPERNOVA_THEME: ThemePreset = {
+const LAB_DESIGN_THEME: ThemePreset = {
   attribution: null,
   cssVars: {
     dark: SEMANTIC.dark,
@@ -28,14 +28,14 @@ const SUPERNOVA_THEME: ThemePreset = {
   },
   dependencies: [],
   description:
-    "O tema do Supernova: cinza neutro, azul para ação, raio de 6px. Gerado de constants/tokens.ts.",
-  installUrl: "https://geistlabsds.vercel.app/r/supernova-theme.json",
-  origin: "supernova",
-  slug: "supernova",
-  title: "Supernova",
+    "O tema do LAB / DESIGN: cinza neutro, azul para ação, raio de 6px. Gerado de constants/tokens.ts.",
+  installUrl: "https://geistlabsds.vercel.app/r/lab-design-theme.json",
+  origin: "lab-design",
+  slug: "lab-design",
+  title: "LAB / DESIGN",
 };
 
-const THEMES: ThemePreset[] = [SUPERNOVA_THEME, ...SUPERNOVA_THEMES];
+const THEMES: ThemePreset[] = [LAB_DESIGN_THEME, ...SUPERNOVA_SHADCN_THEMES];
 
 /** Só cores e raio entram no CSS do site; fontes ficam com o site. */
 const SITE_KEYS = new Set([
@@ -105,7 +105,7 @@ mkdirSync(themesDir, { recursive: true });
 
 for (const theme of THEMES) {
   const themeLevel = theme.cssVars.theme ? lines(theme.cssVars.theme) : "";
-  const css = `/* ${theme.title} — gerado por scripts/build-themes.ts (Supernova). Não editar. */
+  const css = `/* ${theme.title} — gerado por scripts/build-themes.ts (LAB / DESIGN). Não editar. */
 /* Formato: variáveis do shadcn em :root (claro) e .dark (escuro); serve ao shadcn-theme-provider. */
 
 :root {

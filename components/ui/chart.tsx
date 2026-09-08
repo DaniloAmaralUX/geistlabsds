@@ -1,6 +1,6 @@
 "use client";
 
-// Base: shadcn/ui (MIT), adaptado ao Supernova
+// Base: shadcn/ui (MIT), adaptado ao LAB / DESIGN
 import { createContext, useContext, useId, useMemo } from "react";
 import * as RechartsPrimitive from "recharts";
 import type {

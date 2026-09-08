@@ -13,7 +13,7 @@ import { publishedBlocks } from "@/constants/blocks";
 import { ROADMAP, countByEstado } from "@/constants/roadmap";
 import { ROUTES } from "@/constants/routes";
 import { SITE } from "@/constants/site";
-import { SUPERNOVA_THEMES } from "@/constants/themes";
+import { SUPERNOVA_SHADCN_THEMES } from "@/constants/themes";
 import { Badge } from "@/registry/new-york/badge";
 import { Button } from "@/registry/new-york/button";
 import { Input } from "@/registry/new-york/input";
@@ -134,9 +134,9 @@ export default function IndexPage() {
             </Showcase>
             <Showcase title="Temas" href={ROUTES.DOCS_THEMES}>
               <p className="text-sm text-muted-foreground">
-                O tema Supernova e os {SUPERNOVA_THEMES.length} presets do
-                Supernova Shadcn: instale pelo CLI do shadcn, aplique ao vivo no
-                site ou ajuste no Theme Studio.
+                O tema LAB / DESIGN e os {SUPERNOVA_SHADCN_THEMES.length}{" "}
+                presets do Supernova Shadcn: instale pelo CLI do shadcn, aplique
+                ao vivo no site ou ajuste no Theme Studio.
               </p>
             </Showcase>
             <Showcase title="Acervo" href={`${ROUTES.DOCS_BLOCKS}/acervo`}>

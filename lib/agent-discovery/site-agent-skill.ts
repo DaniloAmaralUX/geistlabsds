@@ -8,7 +8,7 @@ export const SITE_AGENT_SKILL_MD = `# ${SITE.NAME}
 
 ## Summary
 
-Help users discover, inspect, and install components, blocks and themes from Supernova, the design system built by LAB / DESIGN. Own implementation on top of shadcn/ui (MIT), Radix and Tailwind, distributed through a registry compatible with the shadcn ecosystem. Documentation is in Brazilian Portuguese.
+Help users discover, inspect, and install components, blocks and themes from LAB / DESIGN, the design system built by LAB / DESIGN. Own implementation on top of shadcn/ui (MIT), Radix and Tailwind, distributed through a registry compatible with the shadcn ecosystem. Documentation is in Brazilian Portuguese.
 
 ## Registry
 

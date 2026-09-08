@@ -1,6 +1,6 @@
 "use client";
 
-// Base: shadcn/ui (MIT), adaptado ao Supernova
+// Base: shadcn/ui (MIT), adaptado ao LAB / DESIGN
 import { HoverCard as HoverCardPrimitive } from "radix-ui";
 
 import { cn } from "@/lib/utils";

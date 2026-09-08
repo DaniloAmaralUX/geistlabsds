@@ -14,7 +14,7 @@ import {
 import { usePalette } from "@/hooks/use-palette";
 import { THEMES } from "@/lib/theme-presets";
 
-/** Troca a paleta do site ao vivo, entre o tema do Supernova e os presets do Supernova Shadcn. */
+/** Troca a paleta do site ao vivo, entre o tema do LAB / DESIGN e os presets do Supernova Shadcn. */
 export const PaletteMenu = () => {
   const { palette, setPalette } = usePalette();
 

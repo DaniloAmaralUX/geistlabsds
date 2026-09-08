@@ -1,6 +1,6 @@
 "use client";
 
-// Base: shadcn/ui (MIT), adaptado ao Supernova
+// Base: shadcn/ui (MIT), adaptado ao LAB / DESIGN
 import { AlertDialog as AlertDialogPrimitive } from "radix-ui";
 
 import { buttonVariants } from "@/components/ui/button";

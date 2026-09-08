@@ -137,7 +137,7 @@ const SectionTable = ({
 };
 
 /**
- * Roteiro: cada item previsto no Supernova, seu estado, a rota local e a
+ * Roteiro: cada item previsto no LAB / DESIGN, seu estado, a rota local e a
  * conferência de instalação. Os totais derivam da lista.
  */
 export const RoadmapTable = () => (

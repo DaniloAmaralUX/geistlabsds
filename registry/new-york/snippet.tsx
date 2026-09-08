@@ -6,11 +6,11 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Snippet — Supernova.
+ * Snippet — LAB / DESIGN.
  *
  * Comando de terminal com botão de copiar. Aceita uma ou várias linhas, mostra
  * o prompt `$` opcional e anuncia a cópia para leitores de tela.
- * Implementação própria do Supernova.
+ * Implementação própria do LAB / DESIGN.
  */
 
 export interface SnippetProps extends Omit<

@@ -10,7 +10,7 @@ import { SiteHeader } from "./components/site-header";
 import data from "./data.json";
 
 /**
- * Painel administrativo — Supernova.
+ * Painel administrativo — LAB / DESIGN.
  *
  * Barra lateral de navegação, cabeçalho, cartões de indicadores, gráfico de
  * área interativo e tabela de dados com arrastar e soltar, seleção e

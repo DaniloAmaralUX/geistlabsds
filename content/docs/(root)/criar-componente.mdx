@@ -1,6 +1,6 @@
 ---
 title: Criar um componente
-description: O ciclo ponta a ponta de um componente do Supernova, do arquivo no registry à instalação validada, com o que aprendemos das bibliotecas de amostra.
+description: O ciclo ponta a ponta de um componente do LAB / DESIGN, do arquivo no registry à instalação validada, com o que aprendemos das bibliotecas de amostra.
 ---
 
 O gabarito é `registry/new-york/button.tsx`, `examples/button*.tsx` e `content/docs/components/button.mdx`; leia antes de começar.
@@ -15,7 +15,7 @@ Em `constants/roadmap.ts`, mude `estado` para `"em-adaptacao"`. Componente fora 
 
 <Step>Escreva o arquivo do registry</Step>
 
-`registry/new-york/<nome>.tsx` só pode importar `react`, `@/lib/utils`, `radix-ui`, `class-variance-authority` e `lucide-react`. JSDoc `<Nome> — Supernova.` com a frase "Implementação própria sobre shadcn, Radix e Tailwind" e o crédito da fonte MIT que moldou a anatomia, quando houver. Exporte `<Nome>` e `<nome>Variants` no fim.
+`registry/new-york/<nome>.tsx` só pode importar `react`, `@/lib/utils`, `radix-ui`, `class-variance-authority` e `lucide-react`. JSDoc `<Nome> — LAB / DESIGN.` com a frase "Implementação própria sobre shadcn, Radix e Tailwind" e o crédito da fonte MIT que moldou a anatomia, quando houver. Exporte `<Nome>` e `<nome>Variants` no fim.
 
 <Step>Registre o item</Step>
 
@@ -29,7 +29,7 @@ Item `registry:ui` em `registry.json`, com `title` e `description` em pt-BR, `de
 }
 ```
 
-`pnpm build` roda `tokens:build`, `themes:build` e `registry:build`; os gerados (`styles/tokens.css`, `styles/palettes.css`, `public/themes/`, `public/r/`, item `supernova-theme`) são versionados, nunca editados à mão.
+`pnpm build` roda `tokens:build`, `themes:build` e `registry:build`; os gerados (`styles/tokens.css`, `styles/palettes.css`, `public/themes/`, `public/r/`, item `lab-design-theme`) são versionados, nunca editados à mão.
 
 <Step>Escreva os exemplos</Step>
 
@@ -106,7 +106,7 @@ Quatro registries MIT do shadcn-labs, lidos inteiros.
 
 **Estados.** `hover:` nas cores; `focus-visible:ring-2 focus-visible:ring-ring` com offset em controles clicáveis; em campos, `focus-within:ring-2` no `input-wrapper`, sem offset; `disabled:` com `border-border bg-muted text-muted-foreground`; `aria-busy` para carregamento, `aria-invalid` e `data-invalid` para erro, `aria-hidden` em ícones decorativos. Toda `animate-*` ou `transition-*` leva `motion-reduce:animate-none` / `motion-reduce:transition-none`, como em `prompt-input.tsx`. `asChild` com `Slot.Root`. `"use client"` só com hook, efeito ou handler.
 
-**Tokens.** Semânticos do shadcn (`bg-background`, `text-foreground`, `border-border`, `bg-muted`, `ring-ring`, `border-input`) e, para intenção, paleta do Tailwind com par `dark:`. O escuro é a classe `.dark` na raiz (`@custom-variant dark` em `styles/globals.css`); `supernova-theme` leva `cssVars.dark` e o consumidor precisa da mesma estratégia. Nunca `--ds-*` nem `bg-ds-*` no registry: `scripts/build-tokens.ts` grava o tema com literais.
+**Tokens.** Semânticos do shadcn (`bg-background`, `text-foreground`, `border-border`, `bg-muted`, `ring-ring`, `border-input`) e, para intenção, paleta do Tailwind com par `dark:`. O escuro é a classe `.dark` na raiz (`@custom-variant dark` em `styles/globals.css`); `lab-design-theme` leva `cssVars.dark` e o consumidor precisa da mesma estratégia. Nunca `--ds-*` nem `bg-ds-*` no registry: `scripts/build-tokens.ts` grava o tema com literais.
 
 **Texto.** String fixa em pt-BR só com prop de escape (`label` no Note, `copyLabel` no Snippet).
 
@@ -146,4 +146,4 @@ Bloco é item `registry:block`, com um `files[]` por arquivo (`registry/new-york
 - **Gerado desatualizado.** `public/r/registry.json` já ficou atrás de `registry.json` no `homepage`; `pnpm build` regenera, nada confere até haver `--check` na CI.
 - **Trabalho pela metade num gate.** Índice que importa página inexistente derruba `pnpm typecheck`: entra completo ou fica fora, com a razão escrita.
 - **Link antes da página.** Rota em `constants/routes.ts` e entrada em `TOP_LEVEL_SECTIONS` ou `meta.json` só depois de a página existir.
-- **Cor de intenção que o tema não governa.** `bg-red-600` e `bg-amber-500` em `button.tsx` não mudam com `supernova-theme`. `constants/tokens.ts` só tem `destructive`; quando ganhar `warning`, `success` e afins, os componentes migram.
+- **Cor de intenção que o tema não governa.** `bg-red-600` e `bg-amber-500` em `button.tsx` não mudam com `lab-design-theme`. `constants/tokens.ts` só tem `destructive`; quando ganhar `warning`, `success` e afins, os componentes migram.

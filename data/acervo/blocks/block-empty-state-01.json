@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-empty-state-01",
+  "type": "registry:block",
+  "title": "Empty State 01",
+  "description": "Bloco para formulários, adaptado de shadcn/studio e pronto para o seu produto.",
+  "author": "Supernova Shadcn (adaptado de shadcn/studio)",
+  "categories": ["formularios", "bloco"],
+  "docs": "Arquivos em components/supernova/empty-state-01/. Comece pelo example.tsx (composição de referência) e troque os dados de demonstração. Prévia e código: https://supernovacn.vercel.app/docs/app-ui/formularios/empty-state-01. Créditos e licenças: https://supernovacn.vercel.app/docs/credits",
+  "dependencies": [],
+  "registryDependencies": ["card"],
+  "files": [
+    {
+      "path": "components/supernova/empty-state-01/example.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/empty-state-01/example.tsx",
+      "content": "import EmptyState from '@/components/supernova/empty-state-01/empty-state-01'\n\nconst EmptyStatePage = () => {\n  return (\n    <div className='py-8 sm:py-16 lg:py-24'>\n      <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>\n        <div className='flex justify-center'>\n          <EmptyState />\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport default EmptyStatePage\n"
+    },
+    {
+      "path": "components/supernova/empty-state-01/empty-state-01.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/empty-state-01/empty-state-01.tsx",
+      "content": "import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { ChartNoAxesColumnIncreasingIcon } from 'lucide-react'\n\nfunction EmptyState() {\n  return (\n    <Card className='w-full max-w-lg'>\n      <CardHeader className='gap-0'>\n        <CardDescription>Total API requests.</CardDescription>\n        <CardTitle className='text-3xl'>0</CardTitle>\n      </CardHeader>\n      <CardContent>\n        <div className='rounded-md border border-dashed p-6 text-center'>\n          <ChartNoAxesColumnIncreasingIcon className='text-muted-foreground mx-auto size-12' />\n          <p className='mt-2 text-sm font-medium'>No data to show</p>\n          <p className='text-muted-foreground mt-1 text-sm'>May take 24 hours for data to load</p>\n        </div>\n      </CardContent>\n    </Card>\n  )\n}\n\nexport default EmptyState\n"
+    }
+  ],
+  "meta": {
+    "origin": "supernova-shadcn",
+    "provenance": {
+      "upstream": "shadcn/studio",
+      "url": "https://github.com/shadcnstudio/shadcn-studio",
+      "sourceRevision": "unrecorded",
+      "licenseText": "https://github.com/shadcnstudio/shadcn-studio/blob/72a20331970218848103184b61e1efa9d0e08dea/LICENSE.md",
+      "license": "MIT + Commons Clause (no sale/redistribution without modification; no competing products)",
+      "adapted": true
+    },
+    "category": "Formulários",
+    "kind": "Bloco"
+  }
+}

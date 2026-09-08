@@ -24,7 +24,7 @@ import {
 import { cn } from "@/lib/utils";
 
 /**
- * PromptInput — Supernova.
+ * PromptInput — LAB / DESIGN.
  *
  * Compositor de prompt para conversas com IA: área de texto que cresce com o
  * conteúdo, menu de ações à esquerda, chip de agente, menu de configurações
@@ -33,7 +33,7 @@ import { cn } from "@/lib/utils";
  *
  * Os menus vêm do `DropdownMenu` do radix-ui (teclado, ARIA, posicionamento
  * com colisão, portal e fechar ao clicar fora). Implementação própria do
- * Supernova a partir de uma especificação funcional.
+ * LAB / DESIGN a partir de uma especificação funcional.
  */
 
 /** Uma escolha em qualquer lista do compositor (agentes, configurações). */

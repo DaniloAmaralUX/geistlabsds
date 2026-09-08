@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-dashboard-dialog-22",
+  "type": "registry:block",
+  "title": "Dashboard Dialog 22",
+  "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+  "author": "Supernova Shadcn (adaptado de shadcn/studio)",
+  "categories": ["produto", "bloco"],
+  "docs": "Arquivos em components/supernova/dashboard-dialog-22/. Comece pelo example.tsx (composição de referência) e troque os dados de demonstração. Prévia e código: https://supernovacn.vercel.app/docs/app-ui/produto/dashboard-dialog-22. Créditos e licenças: https://supernovacn.vercel.app/docs/credits",
+  "dependencies": [],
+  "registryDependencies": ["avatar", "button", "checkbox", "dialog", "label"],
+  "files": [
+    {
+      "path": "components/supernova/dashboard-dialog-22/example.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/dashboard-dialog-22/example.tsx",
+      "content": "import { Button } from '@/components/ui/button'\n\nimport ErrorDialog from '@/components/supernova/dashboard-dialog-22/dialog-error'\n\nconst DialogPage = () => {\n  return (\n    <div className='flex h-dvh items-start justify-center p-8'>\n      <ErrorDialog\n        defaultOpen\n        trigger={\n          <Button variant='outline'>\n            <span>Delete</span>\n          </Button>\n        }\n      />\n    </div>\n  )\n}\n\nexport default DialogPage\n"
+    },
+    {
+      "path": "components/supernova/dashboard-dialog-22/dialog-error.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/dashboard-dialog-22/dialog-error.tsx",
+      "content": "'use client'\n\nimport { useState, type ReactElement } from 'react'\nimport { Avatar, AvatarFallback } from '@/components/ui/avatar'\nimport {\n  Dialog,\n  DialogClose,\n  DialogContent,\n  DialogDescription,\n  DialogHeader,\n  DialogTitle,\n  DialogTrigger\n} from '@/components/ui/dialog'\nimport { Button } from '@/components/ui/button'\nimport { Checkbox } from '@/components/ui/checkbox'\nimport { Label } from '@/components/ui/label'\n\nimport { cn } from '@/lib/utils'\nimport { TriangleAlertIcon } from 'lucide-react'\n\ntype Props = {\n  trigger: ReactElement\n  defaultOpen?: boolean\n  className?: string\n}\n\nconst ErrorDialog = ({ defaultOpen = false, trigger, className }: Props) => {\n  const [open, setOpen] = useState(defaultOpen)\n\n  return (\n    <Dialog open={open} onOpenChange={setOpen}>\n      <DialogTrigger render={trigger} onClick={() => setOpen(true)} />\n      <DialogContent className={cn('sm:max-w-145 [&>[data-slot=dialog-close]>svg]:size-5', className)}>\n        <DialogHeader className='items-center gap-4'>\n          <Avatar className='border-destructive bg-destructive/10 dark:border-destructive/10 dark:bg-destructive/10 size-15 border p-2'>\n            <AvatarFallback className='bg-transparent'>\n              <div className='flex items-center justify-center'>\n                <TriangleAlertIcon className='text-destructive dark:text-destructive size-7' />\n              </div>\n            </AvatarFallback>\n          </Avatar>\n          <div className='space-y-3.5 text-center'>\n            <DialogTitle className='text-lg leading-7 font-semibold'>\n              Are you absolutely sure you want to delete?\n            </DialogTitle>\n            <DialogDescription className='mx-auto max-w-sm'>\n              This action cannot be undone. This will permanently delete your account and remove your data from our\n              servers.\n              <span className='mt-4 flex items-center justify-center gap-3'>\n                <Checkbox id='terms' />\n                <Label htmlFor='terms'>Don&apos;t ask again</Label>\n              </span>\n            </DialogDescription>\n          </div>\n        </DialogHeader>\n\n        <div className='flex justify-center gap-4 sm:flex-row'>\n          <DialogClose render={<Button size='lg' variant='outline' />}>Cancel</DialogClose>\n          <DialogClose render={<Button size='lg' variant='destructive' />}>Delete</DialogClose>\n        </div>\n      </DialogContent>\n    </Dialog>\n  )\n}\n\nexport default ErrorDialog\n"
+    }
+  ],
+  "meta": {
+    "origin": "supernova-shadcn",
+    "provenance": {
+      "upstream": "shadcn/studio",
+      "url": "https://github.com/shadcnstudio/shadcn-studio",
+      "sourceRevision": "unrecorded",
+      "licenseText": "https://github.com/shadcnstudio/shadcn-studio/blob/72a20331970218848103184b61e1efa9d0e08dea/LICENSE.md",
+      "license": "MIT + Commons Clause (no sale/redistribution without modification; no competing products)",
+      "adapted": true
+    },
+    "category": "Produto",
+    "kind": "Bloco"
+  }
+}

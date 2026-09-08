@@ -1,7 +1,7 @@
 /**
  * Temas: presets de tokens no vocabulário do shadcn, em claro e escuro.
  *
- * O tema padrão, Supernova, é gerado de constants/tokens.ts e fica em
+ * O tema padrão, LAB / DESIGN, é gerado de constants/tokens.ts e fica em
  * lib/theme-presets.ts. Os presets abaixo são os do Supernova Shadcn
  * (https://supernovacn.vercel.app, registry em /r/<name>.json), do mesmo
  * responsável, com uso autorizado em 2026-09-08; cada um traz a atribuição
@@ -24,12 +24,12 @@ export interface ThemePreset {
   dependencies: string[];
   attribution?: { name: string; url: string } | null;
   cssVars: { light: ThemeVars; dark: ThemeVars; theme?: ThemeVars };
-  origin: "supernova" | "supernova-shadcn";
+  origin: "lab-design" | "supernova-shadcn";
 }
 
 const SUPERNOVA = "https://supernovacn.vercel.app";
 
-export const SUPERNOVA_THEMES: ThemePreset[] = [
+export const SUPERNOVA_SHADCN_THEMES: ThemePreset[] = [
   {
     attribution: {
       name: "DialectCN, de Kapish Dima",

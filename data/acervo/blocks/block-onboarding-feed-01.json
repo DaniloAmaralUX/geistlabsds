@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-onboarding-feed-01",
+  "type": "registry:block",
+  "title": "Onboarding Feed 01",
+  "description": "Bloco para interface, adaptado de shadcn/studio e pronto para o seu produto.",
+  "author": "Supernova Shadcn (adaptado de shadcn/studio)",
+  "categories": ["interface", "bloco"],
+  "docs": "Arquivos em components/supernova/onboarding-feed-01/. Comece pelo example.tsx (composição de referência) e troque os dados de demonstração. Prévia e código: https://supernovacn.vercel.app/docs/blocks/interface/onboarding-feed-01. Créditos e licenças: https://supernovacn.vercel.app/docs/credits",
+  "dependencies": [],
+  "registryDependencies": ["accordion", "button", "card"],
+  "files": [
+    {
+      "path": "components/supernova/onboarding-feed-01/example.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/onboarding-feed-01/example.tsx",
+      "content": "import OnboardingFeed from '@/components/supernova/onboarding-feed-01/onboarding-feed-01'\n\nconst OnboardingFeedPage = () => {\n  return (\n    <div className='py-8 sm:py-16 lg:py-24'>\n      <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>\n        <div className='flex justify-center'>\n          <OnboardingFeed />\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport default OnboardingFeedPage\n"
+    },
+    {
+      "path": "components/supernova/onboarding-feed-01/onboarding-feed-01.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/onboarding-feed-01/onboarding-feed-01.tsx",
+      "content": "'use client'\n\nimport { useState } from 'react'\nimport { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'\nimport { Button } from '@/components/ui/button'\nimport { LogInIcon, ImportIcon, PlusIcon, CircleCheckIcon, CircleDashedIcon } from 'lucide-react'\n\nconst items = [\n  {\n    title: 'Sign up and create an account',\n    content: `To get started, log in with your organization account from your company.`,\n    icon: (\n      <LogInIcon />\n    ),\n    label: 'Sign up'\n  },\n  {\n    title: 'Import your data',\n    content: 'Connect your database to the new workspace by using one of 20+ database connectors.',\n    icon: (\n      <ImportIcon />\n    ),\n    label: 'Import'\n  },\n  {\n    title: 'Create your first report',\n    content: 'Use our drag-and-drop report builder to create your first report and share it with your team.',\n    icon: (\n      <PlusIcon />\n    ),\n    label: 'Create'\n  }\n]\n\nfunction OnboardingFeed() {\n  const [active, setActive] = useState<string[]>(['item-1'])\n  const [completed, setCompleted] = useState<Set<number>>(new Set())\n\n  const handleOpenChange = (val: string[]) => {\n    setActive(val)\n  }\n\n  const handleComplete = (index: number) => {\n    setCompleted(prev => {\n      const next = new Set(prev)\n\n      next.add(index)\n\n      return next\n    })\n\n    const nextIndex = index + 1\n\n    if (nextIndex < items.length) {\n      setActive([`item-${nextIndex + 1}`])\n    } else {\n      setActive([])\n    }\n  }\n\n  return (\n    <Card className='w-full max-w-lg'>\n      <CardHeader>\n        <CardTitle className='leading-none font-semibold'>Hello, John !</CardTitle>\n        <CardDescription>Let&apos;s set up your first data workspace</CardDescription>\n      </CardHeader>\n      <CardContent className='space-y-4 text-sm'>\n        <Accordion\n          className='w-full space-y-2 overflow-visible border-0 [&>*>[data-slot=\"accordion-content\"]]:px-0'\n          value={active}\n          onValueChange={handleOpenChange}\n        >\n          {items.map((item, index) => {\n            const isCompleted = completed.has(index)\n\n            return (\n              <AccordionItem key={index} value={`item-${index + 1}`} className='rounded-md border! bg-transparent'>\n                <AccordionTrigger className='px-5'>\n                  <span className='flex items-center gap-2'>\n                    {isCompleted ? (\n                      <CircleCheckIcon className='size-4 shrink-0' />\n                    ) : (\n                      <CircleDashedIcon className='size-4 shrink-0' />\n                    )}\n                    <span>{item.title}</span>\n                  </span>\n                </AccordionTrigger>\n                <AccordionContent className='text-muted-foreground flex flex-col items-start gap-2 px-5'>\n                  {item.content}\n                  <Button\n                    size='sm'\n                    onClick={() => handleComplete(index)}\n                    disabled={isCompleted || !(index === 0 || completed.has(index - 1))}\n                    className='*:[svg]:size-4 *:[svg]:shrink-0'\n                  >\n                    {item.icon}\n                    {item.label}\n                  </Button>\n                </AccordionContent>\n              </AccordionItem>\n            )\n          })}\n        </Accordion>\n        <div className='flex justify-end gap-2'>\n          <Button className='flex-1 max-sm:w-full' variant='outline'>\n            Cancel\n          </Button>\n          <Button className='flex-1 max-sm:w-full' type='submit'>\n            Continue\n          </Button>\n        </div>\n      </CardContent>\n    </Card>\n  )\n}\n\nexport default OnboardingFeed\n"
+    }
+  ],
+  "meta": {
+    "origin": "supernova-shadcn",
+    "provenance": {
+      "upstream": "shadcn/studio",
+      "url": "https://github.com/shadcnstudio/shadcn-studio",
+      "sourceRevision": "unrecorded",
+      "licenseText": "https://github.com/shadcnstudio/shadcn-studio/blob/72a20331970218848103184b61e1efa9d0e08dea/LICENSE.md",
+      "license": "MIT + Commons Clause (no sale/redistribution without modification; no competing products)",
+      "adapted": true
+    },
+    "category": "Interface",
+    "kind": "Bloco"
+  }
+}

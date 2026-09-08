@@ -1,12 +1,12 @@
 {
-  "name": "supernova",
+  "name": "lab-design",
   "homepage": "https://geistlabsds.vercel.app",
   "items": [
     {
-      "name": "supernova-theme",
+      "name": "lab-design-theme",
       "type": "registry:theme",
-      "title": "Tema Supernova",
-      "description": "Tokens semânticos do Supernova (cores, raio) no vocabulário do shadcn, em claro e escuro. Gerado a partir de constants/tokens.ts.",
+      "title": "Tema LAB / DESIGN",
+      "description": "Tokens semânticos do LAB / DESIGN (cores, raio) no vocabulário do shadcn, em claro e escuro. Gerado a partir de constants/tokens.ts.",
       "cssVars": {
         "dark": {
           "accent": "oklch(0.24 0 0)",

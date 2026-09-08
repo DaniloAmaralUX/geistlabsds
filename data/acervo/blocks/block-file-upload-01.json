@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-file-upload-01",
+  "type": "registry:block",
+  "title": "File Upload 01",
+  "description": "Bloco para formulários, adaptado de shadcn/studio e pronto para o seu produto.",
+  "author": "Supernova Shadcn (adaptado de shadcn/studio)",
+  "categories": ["formularios", "bloco"],
+  "docs": "Arquivos em components/supernova/file-upload-01/. Comece pelo example.tsx (composição de referência) e troque os dados de demonstração. Prévia e código: https://supernovacn.vercel.app/docs/app-ui/formularios/file-upload-01. Créditos e licenças: https://supernovacn.vercel.app/docs/credits",
+  "dependencies": [],
+  "registryDependencies": ["button", "card", "input", "label"],
+  "files": [
+    {
+      "path": "components/supernova/file-upload-01/example.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/file-upload-01/example.tsx",
+      "content": "import FileUpload from '@/components/supernova/file-upload-01/file-upload-01'\n\nconst FileUploadPage = () => {\n  return (\n    <div className='py-8 sm:py-16 lg:py-24'>\n      <div className='mx-auto max-w-7xl px-4 sm:px-6 lg:px-8'>\n        <div className='flex justify-center'>\n          <FileUpload />\n        </div>\n      </div>\n    </div>\n  )\n}\n\nexport default FileUploadPage\n"
+    },
+    {
+      "path": "components/supernova/file-upload-01/file-upload-01.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/file-upload-01/file-upload-01.tsx",
+      "content": "import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'\nimport { Input } from '@/components/ui/input'\nimport { Label } from '@/components/ui/label'\nimport { Button } from '@/components/ui/button'\n\nfunction FileUpload() {\n  return (\n    <Card className='w-full max-w-lg'>\n      <CardHeader>\n        <CardTitle className='font-semibold'>Set up your first Studio</CardTitle>\n        <CardDescription>Set up your Studio to start managing your projects efficiently.</CardDescription>\n      </CardHeader>\n      <CardContent className='space-y-4'>\n        <div className='w-full space-y-2'>\n          <Label htmlFor='studio-name' className='gap-1'>\n            Studio Name <span className='text-destructive'>*</span>\n          </Label>\n          <Input id='studio-name' type='text' placeholder='Studio Name' required />\n        </div>\n        <div className='w-full space-y-2'>\n          <Label htmlFor='studio-input' className='gap-1'>\n            Upload File <span className='text-destructive'>*</span>\n          </Label>\n          <Input\n            id='studio-input'\n            type='file'\n            className='text-muted-foreground file:border-input file:text-foreground p-0 pr-3 italic file:mr-3 file:h-full file:border-0 file:border-r file:border-solid file:bg-transparent file:px-3 file:text-sm file:font-medium file:not-italic'\n          />\n          <p className='text-muted-foreground text-xs'>You can upload a file here.</p>\n        </div>\n      </CardContent>\n      <CardContent className='flex justify-end gap-2 max-sm:justify-center'>\n        <Button className='max-sm:flex-1' variant='outline'>\n          Cancel\n        </Button>\n        <Button className='max-sm:flex-1' type='submit'>\n          Upload\n        </Button>\n      </CardContent>\n    </Card>\n  )\n}\n\nexport default FileUpload\n"
+    }
+  ],
+  "meta": {
+    "origin": "supernova-shadcn",
+    "provenance": {
+      "upstream": "shadcn/studio",
+      "url": "https://github.com/shadcnstudio/shadcn-studio",
+      "sourceRevision": "unrecorded",
+      "licenseText": "https://github.com/shadcnstudio/shadcn-studio/blob/72a20331970218848103184b61e1efa9d0e08dea/LICENSE.md",
+      "license": "MIT + Commons Clause (no sale/redistribution without modification; no competing products)",
+      "adapted": true
+    },
+    "category": "Formulários",
+    "kind": "Bloco"
+  }
+}

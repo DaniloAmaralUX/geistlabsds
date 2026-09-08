@@ -1,6 +1,6 @@
-# Supernova — comece aqui
+# LAB / DESIGN — comece aqui
 
-Supernova é o design system do LAB / DESIGN: fundamentos, componentes, blocos e
+LAB / DESIGN é o design system do LAB / DESIGN: fundamentos, componentes, blocos e
 temas com prévia real e código que entra no projeto de quem usa pelo CLI do
 shadcn. A implementação é própria, sobre shadcn, Radix e Tailwind. A voz e o
 vocabulário são os do Supernova (`docs/product/BRAND-VOICE.md` em
@@ -15,17 +15,17 @@ O contexto (material do responsável, decisões, diário) vive em
 
 ## Fontes únicas
 
-- `constants/tokens.ts` gera `styles/tokens.css` e o item `supernova-theme`
+- `constants/tokens.ts` gera `styles/tokens.css` e o item `lab-design-theme`
   do `registry.json` via `pnpm tokens:build` (roda em `dev` e `build`). Não
   edite os gerados.
-- `constants/roadmap.ts` é o roteiro de componentes do Supernova. A página do
+- `constants/roadmap.ts` é o roteiro de componentes do LAB / DESIGN. A página do
   roteiro e toda contagem derivam dele. Nenhum número é escrito à mão.
 - `constants/blocks.ts` lista os blocos; o código de cada um fica em
   `registry/new-york/blocks/<slug>/` e `blocks/index.ts` mapeia slug → página
   da prévia.
 - `constants/themes.ts` guarda os presets e `scripts/build-themes.ts` gera
   `styles/palettes.css` e `public/themes/*.css` via `pnpm themes:build`. O tema
-  padrão é `SUPERNOVA_THEME` em `lib/theme-presets.ts`.
+  padrão é `LAB_DESIGN_THEME` em `lib/theme-presets.ts`.
 - `data/acervo/*.json` são instantâneos com data dos registries do Supernova.
   A página do acervo e suas contagens saem deles; atualize copiando os
   arquivos de novo, nunca editando.

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-statistics-component-12",
+  "type": "registry:block",
+  "title": "Statistics 12",
+  "description": "Bloco para interface, adaptado de shadcn/studio e pronto para o seu produto.",
+  "author": "Supernova Shadcn (adaptado de shadcn/studio)",
+  "categories": ["interface", "bloco"],
+  "docs": "Arquivos em components/supernova/statistics-component-12/. Comece pelo example.tsx (composição de referência) e troque os dados de demonstração. Prévia e código: https://supernovacn.vercel.app/docs/blocks/interface/statistics-component-12. Créditos e licenças: https://supernovacn.vercel.app/docs/credits",
+  "dependencies": [],
+  "registryDependencies": ["badge", "card"],
+  "files": [
+    {
+      "path": "components/supernova/statistics-component-12/example.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/statistics-component-12/example.tsx",
+      "content": "import StatisticsWithStatus, {\n  type StatisticsCardProps\n} from '@/components/supernova/statistics-component-12/blocks/statistics-with-status'\nimport { BriefcaseIcon, ReceiptIcon, PiggyBankIcon, WalletIcon } from 'lucide-react'\n\nconst statisticsData: StatisticsCardProps[] = [\n  {\n    title: 'Net Profit',\n    value: '$38,200',\n    status: 'within',\n    range: '$30k - $50k',\n    icon: (\n      <BriefcaseIcon />\n    )\n  },\n  {\n    title: 'Operating Expenses',\n    value: '$21,750',\n    status: 'exceed',\n    range: 'Target: $18k',\n    icon: (\n      <ReceiptIcon />\n    )\n  },\n  {\n    title: 'Cash Reserves',\n    value: '$94,500',\n    status: 'observe',\n    range: '$80k - $120k',\n    icon: (\n      <PiggyBankIcon />\n    )\n  },\n  {\n    title: 'Budget Utilisation',\n    value: '78%',\n    status: 'unknown',\n    range: 'Q4 Review Pending',\n    icon: (\n      <WalletIcon />\n    )\n  }\n]\n\nconst StatisticsCardPreview = () => {\n  return (\n    <div className='py-8 sm:py-16 lg:py-24'>\n      <div className='mx-auto grid max-w-7xl gap-4 px-4 sm:grid-cols-2 sm:px-6 lg:px-8 xl:grid-cols-4'>\n        {statisticsData.map((card, index) => (\n          <StatisticsWithStatus key={index} {...card} />\n        ))}\n      </div>\n    </div>\n  )\n}\n\nexport default StatisticsCardPreview\n"
+    },
+    {
+      "path": "components/supernova/statistics-component-12/blocks/statistics-with-status.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/statistics-component-12/blocks/statistics-with-status.tsx",
+      "content": "import { Badge } from '@/components/ui/badge'\nimport { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'\n\nimport { cn } from '@/lib/utils'\nimport { TrendingUpIcon, MinusIcon, TrendingDownIcon, ShieldAlertIcon } from 'lucide-react'\n\nexport type StatisticsCardProps = {\n  value: string\n  title: string\n  status: 'within' | 'observe' | 'exceed' | 'unknown'\n  className?: string\n  range: string\n  icon?: React.ReactNode\n}\n\nconst statusConfig = {\n  within: {\n    color: 'bg-green-600/10 dark:bg-green-400/10 text-green-600 dark:text-green-400',\n    icon: (\n      <TrendingUpIcon />\n    ),\n    label: 'On Track'\n  },\n  observe: {\n    color: 'bg-amber-600/10 dark:bg-amber-400/10 text-amber-600 dark:text-amber-400',\n    icon: (\n      <MinusIcon />\n    ),\n    label: 'Stable'\n  },\n  exceed: {\n    color: 'bg-destructive/10 text-destructive',\n    icon: (\n      <TrendingDownIcon />\n    ),\n    label: 'At Risk'\n  },\n  unknown: {\n    color: 'bg-sky-600/10 dark:bg-sky-400/10 text-sky-600 dark:text-sky-400',\n    icon: (\n      <ShieldAlertIcon />\n    ),\n    label: 'Under Review'\n  }\n}\n\nconst StatisticsCard = ({ status, value, title, className, range, icon }: StatisticsCardProps) => {\n  return (\n    <Card className={cn('flex flex-col gap-3', className)}>\n      <CardHeader className='flex items-center justify-between'>\n        <CardTitle className='text-sm font-semibold'>{title}</CardTitle>\n        {icon && (\n          <div className='bg-primary/10 text-primary flex size-8 shrink-0 items-center justify-center rounded-sm [&>svg]:size-4.5'>\n            {icon}\n          </div>\n        )}\n      </CardHeader>\n\n      <CardContent className='flex flex-col gap-3'>\n        <p className='text-3xl font-semibold tracking-tight'>{value}</p>\n\n        <Badge className={cn(statusConfig[status].color, 'gap-1.5 [&>svg]:size-3.5!')}>\n          {statusConfig[status].icon}\n          <span>{statusConfig[status].label}:</span>\n          <span>{range}</span>\n        </Badge>\n      </CardContent>\n    </Card>\n  )\n}\n\nexport default StatisticsCard\n"
+    }
+  ],
+  "meta": {
+    "origin": "supernova-shadcn",
+    "provenance": {
+      "upstream": "shadcn/studio",
+      "url": "https://github.com/shadcnstudio/shadcn-studio",
+      "sourceRevision": "unrecorded",
+      "licenseText": "https://github.com/shadcnstudio/shadcn-studio/blob/72a20331970218848103184b61e1efa9d0e08dea/LICENSE.md",
+      "license": "MIT + Commons Clause (no sale/redistribution without modification; no competing products)",
+      "adapted": true
+    },
+    "category": "Interface",
+    "kind": "Bloco"
+  }
+}

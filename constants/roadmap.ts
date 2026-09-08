@@ -1,7 +1,7 @@
 import { ROUTES } from "@/constants/routes";
 
 /**
- * Roteiro de componentes do Supernova. A página do roteiro e todas as
+ * Roteiro de componentes do LAB / DESIGN. A página do roteiro e todas as
  * contagens derivam desta lista; nada é escrito à mão.
  */
 

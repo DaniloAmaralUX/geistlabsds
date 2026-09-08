@@ -48,11 +48,11 @@ O CLI copia a página, os nove componentes e o arquivo de dados para `components
 
 Base: pacote `admin-dashboard` exportado do `shadcn-examples`, cujo código base é o shadcn/ui (MIT). A licença do repositório de origem fica registrada como "a confirmar" até ser lida.
 
-O que mudou ao entrar no Supernova:
+O que mudou ao entrar no LAB / DESIGN:
 
-- Button, Badge e Input passaram à API do Supernova: `default`/`outline`/`ghost`/`link` viraram `primary`/`secondary`/`tertiary`; os selos `outline` e `secondary` viraram `appearance="subtle" color="gray"` (os contadores das abas com `shape="pill"`); os ícones dos botões entraram por `prefix` e `suffix`.
+- Button, Badge e Input passaram à API do LAB / DESIGN: `default`/`outline`/`ghost`/`link` viraram `primary`/`secondary`/`tertiary`; os selos `outline` e `secondary` viraram `appearance="subtle" color="gray"` (os contadores das abas com `shape="pill"`); os ícones dos botões entraram por `prefix` e `suffix`.
 - Todos os botões só de ícone (alça de arrastar, menu de ações, paginação) usam `shape="square"`, `size="sm"` e `aria-label`, no lugar de `size="icon"` com texto `sr-only`.
-- Os campos editáveis da tabela usam o Input do Supernova com `size="sm"` e a moldura escondida até o foco; os campos da gaveta usam a prop `label`, que já liga rótulo e campo por `id` gerado com `useId`.
+- Os campos editáveis da tabela usam o Input do LAB / DESIGN com `size="sm"` e a moldura escondida até o foco; os campos da gaveta usam a prop `label`, que já liga rótulo e campo por `id` gerado com `useId`.
 - Ícones do `@tabler/icons-react` foram trocados pelos equivalentes do `lucide-react` (`IconDashboard` → `LayoutDashboardIcon`, `IconDots` → `EllipsisIcon`, `IconLayoutColumns` → `Columns3Icon` etc.), com sufixo `Icon` e `aria-hidden`.
 - A tabela foi migrada do TanStack Table v8 para a v9 instalada no repositório: `useReactTable` virou `useTable` com `tableFeatures()` (seleção, visibilidade, filtro, ordenação e paginação registradas explicitamente), `getState()` virou `table.state` e os tipos ganharam o parâmetro de recursos. A faceta, que nada usava, foi removida.
 - O aviso de salvamento deixou de criar uma `Promise` artificial: usa `toast.loading` seguido de `toast.success` com o mesmo `id`.

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "block-form-layout-01",
+  "type": "registry:block",
+  "title": "Form Layout 01",
+  "description": "Bloco para formulários, adaptado de shadcn/studio e pronto para o seu produto.",
+  "author": "Supernova Shadcn (adaptado de shadcn/studio)",
+  "categories": ["formularios", "bloco"],
+  "docs": "Arquivos em components/supernova/form-layout-01/. Comece pelo example.tsx (composição de referência) e troque os dados de demonstração. Prévia e código: https://supernovacn.vercel.app/docs/app-ui/formularios/form-layout-01. Créditos e licenças: https://supernovacn.vercel.app/docs/credits",
+  "dependencies": [],
+  "registryDependencies": ["button", "field", "input"],
+  "files": [
+    {
+      "path": "components/supernova/form-layout-01/example.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/form-layout-01/example.tsx",
+      "content": "import FormLayout from '@/components/supernova/form-layout-01/form-layout-01'\n\nconst FormLayoutPage = () => {\n  return (\n    <div className='py-8 sm:py-16 lg:py-24'>\n      <div className='mx-auto max-w-3xl px-4 sm:px-6 lg:px-8'>\n        <FormLayout />\n      </div>\n    </div>\n  )\n}\n\nexport default FormLayoutPage\n"
+    },
+    {
+      "path": "components/supernova/form-layout-01/form-layout-01.tsx",
+      "type": "registry:component",
+      "target": "components/supernova/form-layout-01/form-layout-01.tsx",
+      "content": "import { Button } from '@/components/ui/button'\nimport { Input } from '@/components/ui/input'\nimport { Field, FieldGroup, FieldLabel } from '@/components/ui/field'\n\nconst FormLayout = () => {\n  return (\n    <form>\n      <div className='mb-8 space-y-2'>\n        <h2 className='text-xl font-semibold'>Personal Information</h2>\n        <p className='text-muted-foreground'>\n          Please provide your personal information to complete your profile. This will help us tailor our services to\n          your needs.\n        </p>\n      </div>\n\n      <FieldGroup className='grid grid-cols-1 gap-6 sm:grid-cols-2'>\n        <Field className='gap-2'>\n          <FieldLabel htmlFor='multi-step-personal-info-first-name'>First Name</FieldLabel>\n          <Input id='multi-step-personal-info-first-name' placeholder='John' />\n        </Field>\n\n        <Field className='gap-2'>\n          <FieldLabel htmlFor='multi-step-personal-info-last-name'>Last Name</FieldLabel>\n          <Input id='multi-step-personal-info-last-name' placeholder='Doe' />\n        </Field>\n\n        <Field className='gap-2'>\n          <FieldLabel htmlFor='multi-step-personal-info-mobile'>Mobile</FieldLabel>\n          <Input id='multi-step-personal-info-mobile' placeholder='+1 (555) 123-4567' />\n        </Field>\n\n        <Field className='gap-2'>\n          <FieldLabel htmlFor='multi-step-personal-info-pincode'>Pincode</FieldLabel>\n          <Input id='multi-step-personal-info-pincode' placeholder='Postal Code' />\n        </Field>\n\n        <Field className='gap-2 sm:col-span-2'>\n          <FieldLabel htmlFor='multi-step-personal-info-address'>Address</FieldLabel>\n          <Input id='multi-step-personal-info-address' placeholder='123 Main St' />\n        </Field>\n\n        <Field className='gap-2 sm:col-span-2'>\n          <FieldLabel htmlFor='multi-step-personal-info-landmark'>Landmark</FieldLabel>\n          <Input id='multi-step-personal-info-landmark' placeholder='Near Central Park, New York' />\n        </Field>\n\n        <Field className='gap-2'>\n          <FieldLabel htmlFor='multi-step-personal-info-city'>City</FieldLabel>\n          <Input id='multi-step-personal-info-city' placeholder='New York' />\n        </Field>\n\n        <Field className='gap-2'>\n          <FieldLabel htmlFor='multi-step-personal-info-state'>State</FieldLabel>\n          <Input id='multi-step-personal-info-state' placeholder='NY' />\n        </Field>\n      </FieldGroup>\n\n      <div className='mt-8 flex justify-end'>\n        <Button type='submit'>Save Information</Button>\n      </div>\n    </form>\n  )\n}\n\nexport default FormLayout\n"
+    }
+  ],
+  "meta": {
+    "origin": "supernova-shadcn",
+    "provenance": {
+      "upstream": "shadcn/studio",
+      "url": "https://github.com/shadcnstudio/shadcn-studio",
+      "sourceRevision": "unrecorded",
+      "licenseText": "https://github.com/shadcnstudio/shadcn-studio/blob/72a20331970218848103184b61e1efa9d0e08dea/LICENSE.md",
+      "license": "MIT + Commons Clause (no sale/redistribution without modification; no competing products)",
+      "adapted": true
+    },
+    "category": "Formulários",
+    "kind": "Bloco"
+  }
+}
