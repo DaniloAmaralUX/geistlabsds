@@ -1,97 +1,37 @@
-<p align="center">
-  <img src="https://startercn.vercel.app/og" alt="startercn banner" />
-</p>
+<a href="https://interfaces.dev/">
+  <img width="320" height="168" alt="interfaces.dev" src="https://ho1jr3x2dcwdu3t5.public.blob.vercel-storage.com/interfaces-og-image.png" />
+</a>
 
-<h1 align="center">startercn</h1>
+[![skills.sh](https://skills.sh/b/jakubkrehel/skills)](https://skills.sh/jakubkrehel/skills)
 
-<p align="center">
-  A template for building and publishing your own custom shadcn registry components. Includes documentation, landing page, and everything you need to deploy your component registry.
-  <br />
-  <br />
-  <a href="https://github.com/shadcn-labs/startercn"><img src="https://www.shieldcn.dev/github/stars/shadcn-labs/startercn.svg?variant=secondary&size=xs&theme=zinc" alt="GitHub Stars" /></a>
-  <a href="https://github.com/shadcn-labs/startercn/actions"><img src="https://www.shieldcn.dev/github/ci/shadcn-labs/startercn.svg?variant=secondary&size=xs&theme=zinc" alt="CI" /></a>
-  <a href="https://discord.com/invite/N6G36KhYK4"><img src="https://www.shieldcn.dev/discord/online-members/N6G36KhYK4.svg?variant=secondary&size=xs&theme=zinc" alt="Discord Members" /></a>
-  <a href="https://x.com/shadcnlabs"><img src="https://www.shieldcn.dev/x/follow/shadcnlabs.svg?variant=branded&size=xs&theme=zinc" alt="X Follow" /></a>
-</p>
+A collection of agent skills that help you build a great interface. They cover UI, typography, colors, accessibility, layout, product writing and more.
 
-## Features
+## Skills
 
-- 📦 **Ready-to-use template** - Fork and start building immediately
-- 📚 **Documentation site** - Beautiful docs powered by Fumadocs
-- 🎨 **Shadcn registry compatible** - Works with `npx shadcn add`
-- 🤖 **[Agent ready](https://www.mintlify.com/score/startercn)** - Includes `llms.txt`, `llms-full.txt`, agent skills discovery routes, and API catalog endpoints
-- 🔊 **[Web audio feedback](https://audio.raphaelsalaja.com/)** - Built-in sound effects powered by `@web-kits/audio`
-- 📳 **[Web haptics](https://haptics.lochie.me/)** - Optional haptic feedback hooks for supported devices via `web-haptics`
-- ✨ **[Motion animations](https://motion.dev/)** - `motion`-powered UI polish for copy states, text transitions, and interactive elements
-- 🎯 **[Animated icons](https://lucide-animated.com/)** - Reusable animated icons for navigation, sharing, sponsorship, and CTAs
-- 🔄 **[View transitions](https://nextjs.org/docs/app/api-reference/config/next-config-js/viewTransition)** - Next.js view transitions enabled for smoother navigation between pages
-- 🚀 **Deploy ready** - Deploy anywhere
+- [**better-interface**](skills/better-interface/SKILL.md): A user-invoked, cross-discipline interface review that coordinates every skill below.
+- [**interface-review**](skills/interface-review/SKILL.md): A user-invoked review of your uncommitted changes, current branch or a pull request against every skill below.
+- [**better-ui**](skills/better-ui/SKILL.md): Design engineering details that make interfaces feel polished: border radius, shadows, animations and micro-interactions.
+- [**better-typography**](skills/better-typography/SKILL.md): Web typography from choosing fonts to spacing, wrapping and accessibility.
+- [**better-colors**](skills/better-colors/SKILL.md): OKLCH color space: palette generation, contrast, gamut handling and theming.
+- [**better-accessibility**](skills/better-accessibility/SKILL.md): Focus states, keyboard support, ARIA, forms, screen readers, hit areas and motion.
+- [**better-layout**](skills/better-layout/SKILL.md): Layout structure, grouping, alignment, reading order, progressive disclosure and adaptive breakpoints.
+- [**better-writing**](skills/better-writing/SKILL.md): UX writing and interface copy, from button labels to errors, settings and empty states.
 
-## Built In
+## Install
 
-- `Next.js 16` with the App Router
-- `React 19` and `TypeScript`
-- `Tailwind CSS 4`
-- `Fumadocs` for documentation
-- `shiki` + `rehype-pretty-code` for code blocks
-- `sonner` for toasts
-- `radix-ui` + `vaul` for accessible primitives
-- `@vercel/analytics` for analytics
+### CLI
 
-## Quick Start
-
-1. **Use this template** - Click "Use this template" on GitHub
-
-2. **Install dependencies**:
+Works in Claude Code, Codex, Opencode and other agents. You can choose which skills to install or install all of them.
 
 ```bash
-pnpm install
+npx skills add jakubkrehel/skills
 ```
 
-3. **Replace the placeholder component** at `registry/new-york/your-component.tsx`
+### Claude Code plugin
 
-4. **Update `registry.json`** with your component details
+Installs every skill in this repository together and updates in place. Run these inside Claude Code:
 
-5. **Build the registry**:
-
-```bash
-pnpm registry:build
+```text
+/plugin marketplace add jakubkrehel/skills
+/plugin install interfaces@interfaces
 ```
-
-6. **Start development**:
-
-```bash
-pnpm dev
-```
-
-7. **Deploy** and share your component!
-
-## Usage
-
-Once deployed, users can install your component with:
-
-```bash
-npx shadcn@latest add https://your-domain.com/r/your-component.json
-```
-
-## Project Structure
-
-```
-├── registry/
-│   └── new-york/           # Your components go here
-│       └── your-component.tsx
-├── registry.json           # Component registry manifest
-├── content/docs/           # Documentation (MDX)
-├── app/                    # Next.js app
-└── public/r/               # Built registry files (auto-generated)
-```
-
-## Scripts
-
-- `pnpm dev` - Start development server
-- `pnpm build` - Build for production
-- `pnpm registry:build` - Rebuild the component registry
-
-## License
-
-[MIT](./LICENSE)
