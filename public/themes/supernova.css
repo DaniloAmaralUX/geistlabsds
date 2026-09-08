@@ -1,0 +1,87 @@
+/* Supernova — gerado por scripts/build-themes.ts (Supernova). Não editar. */
+/* Formato: variáveis do shadcn em :root (claro) e .dark (escuro); serve ao shadcn-theme-provider. */
+
+:root {
+  --radius: 6px;
+  --accent: var(--ds-gray-200);
+  --accent-foreground: var(--ds-gray-1000);
+  --background: oklch(1 0 0);
+  --border: var(--ds-gray-400);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--ds-gray-1000);
+  --chart-1: var(--ds-blue-500);
+  --chart-2: var(--ds-blue-700);
+  --chart-3: var(--ds-green-700);
+  --chart-4: var(--ds-amber-700);
+  --chart-5: var(--ds-violet-700);
+  --code: var(--ds-gray-100);
+  --code-foreground: var(--ds-gray-900);
+  --code-highlight: var(--ds-gray-300);
+  --code-number: var(--ds-gray-700);
+  --destructive: var(--ds-red-700);
+  --foreground: oklch(0.205 0 0);
+  --input: var(--ds-gray-400);
+  --muted: var(--ds-gray-100);
+  --muted-foreground: var(--ds-gray-900);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--ds-gray-1000);
+  --primary: var(--ds-gray-1000);
+  --primary-foreground: oklch(1 0 0);
+  --ring: var(--ds-blue-700);
+  --secondary: var(--ds-gray-200);
+  --secondary-foreground: var(--ds-gray-1000);
+  --selection: var(--ds-blue-200);
+  --selection-foreground: var(--ds-gray-1000);
+  --sidebar: oklch(1 0 0);
+  --sidebar-accent: var(--ds-gray-200);
+  --sidebar-accent-foreground: var(--ds-gray-1000);
+  --sidebar-border: var(--ds-gray-400);
+  --sidebar-foreground: var(--ds-gray-1000);
+  --sidebar-primary: var(--ds-blue-700);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-ring: var(--ds-blue-700);
+  --surface: var(--ds-gray-100);
+  --surface-foreground: var(--ds-gray-900);
+}
+
+.dark {
+  --accent: var(--ds-gray-200);
+  --accent-foreground: var(--ds-gray-1000);
+  --background: oklch(0.13 0 0);
+  --border: var(--ds-gray-300);
+  --card: var(--ds-gray-100);
+  --card-foreground: var(--ds-gray-1000);
+  --chart-1: var(--ds-blue-500);
+  --chart-2: var(--ds-blue-700);
+  --chart-3: var(--ds-green-700);
+  --chart-4: var(--ds-amber-700);
+  --chart-5: var(--ds-violet-700);
+  --code: var(--ds-gray-100);
+  --code-foreground: var(--ds-gray-900);
+  --code-highlight: var(--ds-gray-300);
+  --code-number: var(--ds-gray-600);
+  --destructive: var(--ds-red-700);
+  --foreground: oklch(0.93 0 0);
+  --input: var(--ds-gray-300);
+  --muted: var(--ds-gray-100);
+  --muted-foreground: var(--ds-gray-800);
+  --popover: var(--ds-gray-100);
+  --popover-foreground: var(--ds-gray-1000);
+  --primary: var(--ds-gray-1000);
+  --primary-foreground: oklch(0.13 0 0);
+  --ring: var(--ds-blue-700);
+  --secondary: var(--ds-gray-200);
+  --secondary-foreground: var(--ds-gray-1000);
+  --selection: var(--ds-blue-300);
+  --selection-foreground: var(--ds-gray-1000);
+  --sidebar: oklch(0.13 0 0);
+  --sidebar-accent: var(--ds-gray-200);
+  --sidebar-accent-foreground: var(--ds-gray-1000);
+  --sidebar-border: var(--ds-gray-300);
+  --sidebar-foreground: var(--ds-gray-1000);
+  --sidebar-primary: var(--ds-blue-700);
+  --sidebar-primary-foreground: var(--ds-gray-1000);
+  --sidebar-ring: var(--ds-blue-700);
+  --surface: var(--ds-gray-100);
+  --surface-foreground: var(--ds-gray-900);
+}

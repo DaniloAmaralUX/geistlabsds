@@ -1,8 +1,8 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
-  "name": "lab-design-theme",
-  "title": "Tema LAB / DESIGN",
-  "description": "Tokens semânticos do LAB / DESIGN (cores, raio) no vocabulário do shadcn, em claro e escuro. Gerado a partir de constants/tokens.ts.",
+  "name": "supernova-theme",
+  "title": "Tema Supernova",
+  "description": "Tokens semânticos do Supernova (cores, raio) no vocabulário do shadcn, em claro e escuro. Gerado a partir de constants/tokens.ts.",
   "cssVars": {
     "theme": {
       "radius": "6px"

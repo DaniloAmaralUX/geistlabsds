@@ -1,6 +1,6 @@
 "use client";
 
-import { ExternalLinkIcon, SquarePenIcon } from "lucide-react";
+import { SquarePenIcon } from "lucide-react";
 
 import { GITHUB, LINK } from "@/constants/links";
 import { DOCS_DIR } from "@/lib/docs";
@@ -35,14 +35,5 @@ export const DocsTocFooter = ({
         Editar esta página
       </a>
     )}
-    <a
-      href={LINK.GEIST}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={LINK_CLS}
-    >
-      <ExternalLinkIcon />
-      Referência: Geist
-    </a>
   </div>
 );

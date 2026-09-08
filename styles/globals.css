@@ -3,6 +3,7 @@
 
 @import "./themes.css";
 @import "./tokens.css";
+@import "./palettes.css";
 
 @custom-variant dark (&:is(.dark *));
 

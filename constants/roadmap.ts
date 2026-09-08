@@ -1,21 +1,11 @@
 import { ROUTES } from "@/constants/routes";
 
 /**
- * Inventário de cobertura do Geist.
- *
- * Fonte: navegação de vercel.com/geist colada pelo responsável em
- * 2026-09-08 (Foundations, Brands e Components, na ordem original). A página
- * de cobertura e todas as contagens derivam desta lista; nada é escrito à mão.
+ * Roteiro de componentes do Supernova. A página do roteiro e todas as
+ * contagens derivam desta lista; nada é escrito à mão.
  */
 
-export const INVENTORY_SOURCE = {
-  date: "2026-09-08",
-  description:
-    "Navegação de vercel.com/geist colada pelo responsável; conferida item a item.",
-  status: "verificado",
-} as const;
-
-export type Section = "foundations" | "brands" | "components";
+export type Section = "foundations" | "components" | "extras";
 
 export type Estado =
   | "inventariado"
@@ -23,13 +13,11 @@ export type Estado =
   | "em-revisao"
   | "publicado";
 
-export interface InventoryItem {
-  /** Identificador estável, igual ao caminho no Geist quando existe. */
+export interface RoadmapItem {
+  /** Identificador estável. */
   slug: string;
   name: string;
   section: Section;
-  /** Página de referência no Geist. */
-  href: string;
   estado: Estado;
   /** Rota local quando o item já existe neste design system. */
   rota?: string;
@@ -44,16 +32,13 @@ export interface InventoryItem {
   nota?: string;
 }
 
-const geist = (path: string) => `https://vercel.com/geist/${path}`;
-
 const item = (
   section: Section,
   slug: string,
   name: string,
-  extra: Partial<InventoryItem> = {}
-): InventoryItem => ({
+  extra: Partial<RoadmapItem> = {}
+): RoadmapItem => ({
   estado: "inventariado",
-  href: geist(slug),
   name,
   section,
   slug,
@@ -61,9 +46,9 @@ const item = (
 });
 
 export const SECTION_LABEL: Record<Section, string> = {
-  brands: "Marcas",
   components: "Componentes",
-  foundations: "Fundações",
+  extras: "Além do roteiro inicial",
+  foundations: "Fundamentos",
 };
 
 export const ESTADO_LABEL: Record<Estado, string> = {
@@ -73,39 +58,20 @@ export const ESTADO_LABEL: Record<Estado, string> = {
   publicado: "Publicado",
 };
 
-export const GEIST_INVENTORY: InventoryItem[] = [
-  item("foundations", "introduction", "Introduction", {
+export const ROADMAP: RoadmapItem[] = [
+  item("foundations", "introducao", "Introdução", {
     estado: "publicado",
     rota: ROUTES.DOCS_FOUNDATIONS,
   }),
-  item("foundations", "colors", "Colors", {
+  item("foundations", "cores", "Cores", {
     estado: "publicado",
     rota: `${ROUTES.DOCS_FOUNDATIONS}/cores`,
   }),
-  item("foundations", "typography", "Typography", {
+  item("foundations", "tipografia", "Tipografia", {
     estado: "publicado",
     rota: `${ROUTES.DOCS_FOUNDATIONS}/tipografia`,
   }),
-  item("foundations", "materials", "Materials"),
-
-  item("brands", "brands#vercel", "Vercel", {
-    nota: "Marca de terceiro; não entra como marca própria.",
-  }),
-  item("brands", "brands#next-js", "Next.js", {
-    nota: "Marca de terceiro; não entra como marca própria.",
-  }),
-  item("brands", "brands#turbo", "Turbo", {
-    nota: "Marca de terceiro; não entra como marca própria.",
-  }),
-  item("brands", "brands#v0", "v0", {
-    nota: "Marca de terceiro; não entra como marca própria.",
-  }),
-  item("brands", "brands#eve", "eve", {
-    nota: "Marca de terceiro; não entra como marca própria.",
-  }),
-  item("brands", "brands#ai-sdk", "AI SDK", {
-    nota: "Marca de terceiro; não entra como marca própria.",
-  }),
+  item("foundations", "materiais", "Materiais"),
 
   item("components", "avatar", "Avatar"),
   item("components", "badge", "Badge", {
@@ -168,8 +134,8 @@ export const GEIST_INVENTORY: InventoryItem[] = [
   }),
   item("components", "pagination", "Pagination"),
   item("components", "phone", "Phone"),
-  item("components", "badge#pill", "Pill", {
-    nota: "No Geist é uma seção da página Badge.",
+  item("components", "pill", "Pill", {
+    nota: "Forma de pílula, prevista na página do Badge.",
   }),
   item("components", "progress", "Progress"),
   item("components", "project-banner", "Project Banner"),
@@ -201,12 +167,19 @@ export const GEIST_INVENTORY: InventoryItem[] = [
   item("components", "toggle", "Toggle"),
   item("components", "tooltip", "Tooltip"),
   item("components", "video", "Video"),
+
+  item("extras", "prompt-input", "Prompt Input", {
+    estado: "publicado",
+    instalacao: "pendente",
+    nota: "Além do roteiro inicial; implementação a partir de uma especificação funcional.",
+    rota: `${ROUTES.DOCS_COMPONENTS}/prompt-input`,
+  }),
 ];
 
-export const inventoryBySection = (section: Section) =>
-  GEIST_INVENTORY.filter((entry) => entry.section === section);
+export const roadmapBySection = (section: Section) =>
+  ROADMAP.filter((entry) => entry.section === section);
 
-export const countByEstado = (items: InventoryItem[] = GEIST_INVENTORY) => {
+export const countByEstado = (items: RoadmapItem[] = ROADMAP) => {
   const totals: Record<Estado, number> = {
     "em-adaptacao": 0,
     "em-revisao": 0,

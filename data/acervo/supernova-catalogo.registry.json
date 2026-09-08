@@ -1,0 +1,1243 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "supernova-catalogo",
+  "homepage": "https://supernova-catalogo.vercel.app",
+  "items": [
+    {
+      "name": "preset",
+      "type": "registry:style",
+      "title": "Preset do Supernova Catálogo",
+      "description": "A camada de tokens do catálogo: a estrutura do preset oficial b21XEsfuCW (style radix-luma, radius large, DM Sans e Raleway) com a paleta neutra OKLCH da Supernova."
+    },
+    {
+      "name": "atoms-alert",
+      "type": "registry:ui",
+      "title": "alert",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-avatar",
+      "type": "registry:ui",
+      "title": "avatar",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-badge",
+      "type": "registry:ui",
+      "title": "badge",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-button",
+      "type": "registry:ui",
+      "title": "button",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-card",
+      "type": "registry:ui",
+      "title": "card",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-chart",
+      "type": "registry:ui",
+      "title": "chart",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-checkbox",
+      "type": "registry:ui",
+      "title": "checkbox",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-collapsible",
+      "type": "registry:ui",
+      "title": "collapsible",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-combobox",
+      "type": "registry:ui",
+      "title": "combobox",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-command",
+      "type": "registry:ui",
+      "title": "command",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-dialog",
+      "type": "registry:ui",
+      "title": "dialog",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-dropdown-menu",
+      "type": "registry:ui",
+      "title": "dropdown-menu",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-empty",
+      "type": "registry:ui",
+      "title": "empty",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-field",
+      "type": "registry:ui",
+      "title": "field",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-input",
+      "type": "registry:ui",
+      "title": "input",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-input-group",
+      "type": "registry:ui",
+      "title": "input-group",
+      "description": "Campo com adorno na borda — usado pelas telas de filtro e de tabela."
+    },
+    {
+      "name": "atoms-input-otp",
+      "type": "registry:ui",
+      "title": "input-otp",
+      "description": "Código de uso único. É o que o coss chama de `otp-field`; a diferença é que aqui cada dígito é um slot com posição declarada."
+    },
+    {
+      "name": "atoms-item",
+      "type": "registry:ui",
+      "title": "item",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-kbd",
+      "type": "registry:ui",
+      "title": "kbd",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-label",
+      "type": "registry:ui",
+      "title": "label",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-micro-rotulo",
+      "type": "registry:ui",
+      "title": "micro-rotulo",
+      "description": "A tripla mono/maiúsculo/entreletra que identifica a família Supernova, ao lado do Compound Design."
+    },
+    {
+      "name": "atoms-pagination",
+      "type": "registry:ui",
+      "title": "pagination",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-pilula",
+      "type": "registry:ui",
+      "title": "pilula",
+      "description": "A pílula com ponto que abre as páginas, lida do Compound Design."
+    },
+    {
+      "name": "atoms-popover",
+      "type": "registry:ui",
+      "title": "popover",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-progress",
+      "type": "registry:ui",
+      "title": "progress",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-radio-group",
+      "type": "registry:ui",
+      "title": "radio-group",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-select",
+      "type": "registry:ui",
+      "title": "select",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-selo-de-maturidade",
+      "type": "registry:ui",
+      "title": "selo-de-maturidade",
+      "description": "Declara o estado do design no catálogo. Catalogar não é prometer."
+    },
+    {
+      "name": "atoms-separator",
+      "type": "registry:ui",
+      "title": "separator",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-sheet",
+      "type": "registry:ui",
+      "title": "sheet",
+      "description": "Trazido como dependência de @shadcn/sidebar — é a gaveta do trilho no celular."
+    },
+    {
+      "name": "atoms-sidebar",
+      "type": "registry:ui",
+      "title": "sidebar",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-skeleton",
+      "type": "registry:ui",
+      "title": "skeleton",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-slider",
+      "type": "registry:ui",
+      "title": "slider",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-spinner",
+      "type": "registry:ui",
+      "title": "spinner",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-switch",
+      "type": "registry:ui",
+      "title": "switch",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-table",
+      "type": "registry:ui",
+      "title": "table",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-tabs",
+      "type": "registry:ui",
+      "title": "tabs",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-textarea",
+      "type": "registry:ui",
+      "title": "textarea",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-toggle",
+      "type": "registry:ui",
+      "title": "toggle",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-toggle-group",
+      "type": "registry:ui",
+      "title": "toggle-group",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "atoms-tooltip",
+      "type": "registry:ui",
+      "title": "tooltip",
+      "description": "Átomo do catálogo, origem: shadcn."
+    },
+    {
+      "name": "molecules-borda-luminosa",
+      "type": "registry:ui",
+      "title": "borda-luminosa",
+      "description": "Composição do catálogo, sem equivalente no registry oficial."
+    },
+    {
+      "name": "molecules-botao-especular",
+      "type": "registry:ui",
+      "title": "botao-especular",
+      "description": "Composição do catálogo, sem equivalente no registry oficial."
+    },
+    {
+      "name": "molecules-checkbox-group",
+      "type": "registry:ui",
+      "title": "checkbox-group",
+      "description": "Composição do catálogo, sem equivalente no registry oficial."
+    },
+    {
+      "name": "molecules-comando-de-instalacao",
+      "type": "registry:ui",
+      "title": "comando-de-instalacao",
+      "description": "Composição do catálogo, sem equivalente no registry oficial."
+    },
+    {
+      "name": "molecules-legenda-de-teclas",
+      "type": "registry:ui",
+      "title": "legenda-de-teclas",
+      "description": "Composição do catálogo, sem equivalente no registry oficial."
+    },
+    {
+      "name": "molecules-separador-com-rotulo",
+      "type": "registry:ui",
+      "title": "separador-com-rotulo",
+      "description": "Composição do catálogo, sem equivalente no registry oficial."
+    },
+    {
+      "name": "layouts-app-shell",
+      "type": "registry:block",
+      "title": "Casca de aplicação",
+      "description": "Casca de aplicação — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-workspace-rail",
+      "type": "registry:block",
+      "title": "Trilho de workspace",
+      "description": "Trilho de workspace — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-mini-rail",
+      "type": "registry:block",
+      "title": "Trilho de ícones",
+      "description": "Trilho de ícones — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-docs-tree",
+      "type": "registry:block",
+      "title": "Árvore de documentação",
+      "description": "Árvore de documentação — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-inbox-rail",
+      "type": "registry:block",
+      "title": "Trilho de caixa de entrada",
+      "description": "Trilho de caixa de entrada — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-two-pane",
+      "type": "registry:block",
+      "title": "Dois painéis",
+      "description": "Dois painéis — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-three-pane",
+      "type": "registry:block",
+      "title": "Três painéis",
+      "description": "Três painéis — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-split-resizable",
+      "type": "registry:block",
+      "title": "Divisão redimensionável",
+      "description": "Divisão redimensionável — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-focus-mode",
+      "type": "registry:block",
+      "title": "Modo foco",
+      "description": "Modo foco — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-floating-toolbar",
+      "type": "registry:block",
+      "title": "Barra flutuante",
+      "description": "Barra flutuante — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-canvas-tools",
+      "type": "registry:block",
+      "title": "Ferramentas de canvas",
+      "description": "Ferramentas de canvas — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "layouts-bottom-nav",
+      "type": "registry:block",
+      "title": "Navegação inferior",
+      "description": "Navegação inferior — Layouts. Design do Supernova Catálogo."
+    },
+    {
+      "name": "forms-workspace-settings",
+      "type": "registry:block",
+      "title": "Configurações do workspace",
+      "description": "Configurações do workspace — Formulários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "forms-invite-teammates",
+      "type": "registry:block",
+      "title": "Convidar pessoas",
+      "description": "Convidar pessoas — Formulários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "forms-notifications",
+      "type": "registry:block",
+      "title": "Preferências de notificação",
+      "description": "Preferências de notificação — Formulários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "forms-api-key",
+      "type": "registry:block",
+      "title": "Criar chave de API",
+      "description": "Criar chave de API — Formulários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-login",
+      "type": "registry:block",
+      "title": "Entrar",
+      "description": "Entrar — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-onboarding",
+      "type": "registry:block",
+      "title": "Onboarding",
+      "description": "Onboarding — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-waitlist",
+      "type": "registry:block",
+      "title": "Lista de espera",
+      "description": "Lista de espera — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-check-email",
+      "type": "registry:block",
+      "title": "Confira seu e-mail",
+      "description": "Confira seu e-mail — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-inset-login",
+      "type": "registry:block",
+      "title": "Entrada encaixada",
+      "description": "Entrada encaixada — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-centered-signin",
+      "type": "registry:block",
+      "title": "Entrada centralizada",
+      "description": "Entrada centralizada — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-centered-signup",
+      "type": "registry:block",
+      "title": "Cadastro centralizado",
+      "description": "Cadastro centralizado — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-left-signin",
+      "type": "registry:block",
+      "title": "Entrada à esquerda",
+      "description": "Entrada à esquerda — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-right-signin",
+      "type": "registry:block",
+      "title": "Entrada à direita",
+      "description": "Entrada à direita — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-glass-signup",
+      "type": "registry:block",
+      "title": "Cadastro em vidro",
+      "description": "Cadastro em vidro — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-otp-verify",
+      "type": "registry:block",
+      "title": "Verificação por código",
+      "description": "Verificação por código — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-reset-password",
+      "type": "registry:block",
+      "title": "Redefinir senha",
+      "description": "Redefinir senha — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-two-factor",
+      "type": "registry:block",
+      "title": "Dois fatores",
+      "description": "Dois fatores — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "auth-magic-link-sent",
+      "type": "registry:block",
+      "title": "Link mágico enviado",
+      "description": "Link mágico enviado — Acesso e onboarding. Design do Supernova Catálogo."
+    },
+    {
+      "name": "dashboards-metrics-overview",
+      "type": "registry:block",
+      "title": "Visão de métricas",
+      "description": "Visão de métricas — Painéis. Design do Supernova Catálogo."
+    },
+    {
+      "name": "dashboards-usage",
+      "type": "registry:block",
+      "title": "Uso do plano",
+      "description": "Uso do plano — Painéis. Design do Supernova Catálogo."
+    },
+    {
+      "name": "dashboards-analytics",
+      "type": "registry:block",
+      "title": "Analytics",
+      "description": "Analytics — Painéis. Design do Supernova Catálogo."
+    },
+    {
+      "name": "dashboards-home",
+      "type": "registry:block",
+      "title": "Início pessoal",
+      "description": "Início pessoal — Painéis. Design do Supernova Catálogo."
+    },
+    {
+      "name": "dashboards-revenue",
+      "type": "registry:block",
+      "title": "Receita",
+      "description": "Receita — Painéis. Design do Supernova Catálogo."
+    },
+    {
+      "name": "dashboards-services",
+      "type": "registry:block",
+      "title": "Saúde dos serviços",
+      "description": "Saúde dos serviços — Painéis. Design do Supernova Catálogo."
+    },
+    {
+      "name": "dashboards-engineering",
+      "type": "registry:block",
+      "title": "Velocidade de engenharia",
+      "description": "Velocidade de engenharia — Painéis. Design do Supernova Catálogo."
+    },
+    {
+      "name": "dashboards-support",
+      "type": "registry:block",
+      "title": "Fila de suporte",
+      "description": "Fila de suporte — Painéis. Design do Supernova Catálogo."
+    },
+    {
+      "name": "dashboards-market",
+      "type": "registry:block",
+      "title": "Mercados",
+      "description": "Mercados — Painéis. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tables-invoices",
+      "type": "registry:block",
+      "title": "Faturas",
+      "description": "Faturas — Tabelas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tables-members",
+      "type": "registry:block",
+      "title": "Pessoas do time",
+      "description": "Pessoas do time — Tabelas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tables-orders",
+      "type": "registry:block",
+      "title": "Pedidos",
+      "description": "Pedidos — Tabelas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tables-logs",
+      "type": "registry:block",
+      "title": "Logs de servidor",
+      "description": "Logs de servidor — Tabelas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tables-api-keys",
+      "type": "registry:block",
+      "title": "Chaves de API",
+      "description": "Chaves de API — Tabelas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tables-inventory",
+      "type": "registry:block",
+      "title": "Estoque",
+      "description": "Estoque — Tabelas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tables-issues",
+      "type": "registry:block",
+      "title": "Rastreador de issues",
+      "description": "Rastreador de issues — Tabelas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tables-transactions",
+      "type": "registry:block",
+      "title": "Transações",
+      "description": "Transações — Tabelas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tables-audit-log",
+      "type": "registry:block",
+      "title": "Registro de auditoria",
+      "description": "Registro de auditoria — Tabelas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "filters-toolbar",
+      "type": "registry:block",
+      "title": "Barra de filtros",
+      "description": "Barra de filtros — Filtros. Design do Supernova Catálogo."
+    },
+    {
+      "name": "filters-faceted",
+      "type": "registry:block",
+      "title": "Popover facetado",
+      "description": "Popover facetado — Filtros. Design do Supernova Catálogo."
+    },
+    {
+      "name": "filters-chips",
+      "type": "registry:block",
+      "title": "Chips de filtro ativo",
+      "description": "Chips de filtro ativo — Filtros. Design do Supernova Catálogo."
+    },
+    {
+      "name": "filters-sidebar",
+      "type": "registry:block",
+      "title": "Barra lateral de filtros",
+      "description": "Barra lateral de filtros — Filtros. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-inbox-zero",
+      "type": "registry:block",
+      "title": "Caixa de entrada zerada",
+      "description": "Caixa de entrada zerada — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-no-results",
+      "type": "registry:block",
+      "title": "Sem resultados",
+      "description": "Sem resultados — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-first-project",
+      "type": "registry:block",
+      "title": "Primeiro projeto",
+      "description": "Primeiro projeto — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-end-of-feed",
+      "type": "registry:block",
+      "title": "Fim do feed",
+      "description": "Fim do feed — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-no-team",
+      "type": "registry:block",
+      "title": "Sem colegas",
+      "description": "Sem colegas — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-trash",
+      "type": "registry:block",
+      "title": "Lixeira vazia",
+      "description": "Lixeira vazia — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-404",
+      "type": "registry:block",
+      "title": "Página não encontrada",
+      "description": "Página não encontrada — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-maintenance",
+      "type": "registry:block",
+      "title": "Manutenção",
+      "description": "Manutenção — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-no-files",
+      "type": "registry:block",
+      "title": "Sem arquivos",
+      "description": "Sem arquivos — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "empty-states-offline",
+      "type": "registry:block",
+      "title": "Offline",
+      "description": "Offline — Estados vazios. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-profile",
+      "type": "registry:block",
+      "title": "Perfil",
+      "description": "Perfil — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-appearance",
+      "type": "registry:block",
+      "title": "Aparência",
+      "description": "Aparência — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-billing",
+      "type": "registry:block",
+      "title": "Cobrança",
+      "description": "Cobrança — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-integrations",
+      "type": "registry:block",
+      "title": "Integrações",
+      "description": "Integrações — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-security",
+      "type": "registry:block",
+      "title": "Segurança",
+      "description": "Segurança — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-permissions",
+      "type": "registry:block",
+      "title": "Papéis e permissões",
+      "description": "Papéis e permissões — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-branding",
+      "type": "registry:block",
+      "title": "Marca do workspace",
+      "description": "Marca do workspace — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-localization",
+      "type": "registry:block",
+      "title": "Idioma e região",
+      "description": "Idioma e região — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-webhooks",
+      "type": "registry:block",
+      "title": "Webhooks",
+      "description": "Webhooks — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-privacy",
+      "type": "registry:block",
+      "title": "Privacidade e dados",
+      "description": "Privacidade e dados — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-developer",
+      "type": "registry:block",
+      "title": "Desenvolvedor",
+      "description": "Desenvolvedor — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "settings-sso",
+      "type": "registry:block",
+      "title": "Login único",
+      "description": "Login único — Configurações. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-stat-tile",
+      "type": "registry:block",
+      "title": "Bloco de métrica",
+      "description": "Bloco de métrica — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-profile",
+      "type": "registry:block",
+      "title": "Card de perfil",
+      "description": "Card de perfil — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-pricing",
+      "type": "registry:block",
+      "title": "Faixas de plano",
+      "description": "Faixas de plano — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-product",
+      "type": "registry:block",
+      "title": "Card de produto",
+      "description": "Card de produto — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-invoice",
+      "type": "registry:block",
+      "title": "Linha de fatura",
+      "description": "Linha de fatura — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-task",
+      "type": "registry:block",
+      "title": "Tarefa de kanban",
+      "description": "Tarefa de kanban — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-event",
+      "type": "registry:block",
+      "title": "Evento de calendário",
+      "description": "Evento de calendário — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-integration",
+      "type": "registry:block",
+      "title": "Integração",
+      "description": "Integração — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-media",
+      "type": "registry:block",
+      "title": "Prévia de artigo",
+      "description": "Prévia de artigo — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "cards-payment-method",
+      "type": "registry:block",
+      "title": "Forma de pagamento",
+      "description": "Forma de pagamento — Cards. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-command-palette",
+      "type": "registry:block",
+      "title": "Paleta de comandos",
+      "description": "Paleta de comandos — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-confirm-delete",
+      "type": "registry:block",
+      "title": "Confirmar exclusão",
+      "description": "Confirmar exclusão — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-share-link",
+      "type": "registry:block",
+      "title": "Compartilhar link",
+      "description": "Compartilhar link — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-upload-files",
+      "type": "registry:block",
+      "title": "Enviar arquivos",
+      "description": "Enviar arquivos — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-feedback",
+      "type": "registry:block",
+      "title": "Feedback",
+      "description": "Feedback — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-shortcuts",
+      "type": "registry:block",
+      "title": "Atalhos de teclado",
+      "description": "Atalhos de teclado — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-upgrade",
+      "type": "registry:block",
+      "title": "Mudar de plano",
+      "description": "Mudar de plano — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-export",
+      "type": "registry:block",
+      "title": "Exportar dados",
+      "description": "Exportar dados — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-create-workspace",
+      "type": "registry:block",
+      "title": "Criar workspace",
+      "description": "Criar workspace — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "modals-two-factor",
+      "type": "registry:block",
+      "title": "Configurar dois fatores",
+      "description": "Configurar dois fatores — Modais. Design do Supernova Catálogo."
+    },
+    {
+      "name": "charts-revenue-area",
+      "type": "registry:block",
+      "title": "Receita em área",
+      "description": "Receita em área — Gráficos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "charts-cohort-heatmap",
+      "type": "registry:block",
+      "title": "Mapa de calor de coorte",
+      "description": "Mapa de calor de coorte — Gráficos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "charts-funnel",
+      "type": "registry:block",
+      "title": "Funil",
+      "description": "Funil — Gráficos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "charts-gauges",
+      "type": "registry:block",
+      "title": "Medidores radiais",
+      "description": "Medidores radiais — Gráficos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "charts-bar-grouped",
+      "type": "registry:block",
+      "title": "Barras agrupadas",
+      "description": "Barras agrupadas — Gráficos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "charts-line-multi",
+      "type": "registry:block",
+      "title": "Linhas múltiplas",
+      "description": "Linhas múltiplas — Gráficos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "charts-donut",
+      "type": "registry:block",
+      "title": "Rosca",
+      "description": "Rosca — Gráficos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "charts-scatter",
+      "type": "registry:block",
+      "title": "Dispersão",
+      "description": "Dispersão — Gráficos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "charts-waterfall",
+      "type": "registry:block",
+      "title": "Cascata",
+      "description": "Cascata — Gráficos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-audit",
+      "type": "registry:block",
+      "title": "Trilha de auditoria",
+      "description": "Trilha de auditoria — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-notifications",
+      "type": "registry:block",
+      "title": "Painel de notificações",
+      "description": "Painel de notificações — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-changelog",
+      "type": "registry:block",
+      "title": "Changelog",
+      "description": "Changelog — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-commits",
+      "type": "registry:block",
+      "title": "Histórico de commits",
+      "description": "Histórico de commits — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-approvals",
+      "type": "registry:block",
+      "title": "Aprovações",
+      "description": "Aprovações — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-pull-request",
+      "type": "registry:block",
+      "title": "Pull request",
+      "description": "Pull request — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-pr-ops-console",
+      "type": "registry:block",
+      "title": "Console de PRs",
+      "description": "Console de PRs — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-releases",
+      "type": "registry:block",
+      "title": "Linha de releases",
+      "description": "Linha de releases — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-status-page",
+      "type": "registry:block",
+      "title": "Página de status",
+      "description": "Página de status — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-deploys",
+      "type": "registry:block",
+      "title": "Histórico de deploys",
+      "description": "Histórico de deploys — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-inbox-thread",
+      "type": "registry:block",
+      "title": "Conversa da caixa de entrada",
+      "description": "Conversa da caixa de entrada — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "timelines-activity-feed",
+      "type": "registry:block",
+      "title": "Feed de atividade",
+      "description": "Feed de atividade — Linhas do tempo. Design do Supernova Catálogo."
+    },
+    {
+      "name": "calendars-month",
+      "type": "registry:block",
+      "title": "Visão de mês",
+      "description": "Visão de mês — Calendários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "calendars-week",
+      "type": "registry:block",
+      "title": "Semana",
+      "description": "Semana — Calendários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "calendars-agenda",
+      "type": "registry:block",
+      "title": "Agenda",
+      "description": "Agenda — Calendários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "calendars-date-range",
+      "type": "registry:block",
+      "title": "Intervalo de datas",
+      "description": "Intervalo de datas — Calendários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "calendars-timezone",
+      "type": "registry:block",
+      "title": "Fusos horários",
+      "description": "Fusos horários — Calendários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "calendars-mini",
+      "type": "registry:block",
+      "title": "Mini calendário",
+      "description": "Mini calendário — Calendários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "calendars-year-heatmap",
+      "type": "registry:block",
+      "title": "Mapa de contribuições",
+      "description": "Mapa de contribuições — Calendários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "calendars-recurring",
+      "type": "registry:block",
+      "title": "Evento recorrente",
+      "description": "Evento recorrente — Calendários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "calendars-holidays",
+      "type": "registry:block",
+      "title": "Feriados e férias",
+      "description": "Feriados e férias — Calendários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-hero",
+      "type": "registry:block",
+      "title": "Capa de perfil",
+      "description": "Capa de perfil — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-hover-card",
+      "type": "registry:block",
+      "title": "Hover card",
+      "description": "Hover card — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-team-grid",
+      "type": "registry:block",
+      "title": "Grade do time",
+      "description": "Grade do time — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-directory",
+      "type": "registry:block",
+      "title": "Diretório de contatos",
+      "description": "Diretório de contatos — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-compact-card",
+      "type": "registry:block",
+      "title": "Card compacto",
+      "description": "Card compacto — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-org-chart",
+      "type": "registry:block",
+      "title": "Organograma",
+      "description": "Organograma — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-skills",
+      "type": "registry:block",
+      "title": "Matriz de habilidades",
+      "description": "Matriz de habilidades — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-presence-rail",
+      "type": "registry:block",
+      "title": "Trilho de presença",
+      "description": "Trilho de presença — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-introductions",
+      "type": "registry:block",
+      "title": "Apresentações sugeridas",
+      "description": "Apresentações sugeridas — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "profile-credentials",
+      "type": "registry:block",
+      "title": "Credenciais de segurança",
+      "description": "Credenciais de segurança — Perfil. Design do Supernova Catálogo."
+    },
+    {
+      "name": "toasts-success",
+      "type": "registry:block",
+      "title": "Aviso de sucesso",
+      "description": "Aviso de sucesso — Avisos e faixas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "toasts-error-retry",
+      "type": "registry:block",
+      "title": "Erro com nova tentativa",
+      "description": "Erro com nova tentativa — Avisos e faixas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "toasts-info-banner",
+      "type": "registry:block",
+      "title": "Faixa de sistema",
+      "description": "Faixa de sistema — Avisos e faixas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "toasts-progress",
+      "type": "registry:block",
+      "title": "Aviso de progresso",
+      "description": "Aviso de progresso — Avisos e faixas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "toasts-undo",
+      "type": "registry:block",
+      "title": "Desfazer",
+      "description": "Desfazer — Avisos e faixas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "toasts-rich",
+      "type": "registry:block",
+      "title": "Aviso com conteúdo",
+      "description": "Aviso com conteúdo — Avisos e faixas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "pricing-three-tier",
+      "type": "registry:block",
+      "title": "Três planos",
+      "description": "Três planos — Planos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "pricing-comparison-table",
+      "type": "registry:block",
+      "title": "Tabela de recursos",
+      "description": "Tabela de recursos — Planos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "pricing-slider-seats",
+      "type": "registry:block",
+      "title": "Slider de assentos",
+      "description": "Slider de assentos — Planos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "pricing-simple-card",
+      "type": "registry:block",
+      "title": "Plano único",
+      "description": "Plano único — Planos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "pricing-contact-sales",
+      "type": "registry:block",
+      "title": "Falar com vendas",
+      "description": "Falar com vendas — Planos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "pricing-monthly-yearly",
+      "type": "registry:block",
+      "title": "Mensal ou anual",
+      "description": "Mensal ou anual — Planos. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tours-checklist",
+      "type": "registry:block",
+      "title": "Lista de onboarding",
+      "description": "Lista de onboarding — Tours e dicas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tours-welcome-carousel",
+      "type": "registry:block",
+      "title": "Carrossel de boas-vindas",
+      "description": "Carrossel de boas-vindas — Tours e dicas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tours-spotlight",
+      "type": "registry:block",
+      "title": "Tour com holofote",
+      "description": "Tour com holofote — Tours e dicas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tours-arrow-tooltip",
+      "type": "registry:block",
+      "title": "Dica com seta",
+      "description": "Dica com seta — Tours e dicas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tours-beacon",
+      "type": "registry:block",
+      "title": "Farol",
+      "description": "Farol — Tours e dicas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "tours-inline-hint",
+      "type": "registry:block",
+      "title": "Dica embutida",
+      "description": "Dica embutida — Tours e dicas. Design do Supernova Catálogo."
+    },
+    {
+      "name": "threads-inline-thread",
+      "type": "registry:block",
+      "title": "Thread embutida",
+      "description": "Thread embutida — Comentários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "threads-side-panel",
+      "type": "registry:block",
+      "title": "Painel lateral",
+      "description": "Painel lateral — Comentários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "threads-comment-row",
+      "type": "registry:block",
+      "title": "Linha de comentário",
+      "description": "Linha de comentário — Comentários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "threads-mention-popover",
+      "type": "registry:block",
+      "title": "Popover de menção",
+      "description": "Popover de menção — Comentários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "threads-resolved",
+      "type": "registry:block",
+      "title": "Thread resolvida",
+      "description": "Thread resolvida — Comentários. Design do Supernova Catálogo."
+    },
+    {
+      "name": "threads-compose-rich",
+      "type": "registry:block",
+      "title": "Editor rico",
+      "description": "Editor rico — Comentários. Design do Supernova Catálogo."
+    }
+  ]
+}

@@ -22,7 +22,8 @@ export const DocsNavLink = ({
   className,
   tooltip,
   transitionTypes,
-  size = "icon",
+  shape = "square",
+  size = "sm",
   ...props
 }: React.ComponentProps<typeof Button> & {
   href: string;
@@ -44,6 +45,7 @@ export const DocsNavLink = ({
   const link = (
     <Button
       variant="secondary"
+      shape={shape}
       size={size}
       className={cn("shadow-none", className)}
       asChild

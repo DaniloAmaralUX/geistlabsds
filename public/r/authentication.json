@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "authentication",
+  "title": "Autenticação",
+  "description": "Tela de entrada em duas colunas: painel de marca com depoimento sobre gradiente dos tokens e formulário de criação de conta por e-mail com botão de provedor externo.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://geistlabsds.vercel.app/r/button.json",
+    "https://geistlabsds.vercel.app/r/input.json",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/blocks/authentication/page.tsx",
+      "content": "import Link from \"next/link\";\n\nimport { Button } from \"@/components/ui/button\";\n\nimport { UserAuthForm } from \"./components/user-auth-form\";\n\n/**\n * Autenticação: painel de marca com depoimento à esquerda e formulário de\n * criação de conta à direita. O painel usa um gradiente dos tokens no lugar\n * de imagem de fundo.\n */\nexport default function Page() {\n  return (\n    <div className=\"container relative flex-1 shrink-0 items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0\">\n      <Button\n        asChild\n        variant=\"tertiary\"\n        className=\"absolute top-4 right-4 md:top-8 md:right-8\"\n      >\n        <Link href=\"#\">Entrar</Link>\n      </Button>\n      <div className=\"relative hidden h-full flex-col p-10 text-background lg:flex dark:border-r\">\n        <div className=\"absolute inset-0 bg-linear-to-br from-foreground via-foreground/90 to-muted-foreground\" />\n        <div className=\"relative z-20 flex items-center text-lg font-medium text-background/80\">\n          <svg\n            xmlns=\"http://www.w3.org/2000/svg\"\n            viewBox=\"0 0 24 24\"\n            fill=\"none\"\n            stroke=\"currentColor\"\n            strokeWidth=\"2\"\n            strokeLinecap=\"round\"\n            strokeLinejoin=\"round\"\n            aria-hidden=\"true\"\n            className=\"mr-2 size-6\"\n          >\n            <path d=\"M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3\" />\n          </svg>\n          Acme Inc\n        </div>\n        <div className=\"relative z-20 mt-auto max-w-3xl text-background/70\">\n          <blockquote className=\"leading-normal text-balance\">\n            &ldquo;Esta biblioteca me poupou incontáveis horas de trabalho e me\n            ajudou a entregar designs impecáveis aos meus clientes mais rápido\n            do que nunca.&rdquo; - Sofia Davis\n          </blockquote>\n        </div>\n      </div>\n      <div className=\"flex items-center justify-center lg:min-h-svh lg:p-8\">\n        <div className=\"mx-auto flex w-full flex-col justify-center gap-6 sm:w-[350px]\">\n          <div className=\"flex flex-col gap-2 text-center\">\n            <h1 className=\"text-2xl font-semibold tracking-tight\">\n              Criar uma conta\n            </h1>\n            <p className=\"text-sm text-muted-foreground\">\n              Informe seu e-mail abaixo para criar sua conta\n            </p>\n          </div>\n          <UserAuthForm />\n          <p className=\"px-8 text-center text-sm text-muted-foreground\">\n            Ao clicar em continuar, você concorda com nossos{\" \"}\n            <Link\n              href=\"#\"\n              className=\"underline underline-offset-4 hover:text-primary\"\n            >\n              Termos de Serviço\n            </Link>{\" \"}\n            e nossa{\" \"}\n            <Link\n              href=\"#\"\n              className=\"underline underline-offset-4 hover:text-primary\"\n            >\n              Política de Privacidade\n            </Link>\n            .\n          </p>\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:page",
+      "target": "components/blocos/authentication/page.tsx"
+    },
+    {
+      "path": "registry/new-york/blocks/authentication/components/user-auth-form.tsx",
+      "content": "\"use client\";\n\nimport { GitBranchIcon } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\nimport { cn } from \"@/lib/utils\";\n\n/**\n * Formulário de entrada por e-mail com provedor externo.\n * O envio é simulado: ativa o estado de carregamento por três segundos.\n */\nexport const UserAuthForm = ({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) => {\n  const [isLoading, setIsLoading] = useState(false);\n\n  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {\n    event.preventDefault();\n    setIsLoading(true);\n\n    setTimeout(() => {\n      setIsLoading(false);\n    }, 3000);\n  };\n\n  return (\n    <div className={cn(\"grid gap-6\", className)} {...props}>\n      <form onSubmit={onSubmit}>\n        <div className=\"grid gap-2\">\n          <div className=\"grid gap-1\">\n            <Label className=\"sr-only\" htmlFor=\"email\">\n              E-mail\n            </Label>\n            <Input\n              id=\"email\"\n              placeholder=\"nome@exemplo.com\"\n              type=\"email\"\n              autoCapitalize=\"none\"\n              autoComplete=\"email\"\n              autoCorrect=\"off\"\n              disabled={isLoading}\n            />\n          </div>\n          <Button type=\"submit\" loading={isLoading}>\n            Entrar com e-mail\n          </Button>\n        </div>\n      </form>\n      <div className=\"relative\">\n        <div className=\"absolute inset-0 flex items-center\">\n          <span className=\"w-full border-t\" />\n        </div>\n        <div className=\"relative flex justify-center text-xs uppercase\">\n          <span className=\"bg-background px-2 text-muted-foreground\">\n            Ou continue com\n          </span>\n        </div>\n      </div>\n      <Button\n        variant=\"secondary\"\n        type=\"button\"\n        loading={isLoading}\n        prefix={<GitBranchIcon aria-hidden=\"true\" />}\n      >\n        GitHub\n      </Button>\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/blocos/authentication/components/user-auth-form.tsx"
+    }
+  ],
+  "categories": [
+    "blocos"
+  ],
+  "type": "registry:block"
+}

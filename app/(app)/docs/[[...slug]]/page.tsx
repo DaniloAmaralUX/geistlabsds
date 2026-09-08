@@ -127,7 +127,7 @@ const Page = async (props: { params: Promise<{ slug?: string[] }> }) => {
                           <DocsNavLink
                             href={neighbours.previous.url}
                             transitionTypes={["nav-back"]}
-                            className="extend-touch-target size-8 md:size-7"
+                            className="extend-touch-target md:size-7 md:data-[shape=square]:w-7"
                             tooltip={{
                               icon: <ArrowLeftIcon />,
                               title: "Previous Page",
@@ -140,7 +140,7 @@ const Page = async (props: { params: Promise<{ slug?: string[] }> }) => {
                           <DocsNavLink
                             href={neighbours.next.url}
                             transitionTypes={["nav-forward"]}
-                            className="extend-touch-target size-8 md:size-7"
+                            className="extend-touch-target md:size-7 md:data-[shape=square]:w-7"
                             tooltip={{
                               icon: <ArrowRightIcon />,
                               title: "Next Page",
@@ -161,14 +161,14 @@ const Page = async (props: { params: Promise<{ slug?: string[] }> }) => {
                 {links ? (
                   <div className="flex items-center space-x-2 pt-4">
                     {links?.doc && (
-                      <Badge asChild variant="secondary">
+                      <Badge asChild appearance="subtle">
                         <Link href={links.doc} target="_blank" rel="noreferrer">
                           Docs <ArrowUpRightIcon />
                         </Link>
                       </Badge>
                     )}
                     {links?.api && (
-                      <Badge asChild variant="secondary">
+                      <Badge asChild appearance="subtle">
                         <Link href={links.api} target="_blank" rel="noreferrer">
                           API Reference <ArrowUpRightIcon />
                         </Link>
@@ -196,7 +196,7 @@ const Page = async (props: { params: Promise<{ slug?: string[] }> }) => {
                 <DocsNavLink
                   href={neighbours.previous.url}
                   transitionTypes={["nav-back"]}
-                  size="sm"
+                  shape="default"
                 >
                   {neighbours.previous.name}
                 </DocsNavLink>
@@ -206,7 +206,7 @@ const Page = async (props: { params: Promise<{ slug?: string[] }> }) => {
                   href={neighbours.next.url}
                   transitionTypes={["nav-forward"]}
                   className="ml-auto"
-                  size="sm"
+                  shape="default"
                 >
                   {neighbours.next.name}
                 </DocsNavLink>

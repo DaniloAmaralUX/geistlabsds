@@ -1,0 +1,149 @@
+---
+title: Criar um componente
+description: O ciclo ponta a ponta de um componente do nosso Geist, do arquivo no registry à instalação validada, com o que aprendemos das bibliotecas de amostra.
+---
+
+O gabarito é `registry/new-york/button.tsx`, `examples/button*.tsx` e `content/docs/components/button.mdx`; leia antes de começar.
+
+## O ciclo ponta a ponta
+
+<Steps>
+
+<Step>Escolha o item no inventário</Step>
+
+Em `constants/roadmap.ts`, mude `estado` para `"em-adaptacao"`. Componente fora do roteiro inicial entra em `ROADMAP` com `section: "extras"` e `nota`.
+
+<Step>Escreva o arquivo do registry</Step>
+
+`registry/new-york/<nome>.tsx` só pode importar `react`, `@/lib/utils`, `radix-ui`, `class-variance-authority` e `lucide-react`. JSDoc `<Nome> — LAB / DESIGN.` com a frase "Implementação própria com referência visual no Geist". Exporte `<Nome>` e `<nome>Variants` no fim.
+
+<Step>Registre o item</Step>
+
+Item `registry:ui` em `registry.json`, com `title` e `description` em pt-BR, `dependencies` com os pacotes npm que o arquivo importar (`react` e `@/lib/utils` não entram) e um arquivo em `files`:
+
+```json
+{
+  "path": "registry/new-york/button.tsx",
+  "type": "registry:ui",
+  "target": "components/ui/button.tsx"
+}
+```
+
+`pnpm build` roda `tokens:build`, `themes:build` e `registry:build`; os gerados (`styles/tokens.css`, `styles/palettes.css`, `public/themes/`, `public/r/`, item `supernova-theme`) são versionados, nunca editados à mão.
+
+<Step>Escreva os exemplos</Step>
+
+Um arquivo por prévia em `examples/`: `<nome>.tsx` a principal, `<nome>-<variante>.tsx` cada seção. Cada um exporta `<Nome><Variante>Demo` e importa de `@/registry/new-york/<nome>`. Contêiner: `flex flex-wrap gap-3` para itens inline; `w-full` com `max-w-*` proporcional para blocos (`max-w-sm` em campos, `max-w-lg` em Note e Snippet, `max-w-xl` no PromptInput). `lib/registry.ts` lê `examples/` em runtime, mas `outputFileTracingIncludes` em `next.config.mjs` só rastreia `./registry/**/*`; `./examples/**/*` precisa entrar ali (pendente).
+
+<Step>Escreva a página</Step>
+
+`content/docs/components/<nome>.mdx`, nesta ordem: `description` igual à do `registry.json`; `ComponentPreview` principal; `## Instalação` com `InstallCommand`; `## Uso` importando de `@/components/ui/<nome>`; uma seção por recurso com `ComponentPreview name="<nome>-<variante>"`; `## Props`; `## Acessibilidade`; `## Diferenças em relação ao Geist` (em extras, `## Origem`, com a referência usada).
+
+`## Acessibilidade` abre com o que a garantia cobre (primitivo Radix, como foi conferido) e lista três eixos: **Teclado** (Tab, Enter/Space, Escape em sobreposição), **Foco** (anel visível nos dois temas, ordem com `asChild`), **Leitor de tela** (`aria-*`, `aria-live`). Nada de "WCAG" ou "contraste AA" sem método. A página entra sozinha em `/llms.txt`; a lista fixa de itens em `lib/agent-discovery/site-agent-skill.ts` deveria derivar de `registry.json` (pendente).
+
+<Step>Entre na navegação</Step>
+
+Acrescente o slug em `content/docs/components/meta.json`; sem isso a página fica fora da barra lateral e da `ComponentsList`.
+
+<Step>Atualize o inventário</Step>
+
+`estado: "publicado"`, `rota` e `instalacao: "pendente"`, o valor honesto antes de instalar. Roteiro e contagens derivam daqui.
+
+<Step>Rode os gates e valide</Step>
+
+`pnpm check`, `pnpm build`, `pnpm typecheck`, `pnpm typecheck:scripts`, nessa ordem. `lefthook.yml` só formata ts/tsx/json/css; MDX só é conferido no `pnpm build`, gate mesmo para doc. Depois instale num consumidor limpo (`npx shadcn@latest add <url>`), troque `instalacao` para `"cli"` (CLI completo) ou `"build"` (arquivos gravados nos `target` e build verde, como em `fundamentos/roteiro.mdx`) e guarde evidências em `docs/evidencias/<data>/`.
+
+</Steps>
+
+## O que aprendemos com as bibliotecas de amostra
+
+Quatro registries MIT do shadcn-labs, lidos inteiros.
+
+### shadcn-cssinjs
+
+- **Uniões nomeadas por eixo** (`ButtonVariant` mapeado com `Record`). **Adaptar:** seguimos com `cva`, mas exportamos a união quando um composto precisa, como `NoteType`.
+- **Manifesto à mão sem auditoria.** `sidebar.tsx` importa `@/hooks/use-mobile`, não entregue. **Adotar** um check que derive `dependencies` dos imports e barre `@/hooks` e `@/components` em `registry:ui`.
+- **Contexto de tamanho em compostos** (`card.tsx`). **Adotar** quando houver compostos.
+- **Badges `links: { doc, api }`.** Não adotar: o link do Geist vive no `href` do inventário.
+
+### pdfcn
+
+- **Grafo de dependências verdadeiro** (`registryDependencies` entre itens próprios). **Adotado** nos blocos.
+- **Prop de cor por lista tipada** (`satisfies (keyof ColorTokens)[]`). **Adaptar:** o `color` do Badge pode derivar de `HUES` em `constants/tokens.ts`.
+- **Saída gerada sem gate.** `public/r/takumi/theme-professional.json` aponta para arquivo que já não existe. Temos o mesmo sintoma; a resposta será um `--check` nos geradores, ainda inexistente aqui.
+- **`@default` no JSDoc:** adotar. **`preview-config`:** adiar, `align` e `className` bastam. **`deepDiff` de tema:** não adotar.
+
+### termcn
+
+- **Acessibilidade honesta em três eixos.** **Adotado** como esqueleto da seção.
+- **Lint afrouxado para o registry** (`complexity` e `jsx-a11y/aria-props` desligados). **Não adotar.** Em `registryDependencies`, nome simples só para item do shadcn; item nosso vai pela URL `/r/<nome>.json`, como nos blocos.
+- **Seletor de tema na moldura da prévia:** adiar; quando entrar, a sobrescrita é local à página, nunca no átomo global. **`tokens-showcase`:** adotar na página de cores.
+
+### startercn
+
+- **A anatomia certa está no site**, não no placeholder. **Adotado:** é o nosso Button.
+- **Reescrita de import errada** em `lib/format-code.ts`; herdada (veja erros comuns). **Corrigir.**
+- **Navegação por listas fixas** (`meta.json`, `TOP_LEVEL_SECTIONS`). **Adaptar:** ficam, mas o check exige a entrada.
+
+## Anatomia de um componente nosso
+
+**Props.** `<Nome>Props` exportada, estendendo `React.ComponentProps<"tag">` com `Omit` do que colide (`prefix`, `size`, `color`) mais `VariantProps<typeof nomeVariants>`. JSDoc de uma linha por prop, com `@default`.
+
+**Variantes.** `cva` com `variants` e `defaultVariants`; `compoundVariants` quando dois eixos só existem juntos, como `color` e `appearance` no Badge. `size` é sempre `"sm" | "md" | "lg"`, padrão `md`; controles têm 32, 40 e 48px.
+
+**Slots e `data-*`.** `data-slot="<nome>"` no raiz e um por sub-parte (`input-wrapper`, `note-action`). Todo eixo vira `data-<eixo>` resolvido:
+
+```tsx
+<Comp
+  data-slot="button"
+  data-variant={variant ?? "primary"}
+  data-size={size ?? "md"}
+  data-shape={shape ?? "default"}
+  aria-busy={loading || undefined}
+  disabled={disabled || loading}
+  className={cn(buttonVariants({ className, shape, size, variant }))}
+```
+
+**Estados.** `hover:` nas cores; `focus-visible:ring-2 focus-visible:ring-ring` com offset em controles clicáveis; em campos, `focus-within:ring-2` no `input-wrapper`, sem offset; `disabled:` com `border-border bg-muted text-muted-foreground`; `aria-busy` para carregamento, `aria-invalid` e `data-invalid` para erro, `aria-hidden` em ícones decorativos. Toda `animate-*` ou `transition-*` leva `motion-reduce:animate-none` / `motion-reduce:transition-none`, como em `prompt-input.tsx`. `asChild` com `Slot.Root`. `"use client"` só com hook, efeito ou handler.
+
+**Tokens.** Semânticos do shadcn (`bg-background`, `text-foreground`, `border-border`, `bg-muted`, `ring-ring`, `border-input`) e, para intenção, paleta do Tailwind com par `dark:`. O escuro é a classe `.dark` na raiz (`@custom-variant dark` em `styles/globals.css`); `supernova-theme` leva `cssVars.dark` e o consumidor precisa da mesma estratégia. Nunca `--ds-*` nem `bg-ds-*` no registry: `scripts/build-tokens.ts` grava o tema com literais.
+
+**Texto.** String fixa em pt-BR só com prop de escape (`label` no Note, `copyLabel` no Snippet).
+
+## Compostos e blocos
+
+Bloco é item `registry:block`, com um `files[]` por arquivo (`registry/new-york/blocks/<slug>/page.tsx` como `registry:page`, sub-partes como `registry:component`), `registryDependencies` com cada item usado e página em `content/docs/blocos/` com `BlockPreview`. Só ela importa de `@/components/ui/` e `@/hooks/`, e cada import chega ao consumidor por `registryDependencies`, próprio ou transitivo. Dados de amostra embutidos como padrão da prop. `blocks/index.ts` mapeia slug → página para a prévia e só entra quando todo `./<slug>/page.tsx` existe.
+
+## Regras de origem
+
+- O Geist é referência visual e de inventário. Nunca copie código, CSS ou texto de `vercel.com/geist`; escreva a partir da função, dos estados e dos tamanhos.
+- Nada de fonte comercial no pacote: Pace UI e similares não entram como código, CSS, captura convertida nem trecho em prompt. Pôr código num prompt é distribuir código.
+- A partir de agora, padrão vindo de fonte MIT (shadcn/ui, startercn, as quatro acima) recebe crédito no JSDoc e, quando molda a página, na seção de diferenças; créditos gerais na [introdução](/docs). Proveniência em três lugares: JSDoc, "Diferenças em relação ao Geist" e `href` no inventário, com `nota` quando houver o que registrar (`note`: "No Geist é uma seção da página Badge").
+
+## Checklist de publicação
+
+- Cada `name` de `ComponentPreview` tem arquivo em `examples/`.
+- Gerados sem diferença: após `pnpm build`, `git status --short public/r styles/tokens.css styles/palettes.css public/themes` vazio.
+- O código sob a prévia importa de `@/components/ui/<nome>`, igual ao `target`; `## Props` lista todas as props da interface, na ordem do arquivo, e termina com "Aceita todas as props de `<tag>`".
+- Gates verdes e consumidor limpo com build verde.
+- Evidências em `docs/evidencias/<data>/`: capturas em 1440 e 390, claro **e** escuro, as quatro; uma com `prefers-reduced-motion: reduce` emulado; `relatorio.txt` com resultado por eixo, como a linha `teclado:` de 2026-09-08. É o alvo: aquela rodada ficou parcial (sem 390 escuro nem Snippet escuro, e com 404 no console).
+- Gates pendentes: `--check` em `scripts/build-tokens.ts` e `scripts/build-themes.ts`, `registry:check` (shadcn build em pasta temporária mais diff) em `ci.yml`, `## Props` gerada de `<Nome>Props` com ts-morph, `scripts/evidencias.ts` com o Playwright das evidências.
+
+<Callout title="Editar não é verificar">
+  Um gate só conta depois de rodar. Falhou, conserte e rode de novo. Não afrouxe
+  regra para passar.
+</Callout>
+
+## Erros comuns
+
+- **Três mecanismos de variante.** Button e Badge usam `cva`; Input e Note, `Record<Tipo, string>`; Snippet, ternário; PromptInput não tem eixo de variante. Input, Note e Snippet migram.
+- **`data-*` parcial.** `badge.tsx` não emite `data-size` nem `data-shape`; `note.tsx` não emite `data-size`.
+- **Button e Badge fora da anatomia.** `animate-spin` e `transition-[…]` sem `motion-reduce:` em `button.tsx`; anatomia do startercn sem crédito no JSDoc nos dois; `"use client"` no Button sem hook e ausente no Badge com o mesmo `Slot`. Migram.
+- **Doc que não bate com o arquivo.** `snippet.mdx` dá a `width` um padrão `100%` que `snippet.tsx` não define; `prompt-input.mdx` tem `description` diferente do `registry.json` e o item em `ROADMAP` não tem `instalacao`. Migram.
+- **Nome de prévia sem arquivo.** `components/component-source.tsx` devolve `null` em silêncio; até haver check, renderize `Note type="error"` apontando `examples/<name>.tsx`.
+- **Import exibido errado.** `lib/format-code.ts` troca `@/registry/new-york/` por `"@/components/"`; deve ser `"@/components/ui/"`. Pendente.
+- **Fork no site.** `components/ui/button.tsx` diverge do registry (`sound`, `haptic`). Compare as cópias num check.
+- **Gerado desatualizado.** `public/r/registry.json` já ficou atrás de `registry.json` no `homepage`; `pnpm build` regenera, nada confere até haver `--check` na CI.
+- **Trabalho pela metade num gate.** Índice que importa página inexistente derruba `pnpm typecheck`: entra completo ou fica fora, com a razão escrita.
+- **Link antes da página.** Rota em `constants/routes.ts` e entrada em `TOP_LEVEL_SECTIONS` ou `meta.json` só depois de a página existir.
+- **Cor de intenção que o tema não governa.** `bg-red-600` e `bg-amber-500` em `button.tsx` não mudam com `supernova-theme`. `constants/tokens.ts` só tem `destructive`; quando ganhar `warning`, `success` e afins, os componentes migram.

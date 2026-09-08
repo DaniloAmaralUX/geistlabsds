@@ -1,0 +1,54 @@
+---
+title: Autenticação
+description: Tela de entrada em duas colunas, com painel de marca e formulário de e-mail com provedor externo.
+---
+
+<BlockPreview slug="authentication" />
+
+## Instalação
+
+<InstallCommand name="authentication" />
+
+O CLI copia a página e o formulário para `components/blocos/authentication/` e instala os itens do registry de que eles dependem (Button, Input e Label do LAB / DESIGN) junto com os pacotes npm listados abaixo.
+
+## Dependências
+
+| Item do registry       | Pacote npm                                             |
+| ---------------------- | ------------------------------------------------------ |
+| `button`               | `radix-ui`, `class-variance-authority`, `lucide-react` |
+| `input`                | —                                                      |
+| `label`                | `radix-ui`                                             |
+| bloco `authentication` | `lucide-react`                                         |
+
+## Arquivos
+
+- `components/blocos/authentication/page.tsx` — página inteira, com o painel de marca e a coluna do formulário.
+- `components/blocos/authentication/components/user-auth-form.tsx` — formulário de e-mail, separador e botão do provedor externo.
+
+## Origem e adaptações
+
+Parte do pacote `authentication` exportado do `shadcn-examples`, cujo código base é o shadcn/ui (MIT). A licença do repositório de origem fica registrada como "a confirmar" até ser lida.
+
+O que mudou ao entrar no LAB / DESIGN:
+
+- Botões usam a API do nosso Button: o link "Entrar" virou `variant="tertiary"` com `asChild`, o envio usa `loading` (o indicador de progresso vem do próprio componente) e o botão do provedor é `variant="secondary"` com o ícone em `prefix`.
+- O campo de e-mail usa o nosso Input; o rótulo continua fora, visível só para leitores de tela, como no original.
+- A imagem de fundo do painel de marca foi substituída por um gradiente dos tokens `foreground` e `muted-foreground`, sem nenhum asset.
+- O ícone do GitHub não existe na versão atual do lucide-react (as marcas foram retiradas); o botão usa `GitBranchIcon` como sinal genérico de provedor de código.
+- Textos em pt-BR; links do exemplo (`/examples/...`, `/terms`, `/privacy`) apontam para `#`.
+- Componentes em arrow function, sem `React.*` no namespace, com o estilo de código do repositório.
+
+<Callout title="Envio simulado">
+  O formulário não chama nenhuma API: ao enviar, ativa o estado de carregamento
+  por três segundos e volta ao normal. Troque `onSubmit` pela sua chamada de
+  autenticação.
+</Callout>
+
+## Acessibilidade
+
+- O campo de e-mail tem `<Label htmlFor="email">` com `sr-only`: o nome acessível existe mesmo com o rótulo visual escondido, e o `placeholder` não faz o papel de rótulo.
+- O botão de envio é `type="submit"` dentro do `form`, então Enter no campo envia; o botão do provedor é `type="button"` e não dispara o formulário.
+- Durante o carregamento, o Button marca `aria-busy` e desabilita os dois botões e o campo, evitando envio duplicado.
+- Ícones decorativos (logotipo em SVG e ícone do provedor) têm `aria-hidden="true"`; o texto visível dá o nome dos botões.
+- O painel de marca usa `text-background` sobre o gradiente de `foreground`, o mesmo par de tokens do Button primário, com o depoimento em opacidade 70% sobre fundo escuro.
+- Links de termos e privacidade têm sublinhado permanente, não só cor, e o foco visível vem do anel de foco padrão dos tokens.

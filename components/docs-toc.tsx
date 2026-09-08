@@ -88,7 +88,7 @@ export const DocsTableOfContents = ({
       <DropdownMenu open={open} onOpenChange={setOpen} sounds>
         <DropdownMenuTrigger asChild>
           <Button
-            variant="outline"
+            variant="secondary"
             size="sm"
             className={cn("h-8 md:h-7", className)}
           >

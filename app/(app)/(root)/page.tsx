@@ -4,7 +4,7 @@ import Link from "next/link";
 import { CommandBox } from "@/components/command-box";
 import { HomeCtas } from "@/components/home-ctas";
 import { PageTransition } from "@/components/page-transition";
-import { GEIST_INVENTORY, countByEstado } from "@/constants/geist-inventory";
+import { ROADMAP, countByEstado } from "@/constants/roadmap";
 import { ROUTES } from "@/constants/routes";
 import { SITE } from "@/constants/site";
 import { Badge } from "@/registry/new-york/badge";
@@ -52,8 +52,8 @@ export default function IndexPage() {
         <section className="container-wrapper relative">
           <div className="container flex flex-col items-center gap-4 py-16 text-center md:py-20 lg:py-24">
             <Badge appearance="subtle" color="blue" shape="pill">
-              POC 1 · {totals.publicado} de {GEIST_INVENTORY.length} itens do
-              Geist publicados
+              POC 1 · {totals.publicado} de {ROADMAP.length} itens do roteiro
+              publicados
             </Badge>
             <h1 className="max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl">
               {SITE.NAME}
@@ -118,11 +118,23 @@ export default function IndexPage() {
             >
               <Snippet text="npx shadcn@latest add …/r/button.json" />
             </Showcase>
-            <Showcase title="Cobertura do Geist" href={ROUTES.DOCS_COVERAGE}>
+            <Showcase title="Blocos" href={ROUTES.DOCS_BLOCKS}>
               <p className="text-sm text-muted-foreground">
-                {GEIST_INVENTORY.length} itens inventariados a partir da
-                navegação do Geist. {totals.publicado} publicados nesta rodada;
-                o resto listado com estado e referência.
+                Páginas e composições prontas, com prévia em tela cheia e
+                instalação pelo shadcn: autenticação, perfil, playground e
+                painel administrativo.
+              </p>
+            </Showcase>
+            <Showcase title="Temas" href={ROUTES.DOCS_THEMES}>
+              <p className="text-sm text-muted-foreground">
+                O tema do LAB / DESIGN e os presets do Supernova: instale pelo
+                shadcn, troque ao vivo no site ou ajuste no Theme Studio.
+              </p>
+            </Showcase>
+            <Showcase title="Roteiro" href={ROUTES.DOCS_ROADMAP}>
+              <p className="text-sm text-muted-foreground">
+                {ROADMAP.length} itens no roteiro. {totals.publicado} publicados
+                nesta rodada; o resto listado com estado.
               </p>
             </Showcase>
           </div>

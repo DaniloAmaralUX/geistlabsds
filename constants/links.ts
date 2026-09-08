@@ -7,7 +7,6 @@ export const GITHUB = {
 const githubUrl = `https://github.com/${GITHUB.org}/${GITHUB.repo}`;
 
 export const LINK = {
-  GEIST: "https://vercel.com/geist/introduction",
   GITHUB: githubUrl,
   LICENSE: `${githubUrl}/blob/${GITHUB.branch}/LICENSE`,
   SHADCN_MCP_DOCS: "https://ui.shadcn.com/docs/mcp",

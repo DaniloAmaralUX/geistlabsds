@@ -1,12 +1,12 @@
 {
-  "name": "lab-design",
-  "homepage": "https://geistlabsds-danilos-projects-94eff717.vercel.app",
+  "name": "supernova",
+  "homepage": "https://geistlabsds.vercel.app",
   "items": [
     {
-      "name": "lab-design-theme",
+      "name": "supernova-theme",
       "type": "registry:theme",
-      "title": "Tema LAB / DESIGN",
-      "description": "Tokens semânticos do LAB / DESIGN (cores, raio) no vocabulário do shadcn, em claro e escuro. Gerado a partir de constants/tokens.ts.",
+      "title": "Tema Supernova",
+      "description": "Tokens semânticos do Supernova (cores, raio) no vocabulário do shadcn, em claro e escuro. Gerado a partir de constants/tokens.ts.",
       "cssVars": {
         "dark": {
           "accent": "oklch(0.24 0 0)",
@@ -160,6 +160,261 @@
           "path": "registry/new-york/snippet.tsx",
           "type": "registry:ui",
           "target": "components/ui/snippet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "prompt-input",
+      "type": "registry:ui",
+      "title": "Prompt Input",
+      "description": "Compositor de prompt para conversas com IA: área de texto que cresce, menu de ações, chip de agente, configurações da requisição e histórico opcional.",
+      "dependencies": ["lucide-react", "radix-ui"],
+      "files": [
+        {
+          "path": "registry/new-york/prompt-input.tsx",
+          "type": "registry:ui",
+          "target": "components/ui/prompt-input.tsx"
+        }
+      ]
+    },
+    {
+      "name": "authentication",
+      "type": "registry:block",
+      "title": "Autenticação",
+      "description": "Tela de entrada em duas colunas: painel de marca com depoimento sobre gradiente dos tokens e formulário de criação de conta por e-mail com botão de provedor externo.",
+      "categories": ["blocos"],
+      "registryDependencies": [
+        "https://geistlabsds.vercel.app/r/button.json",
+        "https://geistlabsds.vercel.app/r/input.json",
+        "label"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/authentication/page.tsx",
+          "type": "registry:page",
+          "target": "components/blocos/authentication/page.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/authentication/components/user-auth-form.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/authentication/components/user-auth-form.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-page",
+      "type": "registry:block",
+      "title": "Perfil",
+      "description": "Cabeçalho de perfil com avatar e abas de dados pessoais, conta, segurança e notificações.",
+      "categories": ["blocos"],
+      "registryDependencies": [
+        "avatar",
+        "https://geistlabsds.vercel.app/r/badge.json",
+        "https://geistlabsds.vercel.app/r/button.json",
+        "card",
+        "https://geistlabsds.vercel.app/r/input.json",
+        "label",
+        "separator",
+        "switch",
+        "tabs",
+        "textarea"
+      ],
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/profile-page/page.tsx",
+          "type": "registry:page",
+          "target": "components/blocos/profile-page/page.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/profile-page/components/profile-header.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/profile-page/components/profile-header.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/profile-page/components/profile-content.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/profile-page/components/profile-content.tsx"
+        }
+      ]
+    },
+    {
+      "name": "playground",
+      "type": "registry:block",
+      "title": "Playground",
+      "description": "Área de prompt com três modos (completar, inserir, editar), painel de parâmetros do modelo com controles deslizantes e dicas, e ações de predefinição (carregar, salvar, compartilhar, ver código, excluir).",
+      "categories": ["blocos"],
+      "registryDependencies": [
+        "https://geistlabsds.vercel.app/r/button.json",
+        "https://geistlabsds.vercel.app/r/input.json",
+        "alert-dialog",
+        "command",
+        "dialog",
+        "dropdown-menu",
+        "hover-card",
+        "label",
+        "popover",
+        "separator",
+        "slider",
+        "switch",
+        "tabs",
+        "textarea"
+      ],
+      "dependencies": ["lucide-react", "sonner"],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/playground/page.tsx",
+          "type": "registry:page",
+          "target": "components/blocos/playground/page.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/components/code-viewer.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/playground/components/code-viewer.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/components/maxlength-selector.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/playground/components/maxlength-selector.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/components/model-selector.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/playground/components/model-selector.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/components/preset-actions.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/playground/components/preset-actions.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/components/preset-save.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/playground/components/preset-save.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/components/preset-selector.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/playground/components/preset-selector.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/components/preset-share.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/playground/components/preset-share.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/components/temperature-selector.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/playground/components/temperature-selector.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/components/top-p-selector.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/playground/components/top-p-selector.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/data/models.ts",
+          "type": "registry:component",
+          "target": "components/blocos/playground/data/models.ts"
+        },
+        {
+          "path": "registry/new-york/blocks/playground/data/presets.ts",
+          "type": "registry:component",
+          "target": "components/blocos/playground/data/presets.ts"
+        }
+      ]
+    },
+    {
+      "name": "admin-dashboard",
+      "type": "registry:block",
+      "title": "Painel administrativo",
+      "description": "Painel com barra lateral, cartões de indicadores, gráfico de área interativo e tabela de seções com reordenação, seleção e paginação.",
+      "categories": ["blocos"],
+      "registryDependencies": [
+        "https://geistlabsds.vercel.app/r/button.json",
+        "https://geistlabsds.vercel.app/r/badge.json",
+        "https://geistlabsds.vercel.app/r/input.json",
+        "sidebar",
+        "card",
+        "chart",
+        "select",
+        "toggle-group",
+        "checkbox",
+        "drawer",
+        "dropdown-menu",
+        "label",
+        "separator",
+        "table",
+        "tabs",
+        "avatar"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "recharts",
+        "@tanstack/react-table@^9",
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "sonner",
+        "zod"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/page.tsx",
+          "type": "registry:page",
+          "target": "components/blocos/admin-dashboard/page.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/components/app-sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/admin-dashboard/components/app-sidebar.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/components/chart-area-interactive.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/admin-dashboard/components/chart-area-interactive.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/components/data-table.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/admin-dashboard/components/data-table.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/components/nav-documents.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/admin-dashboard/components/nav-documents.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/components/nav-main.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/admin-dashboard/components/nav-main.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/components/nav-secondary.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/admin-dashboard/components/nav-secondary.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/components/nav-user.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/admin-dashboard/components/nav-user.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/components/section-cards.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/admin-dashboard/components/section-cards.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/components/site-header.tsx",
+          "type": "registry:component",
+          "target": "components/blocos/admin-dashboard/components/site-header.tsx"
+        },
+        {
+          "path": "registry/new-york/blocks/admin-dashboard/data.json",
+          "type": "registry:file",
+          "target": "components/blocos/admin-dashboard/data.json"
         }
       ]
     }

@@ -9,11 +9,18 @@ import { ComponentPreview } from "@/components/component-preview";
 import { ComponentSource } from "@/components/component-source";
 import { ComponentsList } from "@/components/components-list";
 import { CopyButton } from "@/components/copy-button";
+import {
+  AcervoCount,
+  AcervoSupernova,
+} from "@/components/docs/acervo-supernova";
+import { BlockPreview } from "@/components/docs/block-preview";
+import { BlocksList } from "@/components/docs/blocks-list";
 import { ColorScale } from "@/components/docs/color-scale";
-import { CoverageTable } from "@/components/docs/coverage-table";
 import { InstallCommand } from "@/components/docs/install-command";
+import { RoadmapTable } from "@/components/docs/roadmap-table";
 import { SemanticTokens } from "@/components/docs/semantic-tokens";
 import { RadiusScale, SpacingScale } from "@/components/docs/spacing-scale";
+import { ThemesGallery } from "@/components/docs/themes-gallery";
 import { TypeScale } from "@/components/docs/type-scale";
 import { getIconForLanguageExtension } from "@/components/icons";
 import {
@@ -36,10 +43,14 @@ export const mdxComponents = {
   AccordionTrigger: (
     props: React.ComponentProps<typeof AccordionTriggerBase>
   ) => <AccordionTriggerBase sound="click" {...props} />,
+  AcervoCount,
+  AcervoSupernova,
   Alert,
   AlertDescription,
   AlertTitle,
   AspectRatio,
+  BlockPreview,
+  BlocksList,
   Button,
   Callout,
   CodeTabs,
@@ -47,7 +58,7 @@ export const mdxComponents = {
   ComponentPreview,
   ComponentSource,
   ComponentsList,
-  CoverageTable,
+
   FeatureCard: ({
     icon: Icon,
     title,
@@ -109,6 +120,7 @@ export const mdxComponents = {
     />
   ),
   RadiusScale,
+  RoadmapTable,
   SemanticTokens,
   SpacingScale,
   Step: ({ className, children, ...props }: React.ComponentProps<"h3">) => (
@@ -171,6 +183,7 @@ export const mdxComponents = {
       {...props}
     />
   ),
+  ThemesGallery,
   TypeScale,
   a: ({ className, children, ...props }: React.ComponentProps<"a">) => (
     <a

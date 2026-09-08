@@ -1,0 +1,47 @@
+---
+title: Acervo Supernova
+description: Blocos, layouts, efeitos e telas que os repositórios do Supernova já publicam, com o comando de instalação de cada item.
+---
+
+Antes deste design system, o Supernova já publicava componentes prontos em três repositórios. Esta página lista o que existe lá, lido de instantâneos com data em `data/acervo/`, e dá o comando de instalação de cada item. O código continua onde nasceu: nada foi copiado para cá, e cada comando aponta para o registry de origem.
+
+<Callout title="Proveniência">
+  Os blocos são adaptados de shadcn/studio (MIT + Commons Clause); a cláusula
+  restringe vender ou redistribuir os componentes em si e está registrada como
+  pendência de revisão jurídica. Os efeitos são originais de David Haz (Canvas
+  UI, MIT + Commons Clause), distribuídos pelo Supernova Shadcn. Os layouts são
+  código do Supernova sob MIT.
+</Callout>
+
+## Blocos
+
+<AcervoCount section="blocos" /> blocos do site do Supernova Shadcn, agrupados
+por categoria. O comando usa a URL do item, então funciona sem configurar
+namespace no `components.json`.
+
+<AcervoSupernova section="blocos" />
+
+## Layouts
+
+<AcervoCount section="layouts" /> layouts do repositório `supernova-layouts`, a
+fonte canônica do código instalável do Supernova. O comando é o que o próprio
+Supernova publica para cada item.
+
+<AcervoSupernova section="layouts" />
+
+## Efeitos
+
+<AcervoCount section="efeitos" /> efeitos, cada um publicado em até quatro
+frameworks. Cada botão copia o comando do framework correspondente.
+
+<AcervoSupernova section="efeitos" />
+
+## Catálogo
+
+O `supernova-catalogo` foi o experimento que antecedeu o Supernova Shadcn e está em processo de arquivamento. Fica listado como material histórico: <AcervoCount section="catalogo" /> grupos de telas, com link para a página de cada grupo no site do catálogo, sem comando de instalação.
+
+<AcervoSupernova section="catalogo" />
+
+## Como atualizar
+
+Os instantâneos são cópias dos arquivos gerados pelos repositórios de origem; a data está em `data/acervo/README.md`. Para atualizar, copie os arquivos de novo. Nunca edite os JSON à mão: as contagens desta página saem deles.

@@ -1,0 +1,125 @@
+---
+title: Prompt Input
+description: "Compositor de prompt para conversas com IA: área de texto que cresce, menu de ações, chip de agente, configurações da requisição e histórico opcional."
+---
+
+import { PromptInputDemo } from "@/examples/prompt-input";
+import { PromptInputAgentsDemo } from "@/examples/prompt-input-agents";
+import { PromptInputSettingsDemo } from "@/examples/prompt-input-settings";
+import { PromptInputMenuDemo } from "@/examples/prompt-input-menu";
+import { PromptInputMessagesDemo } from "@/examples/prompt-input-messages";
+
+<ComponentPreview name="prompt-input">
+  <PromptInputDemo />
+</ComponentPreview>
+
+## Instalação
+
+<InstallCommand name="prompt-input" />
+
+As animações dos menus usam `tw-animate-css`, que o `shadcn init` já adiciona em projetos Tailwind 4 (`@import "tw-animate-css"` no CSS global). Sem ele os menus abrem sem animação. A área de texto cresce com `field-sizing: content`; em navegadores sem suporte ela fica com uma linha e rola.
+
+## Uso
+
+```tsx
+import { PromptInput } from "@/components/ui/prompt-input";
+
+export function Exemplo() {
+  return (
+    <PromptInput
+      onSend={({ text, agent, settings }) => {
+        enviar({ agent, settings, text });
+      }}
+    />
+  );
+}
+```
+
+Enter envia; Shift+Enter quebra linha. O texto é aparado antes de sair e um campo vazio mantém o botão de enviar desabilitado. `onSend` recebe um único objeto (`PromptSubmission`) com o texto e o contexto vigente: agente e mapa de configurações.
+
+## Agente
+
+`agents` liga o chip de agente; sem a lista, ele não aparece. O valor pode ser controlado (`agent` + `onAgentChange`) ou começar em `defaultAgent` (padrão: o primeiro da lista).
+
+<ComponentPreview name="prompt-input-agents">
+  <PromptInputAgentsDemo />
+</ComponentPreview>
+
+## Configurações
+
+`settingsMenu` monta o menu à direita: uma lista de `PromptSetting`, cada uma com `id`, `label` e `choices`. No painel, cada configuração é um grupo com rótulo próprio. Na variante `highlight` (padrão) as escolhas ficam à vista, com descrição e check na atual; com `moreLabel`, só a escolha atual fica à vista e um submenu com esse rótulo lista as demais. Na variante `list` a configuração vira uma linha que abre as escolhas ao lado (ou para o lado que couber).
+
+O gatilho mostra a escolha da primeira configuração e um contador `+N` para as outras. O medidor de esforço ao lado só aparece quando existe uma configuração com o id de `effortSetting` (padrão `"effort"`) e o valor dela é `low`, `medium` ou `high`. `commands` acrescenta comandos avulsos no rodapé do painel.
+
+<ComponentPreview name="prompt-input-settings">
+  <PromptInputSettingsDemo />
+</ComponentPreview>
+
+## Menu de ações
+
+`menu` transforma o botão de adição num menu com quatro tipos de item: `action`, `toggle`, `separator` e `submenu` (um nível, com botão de voltar). Alternâncias mantêm estado interno e não fecham o menu. Tudo o que acontece no menu sai por um único `onMenuChange`, com `type: "select"` para ações e `type: "toggle"` (com `checked`) para alternâncias. Sem itens, o botão apenas dispara `onAddClick`.
+
+<ComponentPreview name="prompt-input-menu">
+  <PromptInputMenuDemo />
+</ComponentPreview>
+
+## Histórico
+
+Com `showHistory` (padrão), cada envio vira um balão alinhado à direita numa região com rolagem própria acima do compositor. O histórico pode ser controlado com `history` e `onHistoryChange`; `historyMaxHeight` limita a altura antes de rolar.
+
+<ComponentPreview name="prompt-input-messages">
+  <PromptInputMessagesDemo />
+</ComponentPreview>
+
+## Props
+
+| Prop                                                | Tipo                                                       | Padrão                        |
+| --------------------------------------------------- | ---------------------------------------------------------- | ----------------------------- |
+| `placeholder`                                       | `string`                                                   | `"Pergunte ou peça algo…"`    |
+| `value` / `defaultValue` / `onValueChange`          | `string` / `string` / `(value: string) => void`            | —                             |
+| `onSend`                                            | `(submission: PromptSubmission) => void`                   | —                             |
+| `submitOnEnter`                                     | `boolean`                                                  | `true`                        |
+| `maxRows`                                           | `number`                                                   | `6`                           |
+| `showHistory`                                       | `boolean`                                                  | `true`                        |
+| `history` / `onHistoryChange`                       | `PromptMessage[]` / `(history) => void`                    | —                             |
+| `historyMaxHeight`                                  | `string`                                                   | `"16rem"`                     |
+| `agents`                                            | `PromptChoice[]`                                           | `[]`                          |
+| `agent` / `defaultAgent` / `onAgentChange`          | `string` / `string` / `(value: string) => void`            | primeiro agente               |
+| `agentLabel`                                        | `string`                                                   | `"Agente"`                    |
+| `settingsMenu`                                      | `PromptSetting[]`                                          | `[]`                          |
+| `settings` / `defaultSettings` / `onSettingsChange` | `PromptSettings` / `PromptSettings` / `(settings) => void` | primeira escolha de cada uma  |
+| `effortSetting`                                     | `string`                                                   | `"effort"`                    |
+| `commands`                                          | `PromptCommand[]`                                          | `[]`                          |
+| `settingsLabel`                                     | `string`                                                   | `"Configurações do prompt"`   |
+| `menu`                                              | `PromptMenuItem[]`                                         | `[]`                          |
+| `onMenuChange`                                      | `(change: PromptMenuChange) => void`                       | —                             |
+| `onAddClick`                                        | `() => void`                                               | —                             |
+| `addLabel`                                          | `string`                                                   | `"Mais ações"`                |
+| `backLabel`                                         | `string`                                                   | `"Voltar"`                    |
+| `onMicClick`                                        | `() => void`                                               | — (sem ele, sem botão de voz) |
+| `micLabel`                                          | `string`                                                   | `"Ditar por voz"`             |
+| `sendLabel`                                         | `string`                                                   | `"Enviar"`                    |
+| `inputLabel`                                        | `string`                                                   | `"Mensagem para o agente"`    |
+| `disabled`                                          | `boolean`                                                  | `false`                       |
+| `loading`                                           | `boolean`                                                  | `false`                       |
+| `sendEffect`                                        | `boolean`                                                  | `true`                        |
+
+Os demais atributos vão para a raiz (`div`). `PromptSettingsMenu` também é exportado, para quem quiser só o gatilho e o painel de configurações (`items`, `values`, `onChange`, `commands`, `effortSetting`).
+
+O botão de voz se esconde quando o compositor tem menos de 28rem de largura (container query, não viewport). Os demais tamanhos são fixos.
+
+## Acessibilidade
+
+- A área de texto tem `aria-label` além do placeholder; os botões só com ícone ("mais", voz, enviar) têm `aria-label` e os ícones são `aria-hidden`.
+- O botão de enviar usa `disabled` real quando o campo está vazio ou durante `loading`.
+- Os menus vêm do `DropdownMenu` do radix-ui: `aria-haspopup`, `aria-expanded`, `role="menu"`, itens `menuitem`, `menuitemradio` e `menuitemcheckbox` com `aria-checked`, setas, Home/End e Esc. Fechados pelo teclado (Esc, Enter, Espaço), devolvem o foco ao gatilho; escolhidos com o mouse, devolvem à área de texto para continuar digitando.
+- Nos submenus de configuração, Esc e Seta ← fecham só o submenu e devolvem o foco à linha que o abriu. No menu "mais", voltar de uma página devolve o foco à linha que a abriu.
+- Cada configuração é um `role="group"` com rótulo; a alternância dos itens `toggle` é decorativa, e o estado vem do `aria-checked` do item.
+- O gatilho de configurações tem `aria-label` com a escolha principal e o número das demais; o medidor de esforço é decorativo.
+- O histórico é uma região `role="log"` com `aria-live="polite"`; entra na ordem de Tab (e ganha anel de foco) só quando tem o que rolar.
+- Todo controle focável mostra anel de 2px na cor `ring`, inclusive os itens de menu percorridos pelas setas (anel interno); o cartão ganha borda de foco quando a área de texto está ativa.
+- Com `prefers-reduced-motion`, as animações de entrada e saída dos menus, o brilho de envio e as transições ficam desligados; o indicador de `loading` pulsa em vez de girar.
+
+## Origem
+
+Não existe no Geist; implementação própria do LAB / DESIGN a partir de uma especificação funcional. Fica em Extras na matriz de cobertura, fora dos totais.

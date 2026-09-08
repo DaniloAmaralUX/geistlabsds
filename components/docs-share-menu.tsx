@@ -50,9 +50,11 @@ export const DocsShareMenu = ({
     <DropdownMenu sounds>
       <DropdownMenuTrigger asChild>
         <Button
-          className="hidden sm:flex size-7 border-none active:scale-none"
+          className="hidden sm:flex size-7 border-none active:scale-none data-[shape=square]:w-7"
           variant="secondary"
-          size="icon-sm"
+          shape="square"
+          size="sm"
+          aria-label="Compartilhar página"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >

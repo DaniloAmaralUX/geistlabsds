@@ -1,4 +1,12 @@
 {
   "title": "Componentes",
-  "pages": ["index", "button", "badge", "input", "note", "snippet"]
+  "pages": [
+    "index",
+    "button",
+    "badge",
+    "input",
+    "note",
+    "snippet",
+    "prompt-input"
+  ]
 }

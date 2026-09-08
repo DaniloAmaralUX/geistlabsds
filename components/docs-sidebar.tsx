@@ -23,7 +23,10 @@ const TOP_LEVEL_SECTIONS = [
   { href: ROUTES.DOCS_INSTALLATION, name: "Instalação" },
   { href: ROUTES.DOCS_FOUNDATIONS, name: "Fundamentos" },
   { href: ROUTES.DOCS_COMPONENTS, name: "Componentes" },
-  { href: ROUTES.DOCS_COVERAGE, name: "Cobertura" },
+  { href: ROUTES.DOCS_BLOCKS, name: "Blocos" },
+  { href: ROUTES.DOCS_THEMES, name: "Temas" },
+  { href: ROUTES.DOCS_ROADMAP, name: "Roteiro" },
+  { href: ROUTES.DOCS_CREATE, name: "Criar um componente" },
   { href: ROUTES.LLMS, name: "llms.txt" },
 ];
 

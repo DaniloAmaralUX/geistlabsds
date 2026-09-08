@@ -43,7 +43,7 @@ export interface CopyButtonProps extends Omit<
 export const CopyButton = ({
   value,
   className,
-  variant = "ghost",
+  variant = "tertiary",
   event,
   children,
   showTooltip = true,
@@ -78,12 +78,13 @@ export const CopyButton = ({
   const copyButton = (
     <Button
       data-slot="copy-button"
-      size={children ? "sm" : "icon"}
+      size="sm"
+      shape={children ? "default" : "square"}
       variant={variant}
       className={cn(
         children
           ? ""
-          : "bg-code absolute top-3 right-2 z-10 size-7 hover:opacity-100 focus-visible:opacity-100",
+          : "bg-code absolute top-3 right-2 z-10 size-7 hover:opacity-100 focus-visible:opacity-100 data-[shape=square]:w-7",
         className
       )}
       sound="copy"

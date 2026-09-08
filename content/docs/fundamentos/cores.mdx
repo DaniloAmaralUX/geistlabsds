@@ -1,11 +1,11 @@
 ---
 title: Cores
-description: Seis escalas de dez passos em OKLCH, em claro e escuro, e os tokens semânticos que os componentes usam.
+description: Seis escalas de dez passos em OKLCH, nos modos claro e escuro, e os tokens semânticos que os componentes usam.
 ---
 
-As cores são definidas em OKLCH, que mantém a luminosidade perceptual constante entre matizes. Cada escala tem dez passos; no modo escuro a ordem inverte, então o passo 100 é sempre o mais próximo do fundo e o 1000 o mais próximo do texto.
+As cores do Supernova são definidas em OKLCH, que mantém a luminosidade perceptual constante entre matizes. Cada escala tem dez passos. No modo escuro a ordem inverte: o passo 100 é sempre o mais próximo do fundo e o 1000, o mais próximo do texto.
 
-A coluna de contraste mostra a razão WCAG de cada passo sobre o fundo daquele modo. "AA" é 4,5:1 ou mais, o mínimo para texto normal; "AA grande" é 3:1, suficiente para texto grande e ícones.
+A coluna de contraste mostra a razão WCAG de cada passo sobre o fundo daquele modo. "AA" é 4,5:1 ou mais, o mínimo para texto normal. "AA grande" é 3:1 ou mais, suficiente para texto grande e ícones.
 
 ## Escalas
 
@@ -18,14 +18,17 @@ A coluna de contraste mostra a razão WCAG de cada passo sobre o fundo daquele m
 
 ## Tokens semânticos
 
-Os componentes não usam a escala diretamente. Usam tokens com nome de função, no vocabulário do shadcn, para que qualquer componente do ecossistema receba o mesmo visual. O tema instalável entrega exatamente estes valores.
+Os componentes não usam a escala diretamente. Usam tokens com nome de função, no vocabulário do shadcn, para que qualquer componente compatível com o ecossistema shadcn receba o mesmo visual. O tema instalável entrega exatamente estes valores.
 
 <SemanticTokens />
 
 ## No código
 
-No Tailwind, as escalas ficam disponíveis como `bg-ds-gray-100`, `text-ds-blue-700` e assim por diante. Os tokens semânticos seguem o shadcn: `bg-background`, `text-muted-foreground`, `border-border`, `ring-ring`.
+No Tailwind, os dois níveis ficam disponíveis como classes:
 
-Para instalar as cores num projeto:
+- Escalas: `bg-ds-gray-100`, `text-ds-blue-700` e assim por diante.
+- Tokens semânticos, no vocabulário do shadcn: `bg-background`, `text-muted-foreground`, `border-border`, `ring-ring`.
 
-<InstallCommand name="lab-design-theme" />
+Para levar as cores ao seu projeto, instale o Tema Supernova. Ele entra pelo CLI do shadcn e não adiciona dependência de runtime.
+
+<InstallCommand name="supernova-theme" />

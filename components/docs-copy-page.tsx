@@ -170,8 +170,10 @@ export const DocsCopyPage = ({
   const trigger = (
     <Button
       variant="secondary"
+      shape="square"
       size="sm"
-      className="peer -ml-0.5 size-8 md:size-7 md:text-[0.8rem]"
+      aria-label="Mais opções de cópia"
+      className="peer -ml-0.5 md:size-7 md:data-[shape=square]:w-7 md:text-[0.8rem]"
     >
       <ChevronDownIcon className="rotate-180 sm:rotate-0" />
     </Button>
@@ -218,8 +220,8 @@ export const DocsCopyPage = ({
         >
           {MENU_ITEMS.map(([key, render]) => (
             <Button
-              variant="ghost"
-              size="lg"
+              variant="tertiary"
+              size="md"
               asChild
               key={key}
               sound="click"

@@ -1,0 +1,50 @@
+---
+title: Perfil
+description: Cabeçalho de perfil com avatar e abas de dados pessoais, conta, segurança e notificações.
+---
+
+<BlockPreview slug="profile-page" />
+
+## Instalação
+
+<InstallCommand name="profile-page" />
+
+O CLI copia a página e os dois componentes do bloco para `components/blocos/profile-page/` e instala, se ainda faltarem, os itens do registry que ele usa (Button, Badge, Input, Card, Label, Separator, Switch, Tabs, Textarea e Avatar).
+
+## Dependências
+
+| Item do registry                                 | Pacote npm                                             |
+| ------------------------------------------------ | ------------------------------------------------------ |
+| `button`, `badge`                                | `radix-ui`, `class-variance-authority`, `lucide-react` |
+| `input`                                          | —                                                      |
+| `card`, `textarea`                               | —                                                      |
+| `label`, `separator`, `switch`, `tabs`, `avatar` | `radix-ui`                                             |
+| Ícones do bloco                                  | `lucide-react`                                         |
+
+## Arquivos
+
+- `components/blocos/profile-page/page.tsx` — página que compõe o bloco inteiro.
+- `components/blocos/profile-page/components/profile-header.tsx` — cartão com avatar, nome, selo, contato e ação de editar.
+- `components/blocos/profile-page/components/profile-content.tsx` — abas Pessoal, Conta, Segurança e Notificações.
+
+## Origem e adaptações
+
+Base: pacote `profile-page` exportado do `shadcn-examples`, cujo código base é o shadcn/ui (MIT). A licença do repositório de origem fica registrada como "a confirmar" até ser lida.
+
+O que mudou ao entrar no LAB / DESIGN:
+
+- Button, Badge e Input passaram à API do LAB / DESIGN: `default`/`outline`/`destructive` viraram `primary`/`secondary`/`error`; o selo "outline" com classes verdes virou `color="green" appearance="subtle"`; os ícones dos botões entraram por `prefix`.
+- O botão da câmera sobre o avatar usa `shape="circle"`, `size="sm"` e `aria-label`, no lugar de `size="icon"` com classes de tamanho.
+- O avatar perdeu a imagem externa e mostra só o fallback de iniciais.
+- Os campos de texto usam a prop `label` do Input, que já liga rótulo e campo por `id`.
+- Cada Switch ganhou `id` e o rótulo ao lado ganhou `htmlFor`.
+- Todos os textos visíveis foram para pt-BR; telefone, cidade e plano passaram a exemplos brasileiros.
+- Ícones lucide com sufixo `Icon`, como no restante do repositório.
+
+## Acessibilidade
+
+- Cada campo de texto tem rótulo ligado por `id`: os Input pela prop `label`, a Textarea por um `Label htmlFor`.
+- Os interruptores de conta, segurança e notificações estão associados ao rótulo da linha por `id`/`htmlFor`; clicar no texto aciona o Switch e o leitor de tela anuncia o nome.
+- O único botão só de ícone (câmera) tem `aria-label="Alterar foto do perfil"`; os ícones decorativos do cabeçalho e dos botões levam `aria-hidden`.
+- Abas, interruptores e botões vêm dos primitivos Radix e do Button do LAB / DESIGN, com foco visível por `focus-visible:ring` e navegação por teclado.
+- Cores só pelos tokens (`text-foreground`, `text-muted-foreground`, `text-destructive`) e pelo Badge verde suave, que tem par claro/escuro definido no componente.
