@@ -1,15 +1,17 @@
 ---
 title: Temas
-description: O tema do LAB / DESIGN e os presets do Supernova, para instalar pelo shadcn, trocar ao vivo e ajustar no Theme Studio.
+description: O tema do Supernova e os presets do Supernova Shadcn, para instalar pelo CLI do shadcn, trocar ao vivo e ajustar no Theme Studio.
 ---
 
-Um tema aqui é um conjunto de tokens no vocabulário do shadcn (`--background`, `--primary`, `--radius`…) em claro e escuro. O mesmo tema serve a três usos: **instalar** num projeto pelo shadcn CLI, **trocar ao vivo** no site para ver os componentes com ele, e **ajustar** no Theme Studio do Supernova.
+Um tema é um conjunto de tokens no vocabulário do shadcn (`--background`, `--primary`, `--radius`…) em claro e escuro. O mesmo tema serve a três usos: **instalar** num projeto pelo CLI do shadcn, **trocar ao vivo** neste site para ver os componentes com ele, e **ajustar** no Theme Studio do Supernova Shadcn.
+
+O tema padrão é o tema Supernova, gerado dos tokens deste design system. Os demais são presets do Supernova Shadcn, o site que publica blocos, efeitos e temas em [supernovacn.vercel.app](https://supernovacn.vercel.app); a galeria marca cada origem.
 
 <Callout title="Theme Studio">
   O [Theme
   Studio](https://supernovacn.vercel.app/themes?theme=supernova-vercel&mode=light&view=application)
   é a ferramenta do Supernova Shadcn para criar, visualizar e instalar presets.
-  Abra um tema abaixo nele, ajuste, e instale o resultado com o comando que o
+  Abra um tema abaixo nele, ajuste e instale o resultado com o comando que o
   estúdio gera. O uso da ferramenta e dos presets foi autorizado pelo
   responsável em 2026-09-08.
 </Callout>
@@ -20,7 +22,7 @@ Um tema aqui é um conjunto de tokens no vocabulário do shadcn (`--background`,
 
 ## Trocar de tema ao vivo num projeto
 
-Cada tema também existe como arquivo CSS em `/themes/<slug>.css`, no formato que o shadcn, o tweakcn e o [shadcn-theme-provider](https://github.com/brokeboiflex/shadcn-theme-provider) (MIT) consomem: variáveis em `:root` para o claro e `.dark` para o escuro. Com o provider, a troca acontece em tempo de execução, sem rebuild:
+Cada tema também existe como arquivo CSS em `/themes/<slug>.css`, no formato que o shadcn, o tweakcn e o [shadcn-theme-provider](https://github.com/brokeboiflex/shadcn-theme-provider) (MIT) consomem: variáveis em `:root` para o claro e em `.dark` para o escuro. Com o provider, a troca acontece em tempo de execução, sem rebuild. O exemplo abaixo registra o tema Supernova e o preset Vercel do Supernova Shadcn:
 
 ```tsx
 import { ThemeProvider } from "shadcn-theme-provider";
@@ -44,14 +46,18 @@ export function App({ children }: { children: React.ReactNode }) {
 }
 ```
 
-O seletor de paleta no cabeçalho deste site faz o mesmo, com os mesmos arquivos.
+O seletor de paleta no cabeçalho deste site faz o mesmo, com os mesmos arquivos. Para instalar um tema de vez, use o comando de cada cartão da galeria; ele passa pelo CLI oficial do shadcn.
 
 ## Como um tema nasce
 
-1. O tema do Supernova vem de `constants/tokens.ts`; `scripts/build-tokens.ts` gera o item `supernova-theme` do registry.
-2. Os presets do Supernova vêm do registry publicado em `supernovacn.vercel.app/r/`, copiados para `constants/themes.ts` com a atribuição de origem.
-3. `scripts/build-themes.ts` gera `styles/palettes.css` (troca ao vivo) e `public/themes/*.css` (arquivos para consumo externo). Nada é escrito à mão.
+1. O tema Supernova vem de `constants/tokens.ts`; `scripts/build-tokens.ts` gera o item `supernova-theme` do registry.
+2. Os presets do Supernova Shadcn vêm do registry publicado em `supernovacn.vercel.app/r/`, copiados para `constants/themes.ts` com a atribuição de origem.
+3. `scripts/build-themes.ts` gera `styles/palettes.css` (troca ao vivo) e `public/themes/*.css` (arquivos para consumo externo). Nenhum CSS de tema é escrito à mão.
+
+Para instalar o tema Supernova num projeto, use o item do registry:
+
+<InstallCommand name="supernova-theme" />
 
 ## Origem e crédito
 
-Os presets do Supernova derivam do [DialectCN](https://dialectcn.xyz/), de Kapish Dima ([código](https://github.com/kapishdima/dialectcn)), a ferramenta de temas que serviu de referência ao Theme Studio, com uso autorizado e registrado no Supernova. Fontes Geist e Inter são carregadas pelos pacotes `@fontsource` indicados em cada tema.
+Os presets do Supernova Shadcn seguem o fluxo do [DialectCN](https://dialectcn.xyz/) (Kapish Dima, uso autorizado; [código](https://github.com/kapishdima/dialectcn)), a ferramenta de temas que serviu de base ao Theme Studio. Os nomes dos presets citam marcas por inspiração visual, sem afiliação. As fontes Geist (Vercel, OFL) e Inter entram pelos pacotes `@fontsource` indicados em cada tema.

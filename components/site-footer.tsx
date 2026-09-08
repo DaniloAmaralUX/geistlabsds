@@ -36,11 +36,11 @@ export const SiteFooter = () => {
       <div className="container-wrapper px-4 xl:px-6">
         <div className="flex h-(--footer-height) items-center justify-between">
           <div className="text-muted-foreground w-full px-1 text-center text-xs leading-loose sm:text-sm">
-            {SITE.NAME} · design system do LAB / DESIGN, sobre o template{" "}
+            {SITE.NAME}, design system do LAB / DESIGN. Construído sobre o{" "}
             <FooterLink href={LINK.STARTERCN} onClick={playClick}>
               startercn
-            </FooterLink>
-            . Código no{" "}
+            </FooterLink>{" "}
+            (Shadcn Labs, MIT). Código no{" "}
             <FooterLink href={LINK.GITHUB} onClick={playClick}>
               GitHub
             </FooterLink>

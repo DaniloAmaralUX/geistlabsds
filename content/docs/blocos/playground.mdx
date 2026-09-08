@@ -41,9 +41,9 @@ O CLI copia a página, os nove componentes e os dois arquivos de dados do bloco 
 
 Base: pacote `playground` exportado do `shadcn-examples`, cujo código base é o shadcn/ui (MIT). A licença do repositório de origem fica registrada como "a confirmar" até ser lida.
 
-O que mudou ao entrar no LAB / DESIGN:
+O que mudou ao entrar no Supernova:
 
-- Button passou à API do LAB / DESIGN: `outline` virou `secondary`, `ghost` virou `tertiary`, `destructive` virou `error`; a seta dos combobox entrou por `suffix`.
+- Button passou à API do Supernova: `outline` virou `secondary`, `ghost` virou `tertiary`, `destructive` virou `error`; a seta dos combobox entrou por `suffix`.
 - Os botões só de ícone (ações da predefinição, copiar link, histórico) usam `shape="square"` e `aria-label`, no lugar de `size="icon"` com texto oculto.
 - O campo Nome do diálogo de salvar usa a prop `label` do Input, que já liga rótulo e campo por `id`.
 - Os itens de menu destrutivos usam `variant="destructive"` do Dropdown Menu em vez de classe de cor solta.
@@ -60,4 +60,4 @@ O que mudou ao entrar no LAB / DESIGN:
 - Os combobox de predefinição e de modelo expõem `role="combobox"`, `aria-expanded` e `aria-label`; o de modelo ainda recebe o `id` que o rótulo "Modelo" aponta.
 - Os botões só de ícone têm `aria-label` ("Ações", "Copiar link", "Mostrar histórico") e os ícones e SVGs das abas levam `aria-hidden`, com o nome da aba em texto `sr-only`.
 - Cada área de texto tem nome acessível: `Label htmlFor` nos modos de edição e `aria-label` nos prompts sem rótulo visível; o interruptor do filtro está ligado ao seu rótulo por `id`/`htmlFor`.
-- Foco visível e navegação por teclado vêm dos primitivos Radix, do cmdk e do Button do LAB / DESIGN; cores só pelos tokens (`text-foreground`, `text-muted-foreground`, `bg-muted`), com o item destrutivo do menu no token `destructive`.
+- Foco visível e navegação por teclado vêm dos primitivos Radix, do cmdk e do Button do Supernova; cores só pelos tokens (`text-foreground`, `text-muted-foreground`, `bg-muted`), com o item destrutivo do menu no token `destructive`.

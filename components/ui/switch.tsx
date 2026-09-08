@@ -1,6 +1,6 @@
 "use client";
 
-// Base: shadcn/ui (MIT), adaptado ao LAB / DESIGN
+// Base: shadcn/ui (MIT), adaptado ao Supernova
 import { Switch as SwitchPrimitive } from "radix-ui";
 
 import { cn } from "@/lib/utils";

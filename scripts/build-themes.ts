@@ -15,7 +15,10 @@ import { RADIUS, SEMANTIC } from "../constants/tokens.ts";
 
 const root = join(import.meta.dirname, "..");
 
-/** Mesmo objeto de lib/theme-presets.ts; repetido aqui porque o script não usa o alias @/. */
+/**
+ * Mesmo objeto de lib/theme-presets.ts, campo a campo; repetido aqui porque o
+ * script roda no Node sem o alias @/. Mudou lá, mude aqui.
+ */
 const SUPERNOVA_THEME: ThemePreset = {
   attribution: null,
   cssVars: {
@@ -24,7 +27,8 @@ const SUPERNOVA_THEME: ThemePreset = {
     theme: { radius: RADIUS.base },
   },
   dependencies: [],
-  description: "O tema do Supernova.",
+  description:
+    "O tema do Supernova: cinza neutro, azul para ação, raio de 6px. Gerado de constants/tokens.ts.",
   installUrl: "https://geistlabsds.vercel.app/r/supernova-theme.json",
   origin: "supernova",
   slug: "supernova",

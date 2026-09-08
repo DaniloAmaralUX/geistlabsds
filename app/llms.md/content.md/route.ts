@@ -25,10 +25,10 @@ ${AGENT_DOCS_DIRECTIVE_MARKDOWN}
 - [Roteiro](${base}${ROUTES.DOCS_ROADMAP}.md)
 - [Criar um componente](${base}${ROUTES.DOCS_CREATE}.md)
 - [Documentação](${base}${ROUTES.DOCS}.md)
-- [LLM index (llms.txt)](${base}${ROUTES.LLMS})
-- [API catalog](${base}${ROUTES.API_CATALOG})
-- [OpenAPI description](${base}${ROUTES.OPENAPI})
-- [Agent skills index](${base}${ROUTES.AGENT_SKILLS_INDEX})
+- [Índice para LLMs (llms.txt)](${base}${ROUTES.LLMS})
+- [Catálogo de API](${base}${ROUTES.API_CATALOG})
+- [Descrição OpenAPI](${base}${ROUTES.OPENAPI})
+- [Índice de agent skills](${base}${ROUTES.AGENT_SKILLS_INDEX})
 `;
 };
 

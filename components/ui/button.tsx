@@ -10,9 +10,9 @@ import { useFeedback } from "@/hooks/use-feedback";
 import { cn } from "@/lib/utils";
 
 /**
- * Button — LAB / DESIGN.
+ * Button — Supernova.
  *
- * Implementação própria com referência visual no Geist: cinco intenções
+ * Implementação própria do Supernova: cinco intenções
  * (primary, secondary, tertiary, error, warning), três tamanhos, formas
  * circular e quadrada, estado de carregamento e prefixo/sufixo.
  *

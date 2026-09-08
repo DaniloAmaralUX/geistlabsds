@@ -69,6 +69,7 @@ O rótulo padrão segue o tipo ("Nota:", "Sucesso:", "Erro:", "Aviso:"). Passe o
 - `success` usa `role="status"`; os demais, `role="note"`.
 - A cor acompanha o rótulo; a mensagem nunca depende só dela.
 
-## Diferenças em relação ao Geist
+## Notas de implementação
 
-Mesmos tipos e a mesma prop `fill`. O Geist tem `disabled`; aqui não há caso de uso ainda.
+- O papel ARIA vem do tipo e não é configurável por prop.
+- Não há estado desabilitado. Entra quando houver caso de uso.

@@ -5,11 +5,11 @@ import { useId } from "react";
 import { cn } from "@/lib/utils";
 
 /**
- * Input — LAB / DESIGN.
+ * Input — Supernova.
  *
  * Campo de texto com rótulo, descrição, prefixo, sufixo, erro e três tamanhos.
  * O rótulo e as mensagens ficam ligados ao campo por `id`, `aria-describedby`
- * e `aria-invalid`. Implementação própria com referência visual no Geist.
+ * e `aria-invalid`. Implementação própria do Supernova.
  */
 
 export type InputSize = "sm" | "md" | "lg";

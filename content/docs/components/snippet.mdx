@@ -72,6 +72,7 @@ Passe um array; cada item vira uma linha e o botão copia todas, separadas por q
 - Ao copiar, uma região `aria-live` anuncia "Copiado".
 - O texto é selecionável e rola horizontalmente quando não cabe.
 
-## Diferenças em relação ao Geist
+## Notas de implementação
 
-O Geist tem os tipos `success`, `error`, `warning` e `lite`. Aqui só `dark`; as cores por intenção ficam para quando houver uso.
+- `dark` é a única variação de fundo. Cores por intenção (sucesso, erro, aviso) entram quando houver caso de uso.
+- O botão copia o texto puro, sem o `$` do prompt.

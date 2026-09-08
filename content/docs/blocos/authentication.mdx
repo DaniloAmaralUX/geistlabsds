@@ -9,7 +9,7 @@ description: Tela de entrada em duas colunas, com painel de marca e formulário 
 
 <InstallCommand name="authentication" />
 
-O CLI copia a página e o formulário para `components/blocos/authentication/` e instala os itens do registry de que eles dependem (Button, Input e Label do LAB / DESIGN) junto com os pacotes npm listados abaixo.
+O CLI copia a página e o formulário para `components/blocos/authentication/` e instala os itens do registry de que eles dependem (Button, Input e Label do Supernova) junto com os pacotes npm listados abaixo.
 
 ## Dependências
 
@@ -29,10 +29,10 @@ O CLI copia a página e o formulário para `components/blocos/authentication/` e
 
 Parte do pacote `authentication` exportado do `shadcn-examples`, cujo código base é o shadcn/ui (MIT). A licença do repositório de origem fica registrada como "a confirmar" até ser lida.
 
-O que mudou ao entrar no LAB / DESIGN:
+O que mudou ao entrar no Supernova:
 
-- Botões usam a API do nosso Button: o link "Entrar" virou `variant="tertiary"` com `asChild`, o envio usa `loading` (o indicador de progresso vem do próprio componente) e o botão do provedor é `variant="secondary"` com o ícone em `prefix`.
-- O campo de e-mail usa o nosso Input; o rótulo continua fora, visível só para leitores de tela, como no original.
+- Os botões usam a API do Button do Supernova: o link "Entrar" virou `variant="tertiary"` com `asChild`, o envio usa `loading` (o indicador de progresso vem do próprio componente) e o botão do provedor é `variant="secondary"` com o ícone em `prefix`.
+- O campo de e-mail usa o Input do Supernova; o rótulo continua fora, visível só para leitores de tela, como no original.
 - A imagem de fundo do painel de marca foi substituída por um gradiente dos tokens `foreground` e `muted-foreground`, sem nenhum asset.
 - O ícone do GitHub não existe na versão atual do lucide-react (as marcas foram retiradas); o botão usa `GitBranchIcon` como sinal genérico de provedor de código.
 - Textos em pt-BR; links do exemplo (`/examples/...`, `/terms`, `/privacy`) apontam para `#`.

@@ -1,6 +1,6 @@
 ---
 title: Instalação
-description: Como levar o tema e os componentes do LAB / DESIGN para um projeto shadcn.
+description: Como levar o tema, os componentes e os blocos do Supernova para um projeto shadcn.
 ---
 
 ## Pré-requisitos
@@ -13,7 +13,7 @@ npx shadcn@latest init
 
 ## 1. Tema
 
-O tema aplica as cores e o raio do LAB / DESIGN aos tokens do shadcn, em claro e escuro. Instale uma vez por projeto.
+O tema aplica as cores e o raio do Supernova aos tokens do shadcn, em claro e escuro. Instale uma vez por projeto.
 
 <InstallCommand name="supernova-theme" />
 
@@ -28,6 +28,8 @@ Cada componente é um item do registry. Instale só o que for usar.
   (`components/ui/button.tsx` etc.). Ao instalar, o CLI pergunta se pode
   sobrescrever; responda sim ou passe `--overwrite`.
 </Callout>
+
+Os [blocos](/docs/blocos) seguem o mesmo caminho: cada um é um item do registry, com o comando na sua página, e traz os componentes de que depende.
 
 ## 3. Uso
 

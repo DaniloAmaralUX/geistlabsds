@@ -1,6 +1,6 @@
 "use client";
 
-// Base: shadcn/ui (MIT), adaptado ao LAB / DESIGN
+// Base: shadcn/ui (MIT), adaptado ao Supernova
 import { cn } from "@/lib/utils";
 
 const Table = ({ className, ...props }: React.ComponentProps<"table">) => (

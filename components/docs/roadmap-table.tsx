@@ -64,7 +64,7 @@ const Totals = () => {
   );
 };
 
-/** Uma seção do roteiro: tabela com item, estado, rota local e instalação. */
+/** Uma seção do roteiro: tabela com item, estado, página local e conferência de instalação. */
 const SectionTable = ({
   items,
   section,
@@ -87,7 +87,7 @@ const SectionTable = ({
             <tr>
               <th className="px-3 py-2 font-medium">Item</th>
               <th className="px-3 py-2 font-medium">Estado</th>
-              <th className="px-3 py-2 font-medium">Aqui</th>
+              <th className="px-3 py-2 font-medium">Página</th>
               <th className="px-3 py-2 font-medium">Instalação</th>
             </tr>
           </thead>

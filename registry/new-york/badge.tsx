@@ -5,10 +5,10 @@ import { Slot } from "radix-ui";
 import { cn } from "@/lib/utils";
 
 /**
- * Badge — LAB / DESIGN.
+ * Badge — Supernova.
  *
  * Seis cores por intenção, duas aparências (sólida e suave), três tamanhos e a
- * forma de pílula. Implementação própria com referência visual no Geist.
+ * forma de pílula. Implementação própria do Supernova.
  */
 const badgeVariants = cva(
   "inline-flex w-fit shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-md border font-medium tabular-nums transition-colors [&>svg]:pointer-events-none [&>svg]:size-3",
