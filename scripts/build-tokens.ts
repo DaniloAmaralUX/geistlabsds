@@ -6,6 +6,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
+import { KNOWN_ORIGINS, PUBLIC_ORIGIN } from "../constants/origin.ts";
 import {
   HUES,
   RADIUS,
@@ -81,6 +82,7 @@ const resolve = (mode: Mode, value: string) =>
 
 const registryPath = join(root, "registry.json");
 const registry = JSON.parse(readFileSync(registryPath, "utf-8")) as {
+  homepage: string;
   items: { name: string; cssVars?: Record<string, Record<string, string>> }[];
 };
 const theme = registry.items.find((item) => item.name === "lab-design-theme");
@@ -96,6 +98,17 @@ theme.cssVars = {
   ),
   theme: { radius: RADIUS.base },
 };
-writeFileSync(registryPath, `${JSON.stringify(registry, null, 2)}\n`);
+/**
+ * O domínio público entra aqui a partir de `constants/origin.ts`: a `homepage`
+ * e as `registryDependencies` que apontam para itens nossos. Trocar o nome do
+ * projeto na Vercel passa a ser uma linha só.
+ */
+let serialized = JSON.stringify(registry, null, 2);
+
+for (const origin of KNOWN_ORIGINS) {
+  serialized = serialized.split(origin).join(PUBLIC_ORIGIN);
+}
+
+writeFileSync(registryPath, `${serialized}\n`);
 
 console.log("tokens: styles/tokens.css e registry.json atualizados");

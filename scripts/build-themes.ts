@@ -9,6 +9,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
+import { registryItemUrl } from "../constants/origin.ts";
 import { SUPERNOVA_SHADCN_THEMES } from "../constants/themes.ts";
 import type { ThemePreset, ThemeVars } from "../constants/themes.ts";
 import { RADIUS, SEMANTIC } from "../constants/tokens.ts";
@@ -29,7 +30,7 @@ const LAB_DESIGN_THEME: ThemePreset = {
   dependencies: [],
   description:
     "O tema do LAB / DESIGN: cinza neutro, azul para ação, raio de 6px. Gerado de constants/tokens.ts.",
-  installUrl: "https://geistlabsds.vercel.app/r/lab-design-theme.json",
+  installUrl: registryItemUrl("lab-design-theme"),
   origin: "lab-design",
   slug: "lab-design",
   title: "LAB / DESIGN",
