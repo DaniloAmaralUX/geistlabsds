@@ -38,8 +38,8 @@ const RootLayout = ({
         dangerouslySetInnerHTML={{
           __html: `
               try {
-                var palette = localStorage.getItem('supernova-palette');
-                if (palette && palette !== 'supernova') {
+                var palette = localStorage.getItem('lab-design-palette');
+                if (palette && palette !== 'lab-design') {
                   document.documentElement.dataset.palette = palette;
                 }
               } catch (_) {}

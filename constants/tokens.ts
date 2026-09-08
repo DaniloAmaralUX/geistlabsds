@@ -1,7 +1,7 @@
 /**
- * Fonte única dos tokens do Supernova.
+ * Fonte única dos tokens do LAB / DESIGN.
  *
- * `styles/tokens.css` e o item `supernova-theme` do `registry.json` são
+ * `styles/tokens.css` e o item `lab-design-theme` do `registry.json` são
  * gerados daqui por `scripts/build-tokens.ts` (roda no `build` e no `dev`).
  * As páginas de fundamentos leem estes valores para renderizar as escalas, então
  * o que se vê na documentação é o que o CSS entrega.

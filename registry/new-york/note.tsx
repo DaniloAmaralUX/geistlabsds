@@ -1,11 +1,11 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Note — Supernova.
+ * Note — LAB / DESIGN.
  *
  * Aviso em linha com tipo, rótulo, preenchimento sólido e ação opcional.
  * O papel ARIA acompanha o tipo: erro e aviso anunciam, os demais não.
- * Implementação própria do Supernova.
+ * Implementação própria do LAB / DESIGN.
  */
 
 export type NoteType =

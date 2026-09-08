@@ -1,9 +1,9 @@
-import { SUPERNOVA_THEMES } from "@/constants/themes";
+import { SUPERNOVA_SHADCN_THEMES } from "@/constants/themes";
 import type { ThemePreset } from "@/constants/themes";
 import { RADIUS, SEMANTIC } from "@/constants/tokens";
 
-/** O tema do Supernova, composto dos tokens; é o padrão do site. */
-export const SUPERNOVA_THEME: ThemePreset = {
+/** O tema do LAB / DESIGN, composto dos tokens; é o padrão do site. */
+export const LAB_DESIGN_THEME: ThemePreset = {
   attribution: null,
   cssVars: {
     dark: SEMANTIC.dark,
@@ -12,14 +12,17 @@ export const SUPERNOVA_THEME: ThemePreset = {
   },
   dependencies: [],
   description:
-    "O tema do Supernova: cinza neutro, azul para ação, raio de 6px. Gerado de constants/tokens.ts.",
-  installUrl: "https://geistlabsds.vercel.app/r/supernova-theme.json",
-  origin: "supernova",
-  slug: "supernova",
-  title: "Supernova",
+    "O tema do LAB / DESIGN: cinza neutro, azul para ação, raio de 6px. Gerado de constants/tokens.ts.",
+  installUrl: "https://geistlabsds.vercel.app/r/lab-design-theme.json",
+  origin: "lab-design",
+  slug: "lab-design",
+  title: "LAB / DESIGN",
 };
 
-export const THEMES: ThemePreset[] = [SUPERNOVA_THEME, ...SUPERNOVA_THEMES];
+export const THEMES: ThemePreset[] = [
+  LAB_DESIGN_THEME,
+  ...SUPERNOVA_SHADCN_THEMES,
+];
 
 export const findTheme = (slug: string) =>
   THEMES.find((theme) => theme.slug === slug);

@@ -1,6 +1,6 @@
 /* Gerado por scripts/build-themes.ts a partir de constants/themes.ts. Não editar. */
 
-:root[data-palette="supernova"] {
+:root[data-palette="lab-design"] {
   --radius: 6px;
   --accent: var(--ds-gray-200);
   --accent-foreground: var(--ds-gray-1000);
@@ -35,7 +35,7 @@
   --sidebar-ring: var(--ds-blue-700);
 }
 
-:root[data-palette="supernova"].dark {
+:root[data-palette="lab-design"].dark {
   --accent: var(--ds-gray-200);
   --accent-foreground: var(--ds-gray-1000);
   --background: oklch(0.13 0 0);

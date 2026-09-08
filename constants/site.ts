@@ -20,12 +20,12 @@ export const SITE = {
   },
   DESCRIPTION: {
     LONG: "Fundamentos, componentes, blocos e temas com prévia real e código que entra no seu projeto pelo CLI do shadcn.",
-    SHORT: "Design system do LAB / DESIGN",
+    SHORT: "Fundamentos, componentes, blocos e temas",
   },
   KEYWORDS: [
     "design system",
-    "supernova",
     "lab design",
+    "design engineering",
     "shadcn",
     "shadcn registry",
     "componentes",
@@ -36,11 +36,11 @@ export const SITE = {
     "tailwindcss",
   ] as const,
   LOCALE: "pt-BR",
-  NAME: "Supernova",
+  NAME: "LAB / DESIGN",
   OG_IMAGE: `${baseUrl}/og`,
   REGISTRY: baseUrl,
   /** Identificador seguro para nomes de ferramenta, arquivos e chaves. */
-  SLUG: "supernova",
+  SLUG: "lab-design",
   URL: baseUrl,
 };
 

@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useState } from "react";
 
-export const PALETTE_STORAGE_KEY = "supernova-palette";
-export const DEFAULT_PALETTE = "supernova";
+export const PALETTE_STORAGE_KEY = "lab-design-palette";
+export const DEFAULT_PALETTE = "lab-design";
 
 const readPalette = () => {
   if (typeof document === "undefined") {

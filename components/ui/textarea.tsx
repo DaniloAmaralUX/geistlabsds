@@ -1,4 +1,4 @@
-// Base: shadcn/ui (MIT), adaptado ao Supernova
+// Base: shadcn/ui (MIT), adaptado ao LAB / DESIGN
 import { cn } from "@/lib/utils";
 
 const Textarea = ({

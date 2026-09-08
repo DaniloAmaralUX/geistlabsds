@@ -5,7 +5,7 @@ export const SnippetMultilineDemo = () => (
     <Snippet
       text={[
         "pnpm install",
-        "pnpm dlx shadcn@latest add https://geistlabsds.vercel.app/r/supernova-theme.json",
+        "pnpm dlx shadcn@latest add https://geistlabsds.vercel.app/r/lab-design-theme.json",
         "pnpm dev",
       ]}
     />

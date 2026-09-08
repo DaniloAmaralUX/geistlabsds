@@ -10,9 +10,9 @@ import { useFeedback } from "@/hooks/use-feedback";
 import { cn } from "@/lib/utils";
 
 /**
- * Button — Supernova.
+ * Button — LAB / DESIGN.
  *
- * Implementação própria do Supernova: cinco intenções
+ * Implementação própria do LAB / DESIGN: cinco intenções
  * (primary, secondary, tertiary, error, warning), três tamanhos, formas
  * circular e quadrada, estado de carregamento e prefixo/sufixo.
  *

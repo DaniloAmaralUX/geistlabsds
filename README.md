@@ -1,6 +1,6 @@
-# Supernova — design system do LAB / DESIGN
+# LAB / DESIGN — design system do LAB / DESIGN
 
-Supernova é o design system do LAB / DESIGN: fundamentos, componentes, blocos
+LAB / DESIGN é o design system do LAB / DESIGN: fundamentos, componentes, blocos
 e temas com prévia real e código que entra no seu projeto pelo CLI do shadcn.
 Implementação própria sobre shadcn, Radix e Tailwind, compatível com o
 ecossistema shadcn. Publicado em <https://geistlabsds.vercel.app>.
@@ -23,7 +23,7 @@ pnpm typecheck    # depois do build, como na CI
 ## Instalar um componente em outro projeto
 
 ```bash
-npx shadcn@latest add https://geistlabsds.vercel.app/r/supernova-theme.json
+npx shadcn@latest add https://geistlabsds.vercel.app/r/lab-design-theme.json
 npx shadcn@latest add https://geistlabsds.vercel.app/r/button.json
 ```
 
@@ -31,7 +31,7 @@ npx shadcn@latest add https://geistlabsds.vercel.app/r/button.json
 
 | O quê                   | Onde                                                                                                         |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------ |
-| Tokens (fonte única)    | `constants/tokens.ts` → gera `styles/tokens.css` e o item `supernova-theme` do `registry.json`               |
+| Tokens (fonte única)    | `constants/tokens.ts` → gera `styles/tokens.css` e o item `lab-design-theme` do `registry.json`              |
 | Roteiro                 | `constants/roadmap.ts` → página do roteiro e contagens                                                       |
 | Componentes instaláveis | `registry/new-york/*.tsx` + `registry.json` → `public/r/*.json`                                              |
 | Blocos                  | `constants/blocks.ts` (lista) + `registry/new-york/blocks/<slug>/` (código) → `public/r/*.json`              |

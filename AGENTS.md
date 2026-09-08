@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Este repositório é o **Supernova**, o design system do LAB / DESIGN:
+Este repositório é o **LAB / DESIGN**, o design system do LAB / DESIGN:
 fundamentos, componentes, blocos e temas com implementação própria sobre
 shadcn, Radix e Tailwind. As instruções para agentes estão em
 [`CLAUDE.md`](CLAUDE.md); não há segunda cópia aqui.
