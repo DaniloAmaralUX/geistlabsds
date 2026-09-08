@@ -40,6 +40,12 @@ const nextConfig = {
   },
   redirects() {
     return [
+      // A pesquisa vive num app separado (timeline/), publicado à parte.
+      {
+        destination: LINK.PESQUISA,
+        permanent: false,
+        source: ROUTES.PESQUISA,
+      },
       {
         destination: `${ROUTES.DOCS}.md`,
         permanent: true,
