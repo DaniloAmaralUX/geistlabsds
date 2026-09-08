@@ -105,7 +105,7 @@ export const CommandBox = ({ className }: { className?: string }) => {
       <RegistryAddButton
         registry={SITE.REGISTRY}
         className="absolute top-2 right-10 z-10 w-7 h-7 sm:w-auto gap-1.5 border-none px-2 opacity-70 hover:opacity-100 focus-visible:opacity-100 [&_svg:not([class*='size-'])]:size-4 sm:[&_svg:not([class*='size-'])]:size-3.5"
-        variant="ghost"
+        variant="tertiary"
         size="sm"
       />
 

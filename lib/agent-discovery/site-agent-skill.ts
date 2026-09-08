@@ -8,7 +8,7 @@ export const SITE_AGENT_SKILL_MD = `# ${SITE.NAME}
 
 ## Summary
 
-Help users discover, inspect, and install components from the LAB / DESIGN design system (visual reference: Vercel's Geist; original implementation). Documentation is in Brazilian Portuguese.
+Help users discover, inspect, and install components, blocks and themes from Supernova, the LAB / DESIGN design system (original implementation on top of shadcn, Radix and Tailwind). Documentation is in Brazilian Portuguese.
 
 ## Registry
 

@@ -34,6 +34,18 @@ const RootLayout = ({
         }}
       />
       <meta name="theme-color" content={META_THEME_COLORS.light} />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+              try {
+                var palette = localStorage.getItem('supernova-palette');
+                if (palette && palette !== 'supernova') {
+                  document.documentElement.dataset.palette = palette;
+                }
+              } catch (_) {}
+            `,
+        }}
+      />
     </head>
     <body
       className={cn(

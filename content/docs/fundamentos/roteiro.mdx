@@ -1,0 +1,27 @@
+---
+title: Roteiro
+description: Os componentes que o Supernova pretende ter e o estado de cada um.
+---
+
+O roteiro é a lista dos componentes que o Supernova pretende ter. Cada item carrega um estado editorial: **inventariado**, **em adaptação**, **em revisão** ou **publicado**. A lista vive em `constants/roadmap.ts`. A tabela e os totais abaixo são calculados a partir dela, e a seção "Além do roteiro inicial" entra na conta.
+
+<RoadmapTable />
+
+## Como um item avança
+
+1. **Inventariado**: consta no roteiro. Ainda não há código.
+2. **Em adaptação**: a implementação está em andamento.
+3. **Em revisão**: página, exemplos e código existem. Falta conferir estados, teclado e instalação.
+4. **Publicado**: página, exemplos e código conferidos aqui. A coluna Instalação diz até onde a conferência num projeto consumidor chegou.
+
+Um item só muda de estado na lista. A coluna Aqui leva à página do item quando ela existe.
+
+## O que a coluna Instalação significa
+
+A coluna registra a conferência num projeto consumidor limpo, criado do zero com Next.js e Tailwind 4:
+
+- **Build no consumidor**: os arquivos do registry foram gravados nos destinos que o CLI usa e o projeto compilou.
+- **Validada pelo CLI**: o `npx shadcn@latest add` correu do início ao fim e o projeto compilou.
+- **Pendente**: o item está publicado, mas a conferência ainda não foi feita.
+
+Nesta rodada o CLI resolveu os itens e instalou as dependências, mas a etapa de gravação consulta `ui.shadcn.com`, indisponível na rede em que a rodada foi construída. Por isso nenhum item passou de "build no consumidor". A conferência pelo CLI fica para uma rodada com rede.

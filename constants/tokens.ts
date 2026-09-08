@@ -1,13 +1,13 @@
 /**
- * Fonte única dos tokens do LAB / DESIGN.
+ * Fonte única dos tokens do Supernova.
  *
- * `styles/tokens.css` e o item `lab-design-theme` do `registry.json` são
+ * `styles/tokens.css` e o item `supernova-theme` do `registry.json` são
  * gerados daqui por `scripts/build-tokens.ts` (roda no `build` e no `dev`).
  * As páginas de fundamentos leem estes valores para renderizar as escalas, então
  * o que se vê na documentação é o que o CSS entrega.
  *
- * Estrutura inspirada no Geist (escalas 100–1000, cinza neutro, uma cor por
- * intenção). Os valores são escolhas próprias em OKLCH.
+ * Escalas de 100 a 1000, cinza neutro, uma cor por intenção. Os valores são
+ * escolhas próprias em OKLCH.
  */
 
 export type Mode = "light" | "dark";
@@ -184,7 +184,7 @@ export const SEMANTIC: Record<Mode, Record<string, string>> = {
   },
 };
 
-/** Raio base de 6px, como o Geist; os demais derivam dele no CSS. */
+/** Raio base de 6px; os demais derivam dele no CSS. */
 export const RADIUS = {
   base: "6px",
   scale: [

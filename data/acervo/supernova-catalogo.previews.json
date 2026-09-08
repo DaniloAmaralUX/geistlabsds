@@ -1,0 +1,950 @@
+{
+  "layouts__workspace-rail": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__workspace-rail--escuro-16b5764e17.avif",
+    "claro": "/thumbs/layouts__workspace-rail--claro-1fe50e488f.avif"
+  },
+  "layouts__app-shell": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__app-shell--escuro-3e03676fd9.avif",
+    "claro": "/thumbs/layouts__app-shell--claro-00ec7450eb.avif"
+  },
+  "layouts__mini-rail": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__mini-rail--escuro-843da2afba.avif",
+    "claro": "/thumbs/layouts__mini-rail--claro-3463e22428.avif"
+  },
+  "layouts__docs-tree": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__docs-tree--escuro-8f4987015e.avif",
+    "claro": "/thumbs/layouts__docs-tree--claro-fd1e998e49.avif"
+  },
+  "layouts__inbox-rail": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__inbox-rail--escuro-8e9680d6a9.avif",
+    "claro": "/thumbs/layouts__inbox-rail--claro-a84c7d6235.avif"
+  },
+  "layouts__two-pane": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__two-pane--escuro-bf0e017a2f.avif",
+    "claro": "/thumbs/layouts__two-pane--claro-0a6f53d6ed.avif"
+  },
+  "layouts__three-pane": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__three-pane--escuro-6defc03bcf.avif",
+    "claro": "/thumbs/layouts__three-pane--claro-4d458ff927.avif"
+  },
+  "layouts__split-resizable": {
+    "largura": 1280,
+    "altura": 800,
+    "claro": "/thumbs/layouts__split-resizable--claro-6456f0042b.avif",
+    "escuro": "/thumbs/layouts__split-resizable--escuro-4b758f6694.avif"
+  },
+  "layouts__focus-mode": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__focus-mode--escuro-b773a81115.avif",
+    "claro": "/thumbs/layouts__focus-mode--claro-07f8a6a9ae.avif"
+  },
+  "layouts__floating-toolbar": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__floating-toolbar--escuro-a20cfbdad9.avif",
+    "claro": "/thumbs/layouts__floating-toolbar--claro-8163a4e953.avif"
+  },
+  "layouts__canvas-tools": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__canvas-tools--escuro-1cb0cdf5cd.avif",
+    "claro": "/thumbs/layouts__canvas-tools--claro-7c19d990d3.avif"
+  },
+  "layouts__bottom-nav": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/layouts__bottom-nav--escuro-d3ac281628.avif",
+    "claro": "/thumbs/layouts__bottom-nav--claro-1d1776c124.avif"
+  },
+  "forms__workspace-settings": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/forms__workspace-settings--escuro-65cb36eb4f.avif",
+    "claro": "/thumbs/forms__workspace-settings--claro-c33edda377.avif"
+  },
+  "forms__invite-teammates": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/forms__invite-teammates--escuro-619d6c6858.avif",
+    "claro": "/thumbs/forms__invite-teammates--claro-2c9cd58948.avif"
+  },
+  "forms__notifications": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/forms__notifications--escuro-8cb80faaf6.avif",
+    "claro": "/thumbs/forms__notifications--claro-d1c0e8ff5f.avif"
+  },
+  "forms__api-key": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/forms__api-key--escuro-82bf944b3c.avif",
+    "claro": "/thumbs/forms__api-key--claro-8309ae2c38.avif"
+  },
+  "auth__login": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__login--escuro-b671846588.avif",
+    "claro": "/thumbs/auth__login--claro-ba79c492c3.avif"
+  },
+  "auth__onboarding": {
+    "largura": 1280,
+    "altura": 800,
+    "claro": "/thumbs/auth__onboarding--claro-2ebcbf1629.avif",
+    "escuro": "/thumbs/auth__onboarding--escuro-bff1c98358.avif"
+  },
+  "auth__waitlist": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__waitlist--escuro-c29f10bced.avif",
+    "claro": "/thumbs/auth__waitlist--claro-f203cf0258.avif"
+  },
+  "auth__check-email": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__check-email--escuro-f07448f0dd.avif",
+    "claro": "/thumbs/auth__check-email--claro-c42db331d4.avif"
+  },
+  "auth__centered-signin": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__centered-signin--escuro-52a4ae092b.avif",
+    "claro": "/thumbs/auth__centered-signin--claro-6a469a4a5e.avif"
+  },
+  "auth__inset-login": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__inset-login--escuro-2dd37b86d3.avif",
+    "claro": "/thumbs/auth__inset-login--claro-359bffb5c2.avif"
+  },
+  "auth__centered-signup": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__centered-signup--escuro-0bfe641333.avif",
+    "claro": "/thumbs/auth__centered-signup--claro-d45353b6f4.avif"
+  },
+  "auth__left-signin": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__left-signin--escuro-8dd7a4cf69.avif",
+    "claro": "/thumbs/auth__left-signin--claro-c664103892.avif"
+  },
+  "auth__right-signin": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__right-signin--escuro-a7cf123f7c.avif",
+    "claro": "/thumbs/auth__right-signin--claro-f3483fdbdb.avif"
+  },
+  "auth__glass-signup": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__glass-signup--escuro-e2627e7b29.avif",
+    "claro": "/thumbs/auth__glass-signup--claro-a281e5d340.avif"
+  },
+  "auth__otp-verify": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__otp-verify--escuro-9698f83020.avif",
+    "claro": "/thumbs/auth__otp-verify--claro-edfda05d83.avif"
+  },
+  "auth__reset-password": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__reset-password--escuro-149c830405.avif",
+    "claro": "/thumbs/auth__reset-password--claro-8243e56b5a.avif"
+  },
+  "auth__two-factor": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__two-factor--escuro-becc2f700c.avif",
+    "claro": "/thumbs/auth__two-factor--claro-6be39fd630.avif"
+  },
+  "auth__magic-link-sent": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/auth__magic-link-sent--escuro-66c1b2e116.avif",
+    "claro": "/thumbs/auth__magic-link-sent--claro-3a2b15dc61.avif"
+  },
+  "dashboards__metrics-overview": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/dashboards__metrics-overview--escuro-01e228d578.avif",
+    "claro": "/thumbs/dashboards__metrics-overview--claro-c1cf6b7925.avif"
+  },
+  "dashboards__usage": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/dashboards__usage--escuro-38ac27fe7e.avif",
+    "claro": "/thumbs/dashboards__usage--claro-be28985942.avif"
+  },
+  "dashboards__analytics": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/dashboards__analytics--escuro-f37813ca78.avif",
+    "claro": "/thumbs/dashboards__analytics--claro-2d30757db5.avif"
+  },
+  "dashboards__home": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/dashboards__home--escuro-cf6e65c4e7.avif",
+    "claro": "/thumbs/dashboards__home--claro-ca78b085c1.avif"
+  },
+  "dashboards__revenue": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/dashboards__revenue--escuro-8d781f1fe0.avif",
+    "claro": "/thumbs/dashboards__revenue--claro-d6624ce988.avif"
+  },
+  "dashboards__services": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/dashboards__services--escuro-2d4c9b7efc.avif",
+    "claro": "/thumbs/dashboards__services--claro-f99c59f07e.avif"
+  },
+  "dashboards__engineering": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/dashboards__engineering--escuro-5acb930c28.avif",
+    "claro": "/thumbs/dashboards__engineering--claro-48bfe9dd13.avif"
+  },
+  "dashboards__support": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/dashboards__support--escuro-f589287a6f.avif",
+    "claro": "/thumbs/dashboards__support--claro-237183ed08.avif"
+  },
+  "dashboards__market": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/dashboards__market--escuro-9d85d396ec.avif",
+    "claro": "/thumbs/dashboards__market--claro-f59fc3cb84.avif"
+  },
+  "tables__invoices": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tables__invoices--escuro-543f15a0a5.avif",
+    "claro": "/thumbs/tables__invoices--claro-48a63bd0fc.avif"
+  },
+  "tables__members": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tables__members--escuro-d292be50b7.avif",
+    "claro": "/thumbs/tables__members--claro-615a0cdc1e.avif"
+  },
+  "tables__orders": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tables__orders--escuro-8f7b878b2c.avif",
+    "claro": "/thumbs/tables__orders--claro-d9a2db6331.avif"
+  },
+  "tables__logs": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tables__logs--escuro-27ac4d9772.avif",
+    "claro": "/thumbs/tables__logs--claro-84a529526a.avif"
+  },
+  "tables__api-keys": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tables__api-keys--escuro-e869f7fb8c.avif",
+    "claro": "/thumbs/tables__api-keys--claro-7680674811.avif"
+  },
+  "tables__inventory": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tables__inventory--escuro-4ce2391189.avif",
+    "claro": "/thumbs/tables__inventory--claro-8b2b0fa3fd.avif"
+  },
+  "tables__issues": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tables__issues--escuro-2472887059.avif",
+    "claro": "/thumbs/tables__issues--claro-511fd1b033.avif"
+  },
+  "tables__audit-log": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tables__audit-log--escuro-96a234d02a.avif",
+    "claro": "/thumbs/tables__audit-log--claro-b41a8a1256.avif"
+  },
+  "tables__transactions": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tables__transactions--escuro-90e7fc954b.avif",
+    "claro": "/thumbs/tables__transactions--claro-4714e0a145.avif"
+  },
+  "filters__toolbar": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/filters__toolbar--escuro-4c62aa74f6.avif",
+    "claro": "/thumbs/filters__toolbar--claro-9d43114263.avif"
+  },
+  "filters__faceted": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/filters__faceted--escuro-9ad810f7b3.avif",
+    "claro": "/thumbs/filters__faceted--claro-f3145c7605.avif"
+  },
+  "filters__chips": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/filters__chips--escuro-70848fabef.avif",
+    "claro": "/thumbs/filters__chips--claro-e5c85325a2.avif"
+  },
+  "filters__sidebar": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/filters__sidebar--escuro-391700b06b.avif",
+    "claro": "/thumbs/filters__sidebar--claro-e528be59c0.avif"
+  },
+  "empty-states__inbox-zero": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__inbox-zero--escuro-163d3e24f3.avif",
+    "claro": "/thumbs/empty-states__inbox-zero--claro-d1d4460688.avif"
+  },
+  "empty-states__no-results": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__no-results--escuro-e7a632b599.avif",
+    "claro": "/thumbs/empty-states__no-results--claro-7fcbbb0f08.avif"
+  },
+  "empty-states__first-project": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__first-project--escuro-a7b378ac11.avif",
+    "claro": "/thumbs/empty-states__first-project--claro-ef98a527e8.avif"
+  },
+  "empty-states__end-of-feed": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__end-of-feed--escuro-3627ed3c6c.avif",
+    "claro": "/thumbs/empty-states__end-of-feed--claro-965065137c.avif"
+  },
+  "empty-states__no-team": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__no-team--escuro-09279edb1c.avif",
+    "claro": "/thumbs/empty-states__no-team--claro-1efffd468f.avif"
+  },
+  "empty-states__trash": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__trash--escuro-2f7dd8e794.avif",
+    "claro": "/thumbs/empty-states__trash--claro-166576bbda.avif"
+  },
+  "empty-states__404": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__404--escuro-55b9d0a1a2.avif",
+    "claro": "/thumbs/empty-states__404--claro-cc4e28bf04.avif"
+  },
+  "empty-states__maintenance": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__maintenance--escuro-2b9776f81d.avif",
+    "claro": "/thumbs/empty-states__maintenance--claro-0e8d85e994.avif"
+  },
+  "empty-states__no-files": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__no-files--escuro-faf12c90b2.avif",
+    "claro": "/thumbs/empty-states__no-files--claro-4a3a0a8172.avif"
+  },
+  "empty-states__offline": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/empty-states__offline--escuro-5a368a9be4.avif",
+    "claro": "/thumbs/empty-states__offline--claro-6351e76887.avif"
+  },
+  "settings__profile": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__profile--escuro-fd9c614c2b.avif",
+    "claro": "/thumbs/settings__profile--claro-b12e5e0fe6.avif"
+  },
+  "settings__appearance": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__appearance--escuro-75a7e97378.avif",
+    "claro": "/thumbs/settings__appearance--claro-f48856f329.avif"
+  },
+  "settings__billing": {
+    "largura": 1280,
+    "altura": 800,
+    "claro": "/thumbs/settings__billing--claro-5247fed272.avif",
+    "escuro": "/thumbs/settings__billing--escuro-6ec65b694f.avif"
+  },
+  "settings__integrations": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__integrations--escuro-14c888f07d.avif",
+    "claro": "/thumbs/settings__integrations--claro-b92465f787.avif"
+  },
+  "settings__security": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__security--escuro-25fa38c602.avif",
+    "claro": "/thumbs/settings__security--claro-cf06ec856d.avif"
+  },
+  "settings__permissions": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__permissions--escuro-56749ae3ef.avif",
+    "claro": "/thumbs/settings__permissions--claro-c778b8c8d9.avif"
+  },
+  "settings__branding": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__branding--escuro-479cd8d8f7.avif",
+    "claro": "/thumbs/settings__branding--claro-dd32cd272a.avif"
+  },
+  "settings__localization": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__localization--escuro-51acdc184a.avif",
+    "claro": "/thumbs/settings__localization--claro-f11d2494fe.avif"
+  },
+  "settings__webhooks": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__webhooks--escuro-82e70fb11a.avif",
+    "claro": "/thumbs/settings__webhooks--claro-699d19a20b.avif"
+  },
+  "settings__privacy": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__privacy--escuro-380dc1f4a9.avif",
+    "claro": "/thumbs/settings__privacy--claro-ee9ec721bd.avif"
+  },
+  "settings__developer": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__developer--escuro-123fafa0fa.avif",
+    "claro": "/thumbs/settings__developer--claro-7916a2413b.avif"
+  },
+  "settings__sso": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/settings__sso--escuro-b1c7e0c4d6.avif",
+    "claro": "/thumbs/settings__sso--claro-a52aaa8b7a.avif"
+  },
+  "cards__stat-tile": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__stat-tile--escuro-bce02aa563.avif",
+    "claro": "/thumbs/cards__stat-tile--claro-fe5c12e384.avif"
+  },
+  "cards__profile": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__profile--escuro-477ecc99f5.avif",
+    "claro": "/thumbs/cards__profile--claro-2066b4b411.avif"
+  },
+  "cards__pricing": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__pricing--escuro-c41b68e41c.avif",
+    "claro": "/thumbs/cards__pricing--claro-c010061d6a.avif"
+  },
+  "cards__product": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__product--escuro-c96c20ad4c.avif",
+    "claro": "/thumbs/cards__product--claro-ad773a64a3.avif"
+  },
+  "cards__invoice": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__invoice--escuro-8e216a8805.avif",
+    "claro": "/thumbs/cards__invoice--claro-d38e62d3a8.avif"
+  },
+  "cards__task": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__task--escuro-c5c60a306e.avif",
+    "claro": "/thumbs/cards__task--claro-30b8479b5f.avif"
+  },
+  "cards__event": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__event--escuro-ac65bb9368.avif",
+    "claro": "/thumbs/cards__event--claro-7824446d3e.avif"
+  },
+  "cards__integration": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__integration--escuro-4e31f15c50.avif",
+    "claro": "/thumbs/cards__integration--claro-c604a11279.avif"
+  },
+  "cards__media": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__media--escuro-f86d507337.avif",
+    "claro": "/thumbs/cards__media--claro-1a4ffa260c.avif"
+  },
+  "cards__payment-method": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/cards__payment-method--escuro-4214a65a84.avif",
+    "claro": "/thumbs/cards__payment-method--claro-47db81de2c.avif"
+  },
+  "modals__command-palette": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__command-palette--escuro-70392d2fba.avif",
+    "claro": "/thumbs/modals__command-palette--claro-537b47473b.avif"
+  },
+  "modals__confirm-delete": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__confirm-delete--escuro-02c1e21292.avif",
+    "claro": "/thumbs/modals__confirm-delete--claro-c454ab87df.avif"
+  },
+  "modals__share-link": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__share-link--escuro-c7c14c135a.avif",
+    "claro": "/thumbs/modals__share-link--claro-13f9a91fa0.avif"
+  },
+  "modals__upload-files": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__upload-files--escuro-839e417010.avif",
+    "claro": "/thumbs/modals__upload-files--claro-e802e5d30f.avif"
+  },
+  "modals__feedback": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__feedback--escuro-2ac5576298.avif",
+    "claro": "/thumbs/modals__feedback--claro-913167236c.avif"
+  },
+  "modals__shortcuts": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__shortcuts--escuro-e23038e154.avif",
+    "claro": "/thumbs/modals__shortcuts--claro-7a04aaaf8b.avif"
+  },
+  "modals__upgrade": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__upgrade--escuro-ec8ef32351.avif",
+    "claro": "/thumbs/modals__upgrade--claro-534552996b.avif"
+  },
+  "modals__export": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__export--escuro-fe0bb48325.avif",
+    "claro": "/thumbs/modals__export--claro-8fe3cd0600.avif"
+  },
+  "modals__create-workspace": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__create-workspace--escuro-7a1a33e1c6.avif",
+    "claro": "/thumbs/modals__create-workspace--claro-309561b769.avif"
+  },
+  "modals__two-factor": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/modals__two-factor--escuro-e206baeedf.avif",
+    "claro": "/thumbs/modals__two-factor--claro-fb805d72a5.avif"
+  },
+  "charts__revenue-area": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/charts__revenue-area--escuro-2e735ded40.avif",
+    "claro": "/thumbs/charts__revenue-area--claro-93438f29c7.avif"
+  },
+  "charts__cohort-heatmap": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/charts__cohort-heatmap--escuro-af0d75c20c.avif",
+    "claro": "/thumbs/charts__cohort-heatmap--claro-4b6de2d66b.avif"
+  },
+  "charts__funnel": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/charts__funnel--escuro-b707b131cf.avif",
+    "claro": "/thumbs/charts__funnel--claro-79c1017a30.avif"
+  },
+  "charts__gauges": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/charts__gauges--escuro-956fa8576b.avif",
+    "claro": "/thumbs/charts__gauges--claro-a84dfb77ad.avif"
+  },
+  "charts__bar-grouped": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/charts__bar-grouped--escuro-46c3d0a6bc.avif",
+    "claro": "/thumbs/charts__bar-grouped--claro-56261f60f2.avif"
+  },
+  "charts__line-multi": {
+    "largura": 1280,
+    "altura": 800,
+    "claro": "/thumbs/charts__line-multi--claro-33508fd612.avif",
+    "escuro": "/thumbs/charts__line-multi--escuro-2a97334c52.avif"
+  },
+  "charts__donut": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/charts__donut--escuro-3f5c5dde15.avif",
+    "claro": "/thumbs/charts__donut--claro-19572158f3.avif"
+  },
+  "charts__scatter": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/charts__scatter--escuro-c409b61900.avif",
+    "claro": "/thumbs/charts__scatter--claro-a0a4a9be08.avif"
+  },
+  "charts__waterfall": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/charts__waterfall--escuro-621a151812.avif",
+    "claro": "/thumbs/charts__waterfall--claro-31813eb3c5.avif"
+  },
+  "timelines__audit": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__audit--escuro-dae9fe1125.avif",
+    "claro": "/thumbs/timelines__audit--claro-4c186a8ca9.avif"
+  },
+  "timelines__notifications": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__notifications--escuro-877723835c.avif",
+    "claro": "/thumbs/timelines__notifications--claro-25a3c7a38a.avif"
+  },
+  "timelines__changelog": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__changelog--escuro-4885b54fc8.avif",
+    "claro": "/thumbs/timelines__changelog--claro-4ac9cdbef1.avif"
+  },
+  "timelines__commits": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__commits--escuro-0081bf4a51.avif",
+    "claro": "/thumbs/timelines__commits--claro-aaa4b19a78.avif"
+  },
+  "timelines__approvals": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__approvals--escuro-a322923c28.avif",
+    "claro": "/thumbs/timelines__approvals--claro-57796a980e.avif"
+  },
+  "timelines__pull-request": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__pull-request--escuro-a20921d9dc.avif",
+    "claro": "/thumbs/timelines__pull-request--claro-de9d49c307.avif"
+  },
+  "timelines__pr-ops-console": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__pr-ops-console--escuro-36b70ca7ef.avif",
+    "claro": "/thumbs/timelines__pr-ops-console--claro-fe6979f6dd.avif"
+  },
+  "timelines__releases": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__releases--escuro-065aae930d.avif",
+    "claro": "/thumbs/timelines__releases--claro-be4a04939a.avif"
+  },
+  "timelines__status-page": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__status-page--escuro-7d9c371c58.avif",
+    "claro": "/thumbs/timelines__status-page--claro-ca8f9daa19.avif"
+  },
+  "timelines__deploys": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__deploys--escuro-b3122f0e10.avif",
+    "claro": "/thumbs/timelines__deploys--claro-94780af0f4.avif"
+  },
+  "timelines__inbox-thread": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__inbox-thread--escuro-ee4aa22f93.avif",
+    "claro": "/thumbs/timelines__inbox-thread--claro-6bf63ffc54.avif"
+  },
+  "timelines__activity-feed": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/timelines__activity-feed--escuro-352d70beda.avif",
+    "claro": "/thumbs/timelines__activity-feed--claro-5d9e743e80.avif"
+  },
+  "calendars__month": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/calendars__month--escuro-52451beb31.avif",
+    "claro": "/thumbs/calendars__month--claro-78301ef669.avif"
+  },
+  "calendars__week": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/calendars__week--escuro-ac7ca90fd1.avif",
+    "claro": "/thumbs/calendars__week--claro-ed5a781f1d.avif"
+  },
+  "calendars__agenda": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/calendars__agenda--escuro-589df244dc.avif",
+    "claro": "/thumbs/calendars__agenda--claro-8e30d3b4c2.avif"
+  },
+  "calendars__date-range": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/calendars__date-range--escuro-4348c996e5.avif",
+    "claro": "/thumbs/calendars__date-range--claro-b32a2f75a2.avif"
+  },
+  "calendars__mini": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/calendars__mini--escuro-73f34ee04f.avif",
+    "claro": "/thumbs/calendars__mini--claro-b342e29141.avif"
+  },
+  "calendars__timezone": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/calendars__timezone--escuro-d0601daba8.avif",
+    "claro": "/thumbs/calendars__timezone--claro-706b3db006.avif"
+  },
+  "calendars__recurring": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/calendars__recurring--escuro-39d64f6de3.avif",
+    "claro": "/thumbs/calendars__recurring--claro-52f757e4ef.avif"
+  },
+  "calendars__holidays": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/calendars__holidays--escuro-d6c134e9ce.avif",
+    "claro": "/thumbs/calendars__holidays--claro-dd64d88ca7.avif"
+  },
+  "profile__hero": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__hero--escuro-4b74cc6966.avif",
+    "claro": "/thumbs/profile__hero--claro-cf8c3401a4.avif"
+  },
+  "profile__hover-card": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__hover-card--escuro-5b73ad667b.avif",
+    "claro": "/thumbs/profile__hover-card--claro-f55a11fb1f.avif"
+  },
+  "calendars__year-heatmap": {
+    "largura": 1280,
+    "altura": 800,
+    "claro": "/thumbs/calendars__year-heatmap--claro-633bea5ef6.avif",
+    "escuro": "/thumbs/calendars__year-heatmap--escuro-026da3d93f.avif"
+  },
+  "profile__team-grid": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__team-grid--escuro-8e55c3891e.avif",
+    "claro": "/thumbs/profile__team-grid--claro-5cac0d35d2.avif"
+  },
+  "profile__directory": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__directory--escuro-38dd954d0c.avif",
+    "claro": "/thumbs/profile__directory--claro-695aeba96b.avif"
+  },
+  "profile__compact-card": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__compact-card--escuro-aa8096f443.avif",
+    "claro": "/thumbs/profile__compact-card--claro-1011836a92.avif"
+  },
+  "profile__org-chart": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__org-chart--escuro-3d5efd865c.avif",
+    "claro": "/thumbs/profile__org-chart--claro-0cd656de39.avif"
+  },
+  "profile__skills": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__skills--escuro-4afce6077c.avif",
+    "claro": "/thumbs/profile__skills--claro-022a5b1a38.avif"
+  },
+  "profile__presence-rail": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__presence-rail--escuro-187d8fa5de.avif",
+    "claro": "/thumbs/profile__presence-rail--claro-f6c9bbbcd7.avif"
+  },
+  "profile__introductions": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__introductions--escuro-dca819ab43.avif",
+    "claro": "/thumbs/profile__introductions--claro-c3840216ab.avif"
+  },
+  "profile__credentials": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/profile__credentials--escuro-e464bacc7e.avif",
+    "claro": "/thumbs/profile__credentials--claro-f3ee9c8752.avif"
+  },
+  "toasts__success": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/toasts__success--escuro-70c47636c6.avif",
+    "claro": "/thumbs/toasts__success--claro-53be28cf94.avif"
+  },
+  "toasts__error-retry": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/toasts__error-retry--escuro-ca63965a9d.avif",
+    "claro": "/thumbs/toasts__error-retry--claro-40ce69c8c1.avif"
+  },
+  "toasts__info-banner": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/toasts__info-banner--escuro-ea6c259331.avif",
+    "claro": "/thumbs/toasts__info-banner--claro-c541855cfc.avif"
+  },
+  "toasts__progress": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/toasts__progress--escuro-8105ed1917.avif",
+    "claro": "/thumbs/toasts__progress--claro-e579ffd8c9.avif"
+  },
+  "toasts__undo": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/toasts__undo--escuro-c71c5b0f60.avif",
+    "claro": "/thumbs/toasts__undo--claro-7096887980.avif"
+  },
+  "toasts__rich": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/toasts__rich--escuro-0b161fb524.avif",
+    "claro": "/thumbs/toasts__rich--claro-7ab074c8da.avif"
+  },
+  "pricing__three-tier": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/pricing__three-tier--escuro-462268d58d.avif",
+    "claro": "/thumbs/pricing__three-tier--claro-ae6f0a0095.avif"
+  },
+  "pricing__comparison-table": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/pricing__comparison-table--escuro-30ebc661ee.avif",
+    "claro": "/thumbs/pricing__comparison-table--claro-ee45ea605a.avif"
+  },
+  "pricing__slider-seats": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/pricing__slider-seats--escuro-f2d948529e.avif",
+    "claro": "/thumbs/pricing__slider-seats--claro-d44bb0fdea.avif"
+  },
+  "pricing__simple-card": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/pricing__simple-card--escuro-b21d1817db.avif",
+    "claro": "/thumbs/pricing__simple-card--claro-23f74a98e7.avif"
+  },
+  "pricing__contact-sales": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/pricing__contact-sales--escuro-32cb377d33.avif",
+    "claro": "/thumbs/pricing__contact-sales--claro-753eb28d83.avif"
+  },
+  "pricing__monthly-yearly": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/pricing__monthly-yearly--escuro-f7db98a6b7.avif",
+    "claro": "/thumbs/pricing__monthly-yearly--claro-32b1670221.avif"
+  },
+  "tours__checklist": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tours__checklist--escuro-d6e7b532d0.avif",
+    "claro": "/thumbs/tours__checklist--claro-e663d141e6.avif"
+  },
+  "tours__welcome-carousel": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tours__welcome-carousel--escuro-967abd18c2.avif",
+    "claro": "/thumbs/tours__welcome-carousel--claro-8d2e816d88.avif"
+  },
+  "tours__spotlight": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tours__spotlight--escuro-9e362e0642.avif",
+    "claro": "/thumbs/tours__spotlight--claro-4b9ebb443f.avif"
+  },
+  "tours__arrow-tooltip": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tours__arrow-tooltip--escuro-5e297b0a6f.avif",
+    "claro": "/thumbs/tours__arrow-tooltip--claro-8c8c9cb1fb.avif"
+  },
+  "tours__beacon": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/tours__beacon--escuro-d1a4765094.avif",
+    "claro": "/thumbs/tours__beacon--claro-421e74cd0a.avif"
+  },
+  "tours__inline-hint": {
+    "largura": 1280,
+    "altura": 800,
+    "claro": "/thumbs/tours__inline-hint--claro-70b43b0b00.avif",
+    "escuro": "/thumbs/tours__inline-hint--escuro-410ef7d0af.avif"
+  },
+  "threads__inline-thread": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/threads__inline-thread--escuro-3561223552.avif",
+    "claro": "/thumbs/threads__inline-thread--claro-17a1ba32ea.avif"
+  },
+  "threads__side-panel": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/threads__side-panel--escuro-d188932f0b.avif",
+    "claro": "/thumbs/threads__side-panel--claro-79db61e95b.avif"
+  },
+  "threads__comment-row": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/threads__comment-row--escuro-c60a2ce3a0.avif",
+    "claro": "/thumbs/threads__comment-row--claro-7524446a6e.avif"
+  },
+  "threads__mention-popover": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/threads__mention-popover--escuro-a0d17e993b.avif",
+    "claro": "/thumbs/threads__mention-popover--claro-505b44c229.avif"
+  },
+  "threads__resolved": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/threads__resolved--escuro-5093f1fe07.avif",
+    "claro": "/thumbs/threads__resolved--claro-2762117eb4.avif"
+  },
+  "threads__compose-rich": {
+    "largura": 1280,
+    "altura": 800,
+    "escuro": "/thumbs/threads__compose-rich--escuro-77d1b5dca3.avif",
+    "claro": "/thumbs/threads__compose-rich--claro-adc7ae2490.avif"
+  }
+}

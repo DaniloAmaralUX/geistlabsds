@@ -1,0 +1,542 @@
+[
+  {
+    "slug": "about-us-page-01",
+    "name": "block-about-us-page-01",
+    "title": "About Us 01",
+    "category": "Páginas",
+    "kind": "Tela",
+    "description": "Tela para páginas, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-about-us-page-01"
+  },
+  {
+    "slug": "account-settings-01",
+    "name": "block-account-settings-01",
+    "title": "Account Settings 01",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 7,
+    "install": "npx shadcn@latest add @supernova-ui/block-account-settings-01"
+  },
+  {
+    "slug": "app-integration-01",
+    "name": "block-app-integration-01",
+    "title": "App Integration 01",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-app-integration-01"
+  },
+  {
+    "slug": "application-shell-01",
+    "name": "block-application-shell-01",
+    "title": "Application Shell 01",
+    "category": "Produto",
+    "kind": "Aplicação",
+    "description": "Aplicação para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 7,
+    "install": "npx shadcn@latest add @supernova-ui/block-application-shell-01"
+  },
+  {
+    "slug": "blog-component-01",
+    "name": "block-blog-component-01",
+    "title": "Blog 01",
+    "category": "Conteúdo",
+    "kind": "Bloco",
+    "description": "Bloco para conteúdo, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-blog-component-01"
+  },
+  {
+    "slug": "blog-component-15",
+    "name": "block-blog-component-15",
+    "title": "Blog 15",
+    "category": "Conteúdo",
+    "kind": "Bloco",
+    "description": "Bloco para conteúdo, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-blog-component-15"
+  },
+  {
+    "slug": "blog-component-17",
+    "name": "block-blog-component-17",
+    "title": "Blog 17",
+    "category": "Conteúdo",
+    "kind": "Bloco",
+    "description": "Bloco para conteúdo, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-blog-component-17"
+  },
+  {
+    "slug": "chart-component-01",
+    "name": "block-chart-component-01",
+    "title": "Chart 01",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-chart-component-01"
+  },
+  {
+    "slug": "compare-07",
+    "name": "block-compare-07",
+    "title": "Compare 07",
+    "category": "Interface",
+    "kind": "Bloco",
+    "description": "Bloco para interface, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-compare-07"
+  },
+  {
+    "slug": "contact-us-page-01",
+    "name": "block-contact-us-page-01",
+    "title": "Contact Us 01",
+    "category": "Páginas",
+    "kind": "Tela",
+    "description": "Tela para páginas, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-contact-us-page-01"
+  },
+  {
+    "slug": "cta-section-01",
+    "name": "block-cta-section-01",
+    "title": "Cta 01",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-cta-section-01"
+  },
+  {
+    "slug": "cta-section-10",
+    "name": "block-cta-section-10",
+    "title": "Cta 10",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-cta-section-10"
+  },
+  {
+    "slug": "cta-section-12",
+    "name": "block-cta-section-12",
+    "title": "Cta 12",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-cta-section-12"
+  },
+  {
+    "slug": "dashboard-dialog-01",
+    "name": "block-dashboard-dialog-01",
+    "title": "Dashboard Dialog 01",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-dashboard-dialog-01"
+  },
+  {
+    "slug": "dashboard-dialog-02",
+    "name": "block-dashboard-dialog-02",
+    "title": "Dashboard Dialog 02",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-dashboard-dialog-02"
+  },
+  {
+    "slug": "dashboard-dialog-21",
+    "name": "block-dashboard-dialog-21",
+    "title": "Dashboard Dialog 21",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-dashboard-dialog-21"
+  },
+  {
+    "slug": "dashboard-dialog-22",
+    "name": "block-dashboard-dialog-22",
+    "title": "Dashboard Dialog 22",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-dashboard-dialog-22"
+  },
+  {
+    "slug": "dashboard-dropdown-01",
+    "name": "block-dashboard-dropdown-01",
+    "title": "Dashboard Dropdown 01",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-dashboard-dropdown-01"
+  },
+  {
+    "slug": "dashboard-dropdown-02",
+    "name": "block-dashboard-dropdown-02",
+    "title": "Dashboard Dropdown 02",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-dashboard-dropdown-02"
+  },
+  {
+    "slug": "dashboard-footer-01",
+    "name": "block-dashboard-footer-01",
+    "title": "Dashboard Footer 01",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 5,
+    "install": "npx shadcn@latest add @supernova-ui/block-dashboard-footer-01"
+  },
+  {
+    "slug": "dashboard-header-01",
+    "name": "block-dashboard-header-01",
+    "title": "Dashboard Header 01",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 3,
+    "install": "npx shadcn@latest add @supernova-ui/block-dashboard-header-01"
+  },
+  {
+    "slug": "dashboard-shell-01",
+    "name": "block-dashboard-shell-01",
+    "title": "Dashboard Shell 01",
+    "category": "Produto",
+    "kind": "Aplicação",
+    "description": "Aplicação para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 13,
+    "install": "npx shadcn@latest add @supernova-ui/block-dashboard-shell-01"
+  },
+  {
+    "slug": "empty-state-01",
+    "name": "block-empty-state-01",
+    "title": "Empty State 01",
+    "category": "Formulários",
+    "kind": "Bloco",
+    "description": "Bloco para formulários, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-empty-state-01"
+  },
+  {
+    "slug": "faq-component-01",
+    "name": "block-faq-component-01",
+    "title": "Faq 01",
+    "category": "Interface",
+    "kind": "Bloco",
+    "description": "Bloco para interface, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-faq-component-01"
+  },
+  {
+    "slug": "faq-component-17",
+    "name": "block-faq-component-17",
+    "title": "Faq 17",
+    "category": "Interface",
+    "kind": "Bloco",
+    "description": "Bloco para interface, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-faq-component-17"
+  },
+  {
+    "slug": "features-section-01",
+    "name": "block-features-section-01",
+    "title": "Features 01",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-features-section-01"
+  },
+  {
+    "slug": "file-upload-01",
+    "name": "block-file-upload-01",
+    "title": "File Upload 01",
+    "category": "Formulários",
+    "kind": "Bloco",
+    "description": "Bloco para formulários, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-file-upload-01"
+  },
+  {
+    "slug": "footer-component-01",
+    "name": "block-footer-component-01",
+    "title": "Footer 01",
+    "category": "Navegação",
+    "kind": "Bloco",
+    "description": "Bloco para navegação, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 8,
+    "install": "npx shadcn@latest add @supernova-ui/block-footer-component-01"
+  },
+  {
+    "slug": "forgot-password-01",
+    "name": "block-forgot-password-01",
+    "title": "Forgot Password 01",
+    "category": "Autenticação",
+    "kind": "Tela",
+    "description": "Tela para autenticação, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 6,
+    "install": "npx shadcn@latest add @supernova-ui/block-forgot-password-01"
+  },
+  {
+    "slug": "form-layout-01",
+    "name": "block-form-layout-01",
+    "title": "Form Layout 01",
+    "category": "Formulários",
+    "kind": "Bloco",
+    "description": "Bloco para formulários, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-form-layout-01"
+  },
+  {
+    "slug": "form-layout-02",
+    "name": "block-form-layout-02",
+    "title": "Form Layout 02",
+    "category": "Formulários",
+    "kind": "Bloco",
+    "description": "Bloco para formulários, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-form-layout-02"
+  },
+  {
+    "slug": "gallery-component-01",
+    "name": "block-gallery-component-01",
+    "title": "Gallery 01",
+    "category": "Conteúdo",
+    "kind": "Bloco",
+    "description": "Bloco para conteúdo, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-gallery-component-01"
+  },
+  {
+    "slug": "hero-section-01",
+    "name": "block-hero-section-01",
+    "title": "Hero 01",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 5,
+    "install": "npx shadcn@latest add @supernova-ui/block-hero-section-01"
+  },
+  {
+    "slug": "hero-section-35",
+    "name": "block-hero-section-35",
+    "title": "Hero 35",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 6,
+    "install": "npx shadcn@latest add @supernova-ui/block-hero-section-35"
+  },
+  {
+    "slug": "hero-section-41",
+    "name": "block-hero-section-41",
+    "title": "Hero 41",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 6,
+    "install": "npx shadcn@latest add @supernova-ui/block-hero-section-41"
+  },
+  {
+    "slug": "login-page-01",
+    "name": "block-login-page-01",
+    "title": "Login 01",
+    "category": "Autenticação",
+    "kind": "Tela",
+    "description": "Tela para autenticação, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 6,
+    "install": "npx shadcn@latest add @supernova-ui/block-login-page-01"
+  },
+  {
+    "slug": "logo-cloud-01",
+    "name": "block-logo-cloud-01",
+    "title": "Logo Cloud 01",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-logo-cloud-01"
+  },
+  {
+    "slug": "navbar-component-01",
+    "name": "block-navbar-component-01",
+    "title": "Navbar 01",
+    "category": "Navegação",
+    "kind": "Bloco",
+    "description": "Bloco para navegação, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 4,
+    "install": "npx shadcn@latest add @supernova-ui/block-navbar-component-01"
+  },
+  {
+    "slug": "onboarding-feed-01",
+    "name": "block-onboarding-feed-01",
+    "title": "Onboarding Feed 01",
+    "category": "Interface",
+    "kind": "Bloco",
+    "description": "Bloco para interface, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-onboarding-feed-01"
+  },
+  {
+    "slug": "portfolio-01",
+    "name": "block-portfolio-01",
+    "title": "Portfolio 01",
+    "category": "Páginas",
+    "kind": "Tela",
+    "description": "Tela para páginas, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 6,
+    "install": "npx shadcn@latest add @supernova-ui/block-portfolio-01"
+  },
+  {
+    "slug": "pricing-component-01",
+    "name": "block-pricing-component-01",
+    "title": "Pricing 01",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-pricing-component-01"
+  },
+  {
+    "slug": "product-list-01",
+    "name": "block-product-list-01",
+    "title": "Product List 01",
+    "category": "Conteúdo",
+    "kind": "Bloco",
+    "description": "Bloco para conteúdo, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 3,
+    "install": "npx shadcn@latest add @supernova-ui/block-product-list-01"
+  },
+  {
+    "slug": "register-01",
+    "name": "block-register-01",
+    "title": "Register 01",
+    "category": "Autenticação",
+    "kind": "Tela",
+    "description": "Tela para autenticação, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 6,
+    "install": "npx shadcn@latest add @supernova-ui/block-register-01"
+  },
+  {
+    "slug": "reset-password-01",
+    "name": "block-reset-password-01",
+    "title": "Reset Password 01",
+    "category": "Autenticação",
+    "kind": "Tela",
+    "description": "Tela para autenticação, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 6,
+    "install": "npx shadcn@latest add @supernova-ui/block-reset-password-01"
+  },
+  {
+    "slug": "social-proof-01",
+    "name": "block-social-proof-01",
+    "title": "Social Proof 01",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-social-proof-01"
+  },
+  {
+    "slug": "social-proof-07",
+    "name": "block-social-proof-07",
+    "title": "Social Proof 07",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-social-proof-07"
+  },
+  {
+    "slug": "statistics-component-01",
+    "name": "block-statistics-component-01",
+    "title": "Statistics 01",
+    "category": "Interface",
+    "kind": "Bloco",
+    "description": "Bloco para interface, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-statistics-component-01"
+  },
+  {
+    "slug": "statistics-component-12",
+    "name": "block-statistics-component-12",
+    "title": "Statistics 12",
+    "category": "Interface",
+    "kind": "Bloco",
+    "description": "Bloco para interface, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-statistics-component-12"
+  },
+  {
+    "slug": "team-section-01",
+    "name": "block-team-section-01",
+    "title": "Team 01",
+    "category": "Conteúdo",
+    "kind": "Bloco",
+    "description": "Bloco para conteúdo, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 6,
+    "install": "npx shadcn@latest add @supernova-ui/block-team-section-01"
+  },
+  {
+    "slug": "testimonials-component-18",
+    "name": "block-testimonials-component-18",
+    "title": "Testimonials 18",
+    "category": "Marketing",
+    "kind": "Bloco",
+    "description": "Bloco para marketing, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-testimonials-component-18"
+  },
+  {
+    "slug": "timeline-component-05",
+    "name": "block-timeline-component-05",
+    "title": "Timeline 05",
+    "category": "Conteúdo",
+    "kind": "Bloco",
+    "description": "Bloco para conteúdo, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 6,
+    "install": "npx shadcn@latest add @supernova-ui/block-timeline-component-05"
+  },
+  {
+    "slug": "verify-email-01",
+    "name": "block-verify-email-01",
+    "title": "Verify Email 01",
+    "category": "Autenticação",
+    "kind": "Tela",
+    "description": "Tela para autenticação, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 5,
+    "install": "npx shadcn@latest add @supernova-ui/block-verify-email-01"
+  },
+  {
+    "slug": "widget-component-01",
+    "name": "block-widget-component-01",
+    "title": "Widget 01",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-widget-component-01"
+  },
+  {
+    "slug": "widget-component-02",
+    "name": "block-widget-component-02",
+    "title": "Widget 02",
+    "category": "Produto",
+    "kind": "Bloco",
+    "description": "Bloco para produto, adaptado de shadcn/studio e pronto para o seu produto.",
+    "fileCount": 2,
+    "install": "npx shadcn@latest add @supernova-ui/block-widget-component-02"
+  }
+]

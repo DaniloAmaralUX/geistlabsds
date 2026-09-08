@@ -284,9 +284,10 @@ const SidebarTrigger = ({
     <Button
       data-sidebar="trigger"
       data-slot="sidebar-trigger"
-      variant="ghost"
-      size="icon"
-      className={cn("size-7", className)}
+      variant="tertiary"
+      shape="square"
+      size="sm"
+      className={cn("size-7 data-[shape=square]:w-7", className)}
       onClick={handleClick}
       {...props}
     >
@@ -347,7 +348,8 @@ const SidebarInput = ({
   <Input
     data-slot="sidebar-input"
     data-sidebar="input"
-    className={cn("bg-background h-8 w-full shadow-none", className)}
+    size="sm"
+    className={cn("w-full", className)}
     {...props}
   />
 );

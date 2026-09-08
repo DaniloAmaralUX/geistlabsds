@@ -1,0 +1,614 @@
+[
+  {
+    "header": "Capa",
+    "id": 1,
+    "limit": "5",
+    "reviewer": "Eddie Lake",
+    "status": "Em andamento",
+    "target": "18",
+    "type": "Capa"
+  },
+  {
+    "header": "Sumário",
+    "id": 2,
+    "limit": "24",
+    "reviewer": "Eddie Lake",
+    "status": "Concluído",
+    "target": "29",
+    "type": "Sumário"
+  },
+  {
+    "header": "Resumo executivo",
+    "id": 3,
+    "limit": "13",
+    "reviewer": "Eddie Lake",
+    "status": "Concluído",
+    "target": "10",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Abordagem técnica",
+    "id": 4,
+    "limit": "23",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Concluído",
+    "target": "27",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Design",
+    "id": 5,
+    "limit": "16",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Em andamento",
+    "target": "2",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Capacidades",
+    "id": 6,
+    "limit": "8",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Em andamento",
+    "target": "20",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Integração com sistemas existentes",
+    "id": 7,
+    "limit": "21",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Em andamento",
+    "target": "19",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Inovação e vantagens",
+    "id": 8,
+    "limit": "26",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "25",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Visão geral das soluções inovadoras da EMR",
+    "id": 9,
+    "limit": "23",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "7",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Algoritmos avançados e aprendizado de máquina",
+    "id": 10,
+    "limit": "28",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "30",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Protocolos de comunicação adaptativos",
+    "id": 11,
+    "limit": "31",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "9",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Vantagens sobre as tecnologias atuais",
+    "id": 12,
+    "limit": "0",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "12",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Desempenho anterior",
+    "id": 13,
+    "limit": "33",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "22",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Feedback e satisfação dos clientes",
+    "id": 14,
+    "limit": "34",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "15",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Desafios e soluções de implementação",
+    "id": 15,
+    "limit": "35",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "3",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Medidas de segurança e políticas de proteção de dados",
+    "id": 16,
+    "limit": "36",
+    "reviewer": "Atribuir revisor",
+    "status": "Em andamento",
+    "target": "6",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Escalabilidade e preparação para o futuro",
+    "id": 17,
+    "limit": "37",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "4",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Análise de custo-benefício",
+    "id": 18,
+    "limit": "38",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "14",
+    "type": "Linguagem simples"
+  },
+  {
+    "header": "Treinamento e integração de usuários",
+    "id": 19,
+    "limit": "39",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "17",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Roteiro de desenvolvimento futuro",
+    "id": 20,
+    "limit": "40",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "11",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Visão geral da arquitetura do sistema",
+    "id": 21,
+    "limit": "18",
+    "reviewer": "Maya Johnson",
+    "status": "Em andamento",
+    "target": "24",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Plano de gestão de riscos",
+    "id": 22,
+    "limit": "22",
+    "reviewer": "Carlos Rodriguez",
+    "status": "Concluído",
+    "target": "15",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Documentação de conformidade",
+    "id": 23,
+    "limit": "27",
+    "reviewer": "Sarah Chen",
+    "status": "Em andamento",
+    "target": "31",
+    "type": "Jurídico"
+  },
+  {
+    "header": "Documentação da API",
+    "id": 24,
+    "limit": "12",
+    "reviewer": "Raj Patel",
+    "status": "Concluído",
+    "target": "8",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Protótipos de interface",
+    "id": 25,
+    "limit": "25",
+    "reviewer": "Leila Ahmadi",
+    "status": "Em andamento",
+    "target": "19",
+    "type": "Visual"
+  },
+  {
+    "header": "Esquema do banco de dados",
+    "id": 26,
+    "limit": "20",
+    "reviewer": "Thomas Wilson",
+    "status": "Concluído",
+    "target": "22",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Metodologia de testes",
+    "id": 27,
+    "limit": "14",
+    "reviewer": "Atribuir revisor",
+    "status": "Em andamento",
+    "target": "17",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Estratégia de implantação",
+    "id": 28,
+    "limit": "30",
+    "reviewer": "Eddie Lake",
+    "status": "Concluído",
+    "target": "26",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Detalhamento do orçamento",
+    "id": 29,
+    "limit": "16",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Em andamento",
+    "target": "13",
+    "type": "Financeiro"
+  },
+  {
+    "header": "Análise de mercado",
+    "id": 30,
+    "limit": "32",
+    "reviewer": "Sophia Martinez",
+    "status": "Concluído",
+    "target": "29",
+    "type": "Pesquisa"
+  },
+  {
+    "header": "Comparação com concorrentes",
+    "id": 31,
+    "limit": "19",
+    "reviewer": "Atribuir revisor",
+    "status": "Em andamento",
+    "target": "21",
+    "type": "Pesquisa"
+  },
+  {
+    "header": "Plano de manutenção",
+    "id": 32,
+    "limit": "23",
+    "reviewer": "Alex Thompson",
+    "status": "Concluído",
+    "target": "16",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Personas de usuário",
+    "id": 33,
+    "limit": "24",
+    "reviewer": "Nina Patel",
+    "status": "Em andamento",
+    "target": "27",
+    "type": "Pesquisa"
+  },
+  {
+    "header": "Conformidade de acessibilidade",
+    "id": 34,
+    "limit": "21",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "18",
+    "type": "Jurídico"
+  },
+  {
+    "header": "Métricas de desempenho",
+    "id": 35,
+    "limit": "26",
+    "reviewer": "David Kim",
+    "status": "Em andamento",
+    "target": "23",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Plano de recuperação de desastres",
+    "id": 36,
+    "limit": "17",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Concluído",
+    "target": "14",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Integrações com terceiros",
+    "id": 37,
+    "limit": "28",
+    "reviewer": "Eddie Lake",
+    "status": "Em andamento",
+    "target": "25",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Resumo do feedback dos usuários",
+    "id": 38,
+    "limit": "15",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "20",
+    "type": "Pesquisa"
+  },
+  {
+    "header": "Estratégia de localização",
+    "id": 39,
+    "limit": "19",
+    "reviewer": "Maria Garcia",
+    "status": "Em andamento",
+    "target": "12",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Compatibilidade com dispositivos móveis",
+    "id": 40,
+    "limit": "31",
+    "reviewer": "James Wilson",
+    "status": "Concluído",
+    "target": "28",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Plano de migração de dados",
+    "id": 41,
+    "limit": "22",
+    "reviewer": "Atribuir revisor",
+    "status": "Em andamento",
+    "target": "19",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Protocolos de garantia de qualidade",
+    "id": 42,
+    "limit": "33",
+    "reviewer": "Priya Singh",
+    "status": "Concluído",
+    "target": "30",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Análise de partes interessadas",
+    "id": 43,
+    "limit": "14",
+    "reviewer": "Eddie Lake",
+    "status": "Em andamento",
+    "target": "11",
+    "type": "Pesquisa"
+  },
+  {
+    "header": "Avaliação de impacto ambiental",
+    "id": 44,
+    "limit": "27",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "24",
+    "type": "Pesquisa"
+  },
+  {
+    "header": "Direitos de propriedade intelectual",
+    "id": 45,
+    "limit": "20",
+    "reviewer": "Sarah Johnson",
+    "status": "Em andamento",
+    "target": "17",
+    "type": "Jurídico"
+  },
+  {
+    "header": "Estrutura de suporte ao cliente",
+    "id": 46,
+    "limit": "25",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Concluído",
+    "target": "22",
+    "type": "Narrativa"
+  },
+  {
+    "header": "Estratégia de controle de versão",
+    "id": 47,
+    "limit": "18",
+    "reviewer": "Atribuir revisor",
+    "status": "Em andamento",
+    "target": "15",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Pipeline de integração contínua",
+    "id": 48,
+    "limit": "29",
+    "reviewer": "Michael Chen",
+    "status": "Concluído",
+    "target": "26",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Conformidade regulatória",
+    "id": 49,
+    "limit": "16",
+    "reviewer": "Atribuir revisor",
+    "status": "Em andamento",
+    "target": "13",
+    "type": "Jurídico"
+  },
+  {
+    "header": "Sistema de autenticação de usuários",
+    "id": 50,
+    "limit": "31",
+    "reviewer": "Eddie Lake",
+    "status": "Concluído",
+    "target": "28",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Estrutura de análise de dados",
+    "id": 51,
+    "limit": "24",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Em andamento",
+    "target": "21",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Infraestrutura em nuvem",
+    "id": 52,
+    "limit": "19",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "16",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Medidas de segurança de rede",
+    "id": 53,
+    "limit": "32",
+    "reviewer": "Lisa Wong",
+    "status": "Em andamento",
+    "target": "29",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Cronograma do projeto",
+    "id": 54,
+    "limit": "17",
+    "reviewer": "Eddie Lake",
+    "status": "Concluído",
+    "target": "14",
+    "type": "Planejamento"
+  },
+  {
+    "header": "Alocação de recursos",
+    "id": 55,
+    "limit": "30",
+    "reviewer": "Atribuir revisor",
+    "status": "Em andamento",
+    "target": "27",
+    "type": "Planejamento"
+  },
+  {
+    "header": "Estrutura e papéis da equipe",
+    "id": 56,
+    "limit": "23",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Concluído",
+    "target": "20",
+    "type": "Planejamento"
+  },
+  {
+    "header": "Protocolos de comunicação",
+    "id": 57,
+    "limit": "18",
+    "reviewer": "Atribuir revisor",
+    "status": "Em andamento",
+    "target": "15",
+    "type": "Planejamento"
+  },
+  {
+    "header": "Métricas de sucesso",
+    "id": 58,
+    "limit": "33",
+    "reviewer": "Eddie Lake",
+    "status": "Concluído",
+    "target": "30",
+    "type": "Planejamento"
+  },
+  {
+    "header": "Suporte à internacionalização",
+    "id": 59,
+    "limit": "26",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Em andamento",
+    "target": "23",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Procedimentos de backup e recuperação",
+    "id": 60,
+    "limit": "21",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "18",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Sistema de monitoramento e alertas",
+    "id": 61,
+    "limit": "28",
+    "reviewer": "Daniel Park",
+    "status": "Em andamento",
+    "target": "25",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Diretrizes de revisão de código",
+    "id": 62,
+    "limit": "15",
+    "reviewer": "Eddie Lake",
+    "status": "Concluído",
+    "target": "12",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Padrões de documentação",
+    "id": 63,
+    "limit": "30",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Em andamento",
+    "target": "27",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Processo de gestão de releases",
+    "id": 64,
+    "limit": "25",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "22",
+    "type": "Planejamento"
+  },
+  {
+    "header": "Matriz de priorização de funcionalidades",
+    "id": 65,
+    "limit": "22",
+    "reviewer": "Emma Davis",
+    "status": "Em andamento",
+    "target": "19",
+    "type": "Planejamento"
+  },
+  {
+    "header": "Avaliação de dívida técnica",
+    "id": 66,
+    "limit": "27",
+    "reviewer": "Eddie Lake",
+    "status": "Concluído",
+    "target": "24",
+    "type": "Conteúdo técnico"
+  },
+  {
+    "header": "Planejamento de capacidade",
+    "id": 67,
+    "limit": "24",
+    "reviewer": "Jamik Tashpulatov",
+    "status": "Em andamento",
+    "target": "21",
+    "type": "Planejamento"
+  },
+  {
+    "header": "Acordos de nível de serviço",
+    "id": 68,
+    "limit": "29",
+    "reviewer": "Atribuir revisor",
+    "status": "Concluído",
+    "target": "26",
+    "type": "Jurídico"
+  }
+]

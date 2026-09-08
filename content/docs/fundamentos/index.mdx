@@ -1,21 +1,21 @@
 ---
 title: Fundamentos
-description: Os valores base do LAB / DESIGN e as regras que os componentes seguem.
+description: Os valores base do Supernova e as regras que todo componente herda.
 ---
 
-Os fundamentos são a parte do design system que todo componente herda. Vivem em um só arquivo, `constants/tokens.ts`, que gera o CSS do site e o tema instalável. O que aparece nestas páginas é lido desse arquivo, não escrito à mão.
+Os fundamentos são a parte do Supernova que todo componente herda. Vivem em um só arquivo, `constants/tokens.ts`, que gera o CSS do site e o tema instalável. Estas páginas leem esse arquivo em vez de repetir os valores à mão: o que você vê aqui é o que o CSS entrega.
 
 ## Princípios
 
-- **Neutro por padrão.** Superfícies e texto em cinza puro; cor só quando comunica intenção: azul para ação, vermelho para erro, âmbar para aviso, verde para sucesso, violeta para destaque.
-- **Uma escala, dois modos.** Cada cor tem dez passos, de 100 a 1000. No escuro a escala inverte, então `gray-100` é sempre "o mais próximo do fundo".
-- **Raio de 6px.** Botões e campos usam o raio base; cards e notas um passo acima; pílulas são redondas.
+- **Neutro por padrão.** Superfícies e texto em cinza puro. Cor só quando comunica intenção: azul para ação, vermelho para erro, âmbar para aviso, verde para sucesso, violeta para destaque.
+- **Uma escala, dois modos.** Cada cor tem dez passos, de 100 a 1000. No modo escuro a escala inverte, então `gray-100` é sempre o passo mais próximo do fundo.
+- **Raio de 6px.** Botões e campos usam o raio base. Cards e notas ficam um passo acima. Pílulas são redondas.
 - **Foco visível.** Todo elemento interativo mostra um anel azul de 2px ao receber foco pelo teclado.
-- **Tipografia acoplada.** Cada papel tipográfico fixa tamanho, entrelinha, peso e tracking juntos. Não se ajusta um sem o outro.
+- **Tipografia acoplada.** Cada papel tipográfico fixa tamanho, entrelinha, peso e tracking juntos. Não ajuste um sem revisar os outros.
 
 ## Páginas
 
 - [Cores](/docs/fundamentos/cores): as seis escalas e os tokens semânticos.
-- [Tipografia](/docs/fundamentos/tipografia): papéis, fontes e regras de texto.
-- [Espaçamento e raio](/docs/fundamentos/espacamento-e-raio): a grade de 4px e os raios.
-- [Cobertura](/docs/fundamentos/cobertura): o inventário do Geist e o estado de cada item.
+- [Tipografia](/docs/fundamentos/tipografia): fontes, papéis e regras de texto.
+- [Espaçamento e raio](/docs/fundamentos/espacamento-e-raio): a grade de 4px e os raios derivados.
+- [Roteiro](/docs/fundamentos/roteiro): os componentes previstos e o estado de cada um.

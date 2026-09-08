@@ -74,9 +74,10 @@ export const SiteSettings = () => {
 
   const trigger = (
     <Button
-      variant="ghost"
-      size="icon"
-      className="group/settings extend-touch-target size-8"
+      variant="tertiary"
+      shape="square"
+      size="sm"
+      className="group/settings extend-touch-target"
       aria-label="Settings"
     >
       <SettingsIcon />

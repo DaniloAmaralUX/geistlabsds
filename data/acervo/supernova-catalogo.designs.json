@@ -1,0 +1,1243 @@
+{
+  "snapshot": "2026-09-08",
+  "homepage": "https://supernova-catalogo.vercel.app",
+  "totais": {
+    "designs": 158,
+    "grupos": 18,
+    "prontos": 158
+  },
+  "grupos": [
+    {
+      "slug": "layouts",
+      "titulo": "Layouts",
+      "descricao": "Cascas de aplicação, trilhos laterais, painéis divididos, modo foco, telas de canvas.",
+      "designs": [
+        {
+          "slug": "app-shell",
+          "titulo": "Casca de aplicação",
+          "maturidade": "pronto",
+          "registry": "layouts-app-shell",
+          "caminho": "/c/layouts/app-shell"
+        },
+        {
+          "slug": "workspace-rail",
+          "titulo": "Trilho de workspace",
+          "maturidade": "pronto",
+          "registry": "layouts-workspace-rail",
+          "caminho": "/c/layouts/workspace-rail"
+        },
+        {
+          "slug": "mini-rail",
+          "titulo": "Trilho de ícones",
+          "maturidade": "pronto",
+          "registry": "layouts-mini-rail",
+          "caminho": "/c/layouts/mini-rail"
+        },
+        {
+          "slug": "docs-tree",
+          "titulo": "Árvore de documentação",
+          "maturidade": "pronto",
+          "registry": "layouts-docs-tree",
+          "caminho": "/c/layouts/docs-tree"
+        },
+        {
+          "slug": "inbox-rail",
+          "titulo": "Trilho de caixa de entrada",
+          "maturidade": "pronto",
+          "registry": "layouts-inbox-rail",
+          "caminho": "/c/layouts/inbox-rail"
+        },
+        {
+          "slug": "two-pane",
+          "titulo": "Dois painéis",
+          "maturidade": "pronto",
+          "registry": "layouts-two-pane",
+          "caminho": "/c/layouts/two-pane"
+        },
+        {
+          "slug": "three-pane",
+          "titulo": "Três painéis",
+          "maturidade": "pronto",
+          "registry": "layouts-three-pane",
+          "caminho": "/c/layouts/three-pane"
+        },
+        {
+          "slug": "split-resizable",
+          "titulo": "Divisão redimensionável",
+          "maturidade": "pronto",
+          "registry": "layouts-split-resizable",
+          "caminho": "/c/layouts/split-resizable"
+        },
+        {
+          "slug": "focus-mode",
+          "titulo": "Modo foco",
+          "maturidade": "pronto",
+          "registry": "layouts-focus-mode",
+          "caminho": "/c/layouts/focus-mode"
+        },
+        {
+          "slug": "floating-toolbar",
+          "titulo": "Barra flutuante",
+          "maturidade": "pronto",
+          "registry": "layouts-floating-toolbar",
+          "caminho": "/c/layouts/floating-toolbar"
+        },
+        {
+          "slug": "canvas-tools",
+          "titulo": "Ferramentas de canvas",
+          "maturidade": "pronto",
+          "registry": "layouts-canvas-tools",
+          "caminho": "/c/layouts/canvas-tools"
+        },
+        {
+          "slug": "bottom-nav",
+          "titulo": "Navegação inferior",
+          "maturidade": "pronto",
+          "registry": "layouts-bottom-nav",
+          "caminho": "/c/layouts/bottom-nav"
+        }
+      ]
+    },
+    {
+      "slug": "forms",
+      "titulo": "Formulários",
+      "descricao": "Configurações, convites, preferências, chaves de API.",
+      "designs": [
+        {
+          "slug": "workspace-settings",
+          "titulo": "Configurações do workspace",
+          "maturidade": "pronto",
+          "registry": "forms-workspace-settings",
+          "caminho": "/c/forms/workspace-settings"
+        },
+        {
+          "slug": "invite-teammates",
+          "titulo": "Convidar pessoas",
+          "maturidade": "pronto",
+          "registry": "forms-invite-teammates",
+          "caminho": "/c/forms/invite-teammates"
+        },
+        {
+          "slug": "notifications",
+          "titulo": "Preferências de notificação",
+          "maturidade": "pronto",
+          "registry": "forms-notifications",
+          "caminho": "/c/forms/notifications"
+        },
+        {
+          "slug": "api-key",
+          "titulo": "Criar chave de API",
+          "maturidade": "pronto",
+          "registry": "forms-api-key",
+          "caminho": "/c/forms/api-key"
+        }
+      ]
+    },
+    {
+      "slug": "auth",
+      "titulo": "Acesso e onboarding",
+      "descricao": "Entrada, link mágico, OAuth, lista de espera.",
+      "designs": [
+        {
+          "slug": "login",
+          "titulo": "Entrar",
+          "maturidade": "pronto",
+          "registry": "auth-login",
+          "caminho": "/c/auth/login"
+        },
+        {
+          "slug": "onboarding",
+          "titulo": "Onboarding",
+          "maturidade": "pronto",
+          "registry": "auth-onboarding",
+          "caminho": "/c/auth/onboarding"
+        },
+        {
+          "slug": "waitlist",
+          "titulo": "Lista de espera",
+          "maturidade": "pronto",
+          "registry": "auth-waitlist",
+          "caminho": "/c/auth/waitlist"
+        },
+        {
+          "slug": "check-email",
+          "titulo": "Confira seu e-mail",
+          "maturidade": "pronto",
+          "registry": "auth-check-email",
+          "caminho": "/c/auth/check-email"
+        },
+        {
+          "slug": "inset-login",
+          "titulo": "Entrada encaixada",
+          "maturidade": "pronto",
+          "registry": "auth-inset-login",
+          "caminho": "/c/auth/inset-login"
+        },
+        {
+          "slug": "centered-signin",
+          "titulo": "Entrada centralizada",
+          "maturidade": "pronto",
+          "registry": "auth-centered-signin",
+          "caminho": "/c/auth/centered-signin"
+        },
+        {
+          "slug": "centered-signup",
+          "titulo": "Cadastro centralizado",
+          "maturidade": "pronto",
+          "registry": "auth-centered-signup",
+          "caminho": "/c/auth/centered-signup"
+        },
+        {
+          "slug": "left-signin",
+          "titulo": "Entrada à esquerda",
+          "maturidade": "pronto",
+          "registry": "auth-left-signin",
+          "caminho": "/c/auth/left-signin"
+        },
+        {
+          "slug": "right-signin",
+          "titulo": "Entrada à direita",
+          "maturidade": "pronto",
+          "registry": "auth-right-signin",
+          "caminho": "/c/auth/right-signin"
+        },
+        {
+          "slug": "glass-signup",
+          "titulo": "Cadastro em vidro",
+          "maturidade": "pronto",
+          "registry": "auth-glass-signup",
+          "caminho": "/c/auth/glass-signup"
+        },
+        {
+          "slug": "otp-verify",
+          "titulo": "Verificação por código",
+          "maturidade": "pronto",
+          "registry": "auth-otp-verify",
+          "caminho": "/c/auth/otp-verify"
+        },
+        {
+          "slug": "reset-password",
+          "titulo": "Redefinir senha",
+          "maturidade": "pronto",
+          "registry": "auth-reset-password",
+          "caminho": "/c/auth/reset-password"
+        },
+        {
+          "slug": "two-factor",
+          "titulo": "Dois fatores",
+          "maturidade": "pronto",
+          "registry": "auth-two-factor",
+          "caminho": "/c/auth/two-factor"
+        },
+        {
+          "slug": "magic-link-sent",
+          "titulo": "Link mágico enviado",
+          "maturidade": "pronto",
+          "registry": "auth-magic-link-sent",
+          "caminho": "/c/auth/magic-link-sent"
+        }
+      ]
+    },
+    {
+      "slug": "dashboards",
+      "titulo": "Painéis",
+      "descricao": "Grades de métricas, minigráficos, feeds de atividade, uso do plano.",
+      "designs": [
+        {
+          "slug": "metrics-overview",
+          "titulo": "Visão de métricas",
+          "maturidade": "pronto",
+          "registry": "dashboards-metrics-overview",
+          "caminho": "/c/dashboards/metrics-overview"
+        },
+        {
+          "slug": "usage",
+          "titulo": "Uso do plano",
+          "maturidade": "pronto",
+          "registry": "dashboards-usage",
+          "caminho": "/c/dashboards/usage"
+        },
+        {
+          "slug": "analytics",
+          "titulo": "Analytics",
+          "maturidade": "pronto",
+          "registry": "dashboards-analytics",
+          "caminho": "/c/dashboards/analytics"
+        },
+        {
+          "slug": "home",
+          "titulo": "Início pessoal",
+          "maturidade": "pronto",
+          "registry": "dashboards-home",
+          "caminho": "/c/dashboards/home"
+        },
+        {
+          "slug": "revenue",
+          "titulo": "Receita",
+          "maturidade": "pronto",
+          "registry": "dashboards-revenue",
+          "caminho": "/c/dashboards/revenue"
+        },
+        {
+          "slug": "services",
+          "titulo": "Saúde dos serviços",
+          "maturidade": "pronto",
+          "registry": "dashboards-services",
+          "caminho": "/c/dashboards/services"
+        },
+        {
+          "slug": "engineering",
+          "titulo": "Velocidade de engenharia",
+          "maturidade": "pronto",
+          "registry": "dashboards-engineering",
+          "caminho": "/c/dashboards/engineering"
+        },
+        {
+          "slug": "support",
+          "titulo": "Fila de suporte",
+          "maturidade": "pronto",
+          "registry": "dashboards-support",
+          "caminho": "/c/dashboards/support"
+        },
+        {
+          "slug": "market",
+          "titulo": "Mercados",
+          "maturidade": "pronto",
+          "registry": "dashboards-market",
+          "caminho": "/c/dashboards/market"
+        }
+      ]
+    },
+    {
+      "slug": "tables",
+      "titulo": "Tabelas",
+      "descricao": "Linhas ordenáveis, densidade, ações em lote.",
+      "designs": [
+        {
+          "slug": "invoices",
+          "titulo": "Faturas",
+          "maturidade": "pronto",
+          "registry": "tables-invoices",
+          "caminho": "/c/tables/invoices"
+        },
+        {
+          "slug": "members",
+          "titulo": "Pessoas do time",
+          "maturidade": "pronto",
+          "registry": "tables-members",
+          "caminho": "/c/tables/members"
+        },
+        {
+          "slug": "orders",
+          "titulo": "Pedidos",
+          "maturidade": "pronto",
+          "registry": "tables-orders",
+          "caminho": "/c/tables/orders"
+        },
+        {
+          "slug": "logs",
+          "titulo": "Logs de servidor",
+          "maturidade": "pronto",
+          "registry": "tables-logs",
+          "caminho": "/c/tables/logs"
+        },
+        {
+          "slug": "api-keys",
+          "titulo": "Chaves de API",
+          "maturidade": "pronto",
+          "registry": "tables-api-keys",
+          "caminho": "/c/tables/api-keys"
+        },
+        {
+          "slug": "inventory",
+          "titulo": "Estoque",
+          "maturidade": "pronto",
+          "registry": "tables-inventory",
+          "caminho": "/c/tables/inventory"
+        },
+        {
+          "slug": "issues",
+          "titulo": "Rastreador de issues",
+          "maturidade": "pronto",
+          "registry": "tables-issues",
+          "caminho": "/c/tables/issues"
+        },
+        {
+          "slug": "transactions",
+          "titulo": "Transações",
+          "maturidade": "pronto",
+          "registry": "tables-transactions",
+          "caminho": "/c/tables/transactions"
+        },
+        {
+          "slug": "audit-log",
+          "titulo": "Registro de auditoria",
+          "maturidade": "pronto",
+          "registry": "tables-audit-log",
+          "caminho": "/c/tables/audit-log"
+        }
+      ]
+    },
+    {
+      "slug": "filters",
+      "titulo": "Filtros",
+      "descricao": "Barras, popovers facetados, chips e trilhos laterais de filtro.",
+      "designs": [
+        {
+          "slug": "toolbar",
+          "titulo": "Barra de filtros",
+          "maturidade": "pronto",
+          "registry": "filters-toolbar",
+          "caminho": "/c/filters/toolbar"
+        },
+        {
+          "slug": "faceted",
+          "titulo": "Popover facetado",
+          "maturidade": "pronto",
+          "registry": "filters-faceted",
+          "caminho": "/c/filters/faceted"
+        },
+        {
+          "slug": "chips",
+          "titulo": "Chips de filtro ativo",
+          "maturidade": "pronto",
+          "registry": "filters-chips",
+          "caminho": "/c/filters/chips"
+        },
+        {
+          "slug": "sidebar",
+          "titulo": "Barra lateral de filtros",
+          "maturidade": "pronto",
+          "registry": "filters-sidebar",
+          "caminho": "/c/filters/sidebar"
+        }
+      ]
+    },
+    {
+      "slug": "empty-states",
+      "titulo": "Estados vazios",
+      "descricao": "Primeiro uso, ausência de dados, fim de lista.",
+      "designs": [
+        {
+          "slug": "inbox-zero",
+          "titulo": "Caixa de entrada zerada",
+          "maturidade": "pronto",
+          "registry": "empty-states-inbox-zero",
+          "caminho": "/c/empty-states/inbox-zero"
+        },
+        {
+          "slug": "no-results",
+          "titulo": "Sem resultados",
+          "maturidade": "pronto",
+          "registry": "empty-states-no-results",
+          "caminho": "/c/empty-states/no-results"
+        },
+        {
+          "slug": "first-project",
+          "titulo": "Primeiro projeto",
+          "maturidade": "pronto",
+          "registry": "empty-states-first-project",
+          "caminho": "/c/empty-states/first-project"
+        },
+        {
+          "slug": "end-of-feed",
+          "titulo": "Fim do feed",
+          "maturidade": "pronto",
+          "registry": "empty-states-end-of-feed",
+          "caminho": "/c/empty-states/end-of-feed"
+        },
+        {
+          "slug": "no-team",
+          "titulo": "Sem colegas",
+          "maturidade": "pronto",
+          "registry": "empty-states-no-team",
+          "caminho": "/c/empty-states/no-team"
+        },
+        {
+          "slug": "trash",
+          "titulo": "Lixeira vazia",
+          "maturidade": "pronto",
+          "registry": "empty-states-trash",
+          "caminho": "/c/empty-states/trash"
+        },
+        {
+          "slug": "404",
+          "titulo": "Página não encontrada",
+          "maturidade": "pronto",
+          "registry": "empty-states-404",
+          "caminho": "/c/empty-states/404"
+        },
+        {
+          "slug": "maintenance",
+          "titulo": "Manutenção",
+          "maturidade": "pronto",
+          "registry": "empty-states-maintenance",
+          "caminho": "/c/empty-states/maintenance"
+        },
+        {
+          "slug": "no-files",
+          "titulo": "Sem arquivos",
+          "maturidade": "pronto",
+          "registry": "empty-states-no-files",
+          "caminho": "/c/empty-states/no-files"
+        },
+        {
+          "slug": "offline",
+          "titulo": "Offline",
+          "maturidade": "pronto",
+          "registry": "empty-states-offline",
+          "caminho": "/c/empty-states/offline"
+        }
+      ]
+    },
+    {
+      "slug": "settings",
+      "titulo": "Configurações",
+      "descricao": "Perfil, aparência, cobrança, integrações.",
+      "designs": [
+        {
+          "slug": "profile",
+          "titulo": "Perfil",
+          "maturidade": "pronto",
+          "registry": "settings-profile",
+          "caminho": "/c/settings/profile"
+        },
+        {
+          "slug": "appearance",
+          "titulo": "Aparência",
+          "maturidade": "pronto",
+          "registry": "settings-appearance",
+          "caminho": "/c/settings/appearance"
+        },
+        {
+          "slug": "billing",
+          "titulo": "Cobrança",
+          "maturidade": "pronto",
+          "registry": "settings-billing",
+          "caminho": "/c/settings/billing"
+        },
+        {
+          "slug": "integrations",
+          "titulo": "Integrações",
+          "maturidade": "pronto",
+          "registry": "settings-integrations",
+          "caminho": "/c/settings/integrations"
+        },
+        {
+          "slug": "security",
+          "titulo": "Segurança",
+          "maturidade": "pronto",
+          "registry": "settings-security",
+          "caminho": "/c/settings/security"
+        },
+        {
+          "slug": "permissions",
+          "titulo": "Papéis e permissões",
+          "maturidade": "pronto",
+          "registry": "settings-permissions",
+          "caminho": "/c/settings/permissions"
+        },
+        {
+          "slug": "branding",
+          "titulo": "Marca do workspace",
+          "maturidade": "pronto",
+          "registry": "settings-branding",
+          "caminho": "/c/settings/branding"
+        },
+        {
+          "slug": "localization",
+          "titulo": "Idioma e região",
+          "maturidade": "pronto",
+          "registry": "settings-localization",
+          "caminho": "/c/settings/localization"
+        },
+        {
+          "slug": "webhooks",
+          "titulo": "Webhooks",
+          "maturidade": "pronto",
+          "registry": "settings-webhooks",
+          "caminho": "/c/settings/webhooks"
+        },
+        {
+          "slug": "privacy",
+          "titulo": "Privacidade e dados",
+          "maturidade": "pronto",
+          "registry": "settings-privacy",
+          "caminho": "/c/settings/privacy"
+        },
+        {
+          "slug": "developer",
+          "titulo": "Desenvolvedor",
+          "maturidade": "pronto",
+          "registry": "settings-developer",
+          "caminho": "/c/settings/developer"
+        },
+        {
+          "slug": "sso",
+          "titulo": "Login único",
+          "maturidade": "pronto",
+          "registry": "settings-sso",
+          "caminho": "/c/settings/sso"
+        }
+      ]
+    },
+    {
+      "slug": "cards",
+      "titulo": "Cards",
+      "descricao": "Blocos de métrica, itens de lista, contêineres de superfície.",
+      "designs": [
+        {
+          "slug": "stat-tile",
+          "titulo": "Bloco de métrica",
+          "maturidade": "pronto",
+          "registry": "cards-stat-tile",
+          "caminho": "/c/cards/stat-tile"
+        },
+        {
+          "slug": "profile",
+          "titulo": "Card de perfil",
+          "maturidade": "pronto",
+          "registry": "cards-profile",
+          "caminho": "/c/cards/profile"
+        },
+        {
+          "slug": "pricing",
+          "titulo": "Faixas de plano",
+          "maturidade": "pronto",
+          "registry": "cards-pricing",
+          "caminho": "/c/cards/pricing"
+        },
+        {
+          "slug": "product",
+          "titulo": "Card de produto",
+          "maturidade": "pronto",
+          "registry": "cards-product",
+          "caminho": "/c/cards/product"
+        },
+        {
+          "slug": "invoice",
+          "titulo": "Linha de fatura",
+          "maturidade": "pronto",
+          "registry": "cards-invoice",
+          "caminho": "/c/cards/invoice"
+        },
+        {
+          "slug": "task",
+          "titulo": "Tarefa de kanban",
+          "maturidade": "pronto",
+          "registry": "cards-task",
+          "caminho": "/c/cards/task"
+        },
+        {
+          "slug": "event",
+          "titulo": "Evento de calendário",
+          "maturidade": "pronto",
+          "registry": "cards-event",
+          "caminho": "/c/cards/event"
+        },
+        {
+          "slug": "integration",
+          "titulo": "Integração",
+          "maturidade": "pronto",
+          "registry": "cards-integration",
+          "caminho": "/c/cards/integration"
+        },
+        {
+          "slug": "media",
+          "titulo": "Prévia de artigo",
+          "maturidade": "pronto",
+          "registry": "cards-media",
+          "caminho": "/c/cards/media"
+        },
+        {
+          "slug": "payment-method",
+          "titulo": "Forma de pagamento",
+          "maturidade": "pronto",
+          "registry": "cards-payment-method",
+          "caminho": "/c/cards/payment-method"
+        }
+      ]
+    },
+    {
+      "slug": "modals",
+      "titulo": "Modais",
+      "descricao": "Diálogos, gavetas, paletas de comando, confirmações.",
+      "designs": [
+        {
+          "slug": "command-palette",
+          "titulo": "Paleta de comandos",
+          "maturidade": "pronto",
+          "registry": "modals-command-palette",
+          "caminho": "/c/modals/command-palette"
+        },
+        {
+          "slug": "confirm-delete",
+          "titulo": "Confirmar exclusão",
+          "maturidade": "pronto",
+          "registry": "modals-confirm-delete",
+          "caminho": "/c/modals/confirm-delete"
+        },
+        {
+          "slug": "share-link",
+          "titulo": "Compartilhar link",
+          "maturidade": "pronto",
+          "registry": "modals-share-link",
+          "caminho": "/c/modals/share-link"
+        },
+        {
+          "slug": "upload-files",
+          "titulo": "Enviar arquivos",
+          "maturidade": "pronto",
+          "registry": "modals-upload-files",
+          "caminho": "/c/modals/upload-files"
+        },
+        {
+          "slug": "feedback",
+          "titulo": "Feedback",
+          "maturidade": "pronto",
+          "registry": "modals-feedback",
+          "caminho": "/c/modals/feedback"
+        },
+        {
+          "slug": "shortcuts",
+          "titulo": "Atalhos de teclado",
+          "maturidade": "pronto",
+          "registry": "modals-shortcuts",
+          "caminho": "/c/modals/shortcuts"
+        },
+        {
+          "slug": "upgrade",
+          "titulo": "Mudar de plano",
+          "maturidade": "pronto",
+          "registry": "modals-upgrade",
+          "caminho": "/c/modals/upgrade"
+        },
+        {
+          "slug": "export",
+          "titulo": "Exportar dados",
+          "maturidade": "pronto",
+          "registry": "modals-export",
+          "caminho": "/c/modals/export"
+        },
+        {
+          "slug": "create-workspace",
+          "titulo": "Criar workspace",
+          "maturidade": "pronto",
+          "registry": "modals-create-workspace",
+          "caminho": "/c/modals/create-workspace"
+        },
+        {
+          "slug": "two-factor",
+          "titulo": "Configurar dois fatores",
+          "maturidade": "pronto",
+          "registry": "modals-two-factor",
+          "caminho": "/c/modals/two-factor"
+        }
+      ]
+    },
+    {
+      "slug": "charts",
+      "titulo": "Gráficos",
+      "descricao": "Área, barra, rosca, funil, mapa de calor e medidor — SVG puro, sem biblioteca.",
+      "designs": [
+        {
+          "slug": "revenue-area",
+          "titulo": "Receita em área",
+          "maturidade": "pronto",
+          "registry": "charts-revenue-area",
+          "caminho": "/c/charts/revenue-area"
+        },
+        {
+          "slug": "cohort-heatmap",
+          "titulo": "Mapa de calor de coorte",
+          "maturidade": "pronto",
+          "registry": "charts-cohort-heatmap",
+          "caminho": "/c/charts/cohort-heatmap"
+        },
+        {
+          "slug": "funnel",
+          "titulo": "Funil",
+          "maturidade": "pronto",
+          "registry": "charts-funnel",
+          "caminho": "/c/charts/funnel"
+        },
+        {
+          "slug": "gauges",
+          "titulo": "Medidores radiais",
+          "maturidade": "pronto",
+          "registry": "charts-gauges",
+          "caminho": "/c/charts/gauges"
+        },
+        {
+          "slug": "bar-grouped",
+          "titulo": "Barras agrupadas",
+          "maturidade": "pronto",
+          "registry": "charts-bar-grouped",
+          "caminho": "/c/charts/bar-grouped"
+        },
+        {
+          "slug": "line-multi",
+          "titulo": "Linhas múltiplas",
+          "maturidade": "pronto",
+          "registry": "charts-line-multi",
+          "caminho": "/c/charts/line-multi"
+        },
+        {
+          "slug": "donut",
+          "titulo": "Rosca",
+          "maturidade": "pronto",
+          "registry": "charts-donut",
+          "caminho": "/c/charts/donut"
+        },
+        {
+          "slug": "scatter",
+          "titulo": "Dispersão",
+          "maturidade": "pronto",
+          "registry": "charts-scatter",
+          "caminho": "/c/charts/scatter"
+        },
+        {
+          "slug": "waterfall",
+          "titulo": "Cascata",
+          "maturidade": "pronto",
+          "registry": "charts-waterfall",
+          "caminho": "/c/charts/waterfall"
+        }
+      ]
+    },
+    {
+      "slug": "timelines",
+      "titulo": "Linhas do tempo",
+      "descricao": "Trilhas de auditoria, changelogs, deploys, status, menções.",
+      "designs": [
+        {
+          "slug": "audit",
+          "titulo": "Trilha de auditoria",
+          "maturidade": "pronto",
+          "registry": "timelines-audit",
+          "caminho": "/c/timelines/audit"
+        },
+        {
+          "slug": "notifications",
+          "titulo": "Painel de notificações",
+          "maturidade": "pronto",
+          "registry": "timelines-notifications",
+          "caminho": "/c/timelines/notifications"
+        },
+        {
+          "slug": "changelog",
+          "titulo": "Changelog",
+          "maturidade": "pronto",
+          "registry": "timelines-changelog",
+          "caminho": "/c/timelines/changelog"
+        },
+        {
+          "slug": "commits",
+          "titulo": "Histórico de commits",
+          "maturidade": "pronto",
+          "registry": "timelines-commits",
+          "caminho": "/c/timelines/commits"
+        },
+        {
+          "slug": "approvals",
+          "titulo": "Aprovações",
+          "maturidade": "pronto",
+          "registry": "timelines-approvals",
+          "caminho": "/c/timelines/approvals"
+        },
+        {
+          "slug": "pull-request",
+          "titulo": "Pull request",
+          "maturidade": "pronto",
+          "registry": "timelines-pull-request",
+          "caminho": "/c/timelines/pull-request"
+        },
+        {
+          "slug": "pr-ops-console",
+          "titulo": "Console de PRs",
+          "maturidade": "pronto",
+          "registry": "timelines-pr-ops-console",
+          "caminho": "/c/timelines/pr-ops-console"
+        },
+        {
+          "slug": "releases",
+          "titulo": "Linha de releases",
+          "maturidade": "pronto",
+          "registry": "timelines-releases",
+          "caminho": "/c/timelines/releases"
+        },
+        {
+          "slug": "status-page",
+          "titulo": "Página de status",
+          "maturidade": "pronto",
+          "registry": "timelines-status-page",
+          "caminho": "/c/timelines/status-page"
+        },
+        {
+          "slug": "deploys",
+          "titulo": "Histórico de deploys",
+          "maturidade": "pronto",
+          "registry": "timelines-deploys",
+          "caminho": "/c/timelines/deploys"
+        },
+        {
+          "slug": "inbox-thread",
+          "titulo": "Conversa da caixa de entrada",
+          "maturidade": "pronto",
+          "registry": "timelines-inbox-thread",
+          "caminho": "/c/timelines/inbox-thread"
+        },
+        {
+          "slug": "activity-feed",
+          "titulo": "Feed de atividade",
+          "maturidade": "pronto",
+          "registry": "timelines-activity-feed",
+          "caminho": "/c/timelines/activity-feed"
+        }
+      ]
+    },
+    {
+      "slug": "calendars",
+      "titulo": "Calendários",
+      "descricao": "Grades mensais, semanas, agendas, mapas de calor.",
+      "designs": [
+        {
+          "slug": "month",
+          "titulo": "Visão de mês",
+          "maturidade": "pronto",
+          "registry": "calendars-month",
+          "caminho": "/c/calendars/month"
+        },
+        {
+          "slug": "week",
+          "titulo": "Semana",
+          "maturidade": "pronto",
+          "registry": "calendars-week",
+          "caminho": "/c/calendars/week"
+        },
+        {
+          "slug": "agenda",
+          "titulo": "Agenda",
+          "maturidade": "pronto",
+          "registry": "calendars-agenda",
+          "caminho": "/c/calendars/agenda"
+        },
+        {
+          "slug": "date-range",
+          "titulo": "Intervalo de datas",
+          "maturidade": "pronto",
+          "registry": "calendars-date-range",
+          "caminho": "/c/calendars/date-range"
+        },
+        {
+          "slug": "timezone",
+          "titulo": "Fusos horários",
+          "maturidade": "pronto",
+          "registry": "calendars-timezone",
+          "caminho": "/c/calendars/timezone"
+        },
+        {
+          "slug": "mini",
+          "titulo": "Mini calendário",
+          "maturidade": "pronto",
+          "registry": "calendars-mini",
+          "caminho": "/c/calendars/mini"
+        },
+        {
+          "slug": "year-heatmap",
+          "titulo": "Mapa de contribuições",
+          "maturidade": "pronto",
+          "registry": "calendars-year-heatmap",
+          "caminho": "/c/calendars/year-heatmap"
+        },
+        {
+          "slug": "recurring",
+          "titulo": "Evento recorrente",
+          "maturidade": "pronto",
+          "registry": "calendars-recurring",
+          "caminho": "/c/calendars/recurring"
+        },
+        {
+          "slug": "holidays",
+          "titulo": "Feriados e férias",
+          "maturidade": "pronto",
+          "registry": "calendars-holidays",
+          "caminho": "/c/calendars/holidays"
+        }
+      ]
+    },
+    {
+      "slug": "profile",
+      "titulo": "Perfil",
+      "descricao": "Páginas de pessoa, hover cards, grades de time, trilhos de presença.",
+      "designs": [
+        {
+          "slug": "hero",
+          "titulo": "Capa de perfil",
+          "maturidade": "pronto",
+          "registry": "profile-hero",
+          "caminho": "/c/profile/hero"
+        },
+        {
+          "slug": "hover-card",
+          "titulo": "Hover card",
+          "maturidade": "pronto",
+          "registry": "profile-hover-card",
+          "caminho": "/c/profile/hover-card"
+        },
+        {
+          "slug": "team-grid",
+          "titulo": "Grade do time",
+          "maturidade": "pronto",
+          "registry": "profile-team-grid",
+          "caminho": "/c/profile/team-grid"
+        },
+        {
+          "slug": "directory",
+          "titulo": "Diretório de contatos",
+          "maturidade": "pronto",
+          "registry": "profile-directory",
+          "caminho": "/c/profile/directory"
+        },
+        {
+          "slug": "compact-card",
+          "titulo": "Card compacto",
+          "maturidade": "pronto",
+          "registry": "profile-compact-card",
+          "caminho": "/c/profile/compact-card"
+        },
+        {
+          "slug": "org-chart",
+          "titulo": "Organograma",
+          "maturidade": "pronto",
+          "registry": "profile-org-chart",
+          "caminho": "/c/profile/org-chart"
+        },
+        {
+          "slug": "skills",
+          "titulo": "Matriz de habilidades",
+          "maturidade": "pronto",
+          "registry": "profile-skills",
+          "caminho": "/c/profile/skills"
+        },
+        {
+          "slug": "presence-rail",
+          "titulo": "Trilho de presença",
+          "maturidade": "pronto",
+          "registry": "profile-presence-rail",
+          "caminho": "/c/profile/presence-rail"
+        },
+        {
+          "slug": "introductions",
+          "titulo": "Apresentações sugeridas",
+          "maturidade": "pronto",
+          "registry": "profile-introductions",
+          "caminho": "/c/profile/introductions"
+        },
+        {
+          "slug": "credentials",
+          "titulo": "Credenciais de segurança",
+          "maturidade": "pronto",
+          "registry": "profile-credentials",
+          "caminho": "/c/profile/credentials"
+        }
+      ]
+    },
+    {
+      "slug": "toasts",
+      "titulo": "Avisos e faixas",
+      "descricao": "Retorno efêmero — confirmação, erro, desfazer, progresso.",
+      "designs": [
+        {
+          "slug": "success",
+          "titulo": "Aviso de sucesso",
+          "maturidade": "pronto",
+          "registry": "toasts-success",
+          "caminho": "/c/toasts/success"
+        },
+        {
+          "slug": "error-retry",
+          "titulo": "Erro com nova tentativa",
+          "maturidade": "pronto",
+          "registry": "toasts-error-retry",
+          "caminho": "/c/toasts/error-retry"
+        },
+        {
+          "slug": "info-banner",
+          "titulo": "Faixa de sistema",
+          "maturidade": "pronto",
+          "registry": "toasts-info-banner",
+          "caminho": "/c/toasts/info-banner"
+        },
+        {
+          "slug": "progress",
+          "titulo": "Aviso de progresso",
+          "maturidade": "pronto",
+          "registry": "toasts-progress",
+          "caminho": "/c/toasts/progress"
+        },
+        {
+          "slug": "undo",
+          "titulo": "Desfazer",
+          "maturidade": "pronto",
+          "registry": "toasts-undo",
+          "caminho": "/c/toasts/undo"
+        },
+        {
+          "slug": "rich",
+          "titulo": "Aviso com conteúdo",
+          "maturidade": "pronto",
+          "registry": "toasts-rich",
+          "caminho": "/c/toasts/rich"
+        }
+      ]
+    },
+    {
+      "slug": "pricing",
+      "titulo": "Planos",
+      "descricao": "Comparação de faixas, controles deslizantes, contato comercial.",
+      "designs": [
+        {
+          "slug": "three-tier",
+          "titulo": "Três planos",
+          "maturidade": "pronto",
+          "registry": "pricing-three-tier",
+          "caminho": "/c/pricing/three-tier"
+        },
+        {
+          "slug": "comparison-table",
+          "titulo": "Tabela de recursos",
+          "maturidade": "pronto",
+          "registry": "pricing-comparison-table",
+          "caminho": "/c/pricing/comparison-table"
+        },
+        {
+          "slug": "slider-seats",
+          "titulo": "Slider de assentos",
+          "maturidade": "pronto",
+          "registry": "pricing-slider-seats",
+          "caminho": "/c/pricing/slider-seats"
+        },
+        {
+          "slug": "simple-card",
+          "titulo": "Plano único",
+          "maturidade": "pronto",
+          "registry": "pricing-simple-card",
+          "caminho": "/c/pricing/simple-card"
+        },
+        {
+          "slug": "contact-sales",
+          "titulo": "Falar com vendas",
+          "maturidade": "pronto",
+          "registry": "pricing-contact-sales",
+          "caminho": "/c/pricing/contact-sales"
+        },
+        {
+          "slug": "monthly-yearly",
+          "titulo": "Mensal ou anual",
+          "maturidade": "pronto",
+          "registry": "pricing-monthly-yearly",
+          "caminho": "/c/pricing/monthly-yearly"
+        }
+      ]
+    },
+    {
+      "slug": "tours",
+      "titulo": "Tours e dicas",
+      "descricao": "Modais de boas-vindas, holofotes, balões, listas de onboarding.",
+      "designs": [
+        {
+          "slug": "checklist",
+          "titulo": "Lista de onboarding",
+          "maturidade": "pronto",
+          "registry": "tours-checklist",
+          "caminho": "/c/tours/checklist"
+        },
+        {
+          "slug": "welcome-carousel",
+          "titulo": "Carrossel de boas-vindas",
+          "maturidade": "pronto",
+          "registry": "tours-welcome-carousel",
+          "caminho": "/c/tours/welcome-carousel"
+        },
+        {
+          "slug": "spotlight",
+          "titulo": "Tour com holofote",
+          "maturidade": "pronto",
+          "registry": "tours-spotlight",
+          "caminho": "/c/tours/spotlight"
+        },
+        {
+          "slug": "arrow-tooltip",
+          "titulo": "Dica com seta",
+          "maturidade": "pronto",
+          "registry": "tours-arrow-tooltip",
+          "caminho": "/c/tours/arrow-tooltip"
+        },
+        {
+          "slug": "beacon",
+          "titulo": "Farol",
+          "maturidade": "pronto",
+          "registry": "tours-beacon",
+          "caminho": "/c/tours/beacon"
+        },
+        {
+          "slug": "inline-hint",
+          "titulo": "Dica embutida",
+          "maturidade": "pronto",
+          "registry": "tours-inline-hint",
+          "caminho": "/c/tours/inline-hint"
+        }
+      ]
+    },
+    {
+      "slug": "threads",
+      "titulo": "Comentários",
+      "descricao": "Threads embutidas, painéis laterais, reações, menções.",
+      "designs": [
+        {
+          "slug": "inline-thread",
+          "titulo": "Thread embutida",
+          "maturidade": "pronto",
+          "registry": "threads-inline-thread",
+          "caminho": "/c/threads/inline-thread"
+        },
+        {
+          "slug": "side-panel",
+          "titulo": "Painel lateral",
+          "maturidade": "pronto",
+          "registry": "threads-side-panel",
+          "caminho": "/c/threads/side-panel"
+        },
+        {
+          "slug": "comment-row",
+          "titulo": "Linha de comentário",
+          "maturidade": "pronto",
+          "registry": "threads-comment-row",
+          "caminho": "/c/threads/comment-row"
+        },
+        {
+          "slug": "mention-popover",
+          "titulo": "Popover de menção",
+          "maturidade": "pronto",
+          "registry": "threads-mention-popover",
+          "caminho": "/c/threads/mention-popover"
+        },
+        {
+          "slug": "resolved",
+          "titulo": "Thread resolvida",
+          "maturidade": "pronto",
+          "registry": "threads-resolved",
+          "caminho": "/c/threads/resolved"
+        },
+        {
+          "slug": "compose-rich",
+          "titulo": "Editor rico",
+          "maturidade": "pronto",
+          "registry": "threads-compose-rich",
+          "caminho": "/c/threads/compose-rich"
+        }
+      ]
+    }
+  ]
+}

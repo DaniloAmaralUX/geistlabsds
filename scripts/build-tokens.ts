@@ -1,5 +1,5 @@
 /**
- * Gera `styles/tokens.css` e o item `lab-design-theme` de `registry.json` a
+ * Gera `styles/tokens.css` e o item `supernova-theme` de `registry.json` a
  * partir de `constants/tokens.ts`. Roda em `pnpm tokens:build` (chamado por
  * `dev` e `build`). Não edite os arquivos gerados à mão.
  */
@@ -83,9 +83,9 @@ const registryPath = join(root, "registry.json");
 const registry = JSON.parse(readFileSync(registryPath, "utf-8")) as {
   items: { name: string; cssVars?: Record<string, Record<string, string>> }[];
 };
-const theme = registry.items.find((item) => item.name === "lab-design-theme");
+const theme = registry.items.find((item) => item.name === "supernova-theme");
 if (!theme) {
-  throw new Error("registry.json sem o item lab-design-theme");
+  throw new Error("registry.json sem o item supernova-theme");
 }
 theme.cssVars = {
   dark: Object.fromEntries(

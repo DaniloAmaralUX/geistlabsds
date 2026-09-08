@@ -1,0 +1,57 @@
+---
+title: Temas
+description: O tema do LAB / DESIGN e os presets do Supernova, para instalar pelo shadcn, trocar ao vivo e ajustar no Theme Studio.
+---
+
+Um tema aqui é um conjunto de tokens no vocabulário do shadcn (`--background`, `--primary`, `--radius`…) em claro e escuro. O mesmo tema serve a três usos: **instalar** num projeto pelo shadcn CLI, **trocar ao vivo** no site para ver os componentes com ele, e **ajustar** no Theme Studio do Supernova.
+
+<Callout title="Theme Studio">
+  O [Theme
+  Studio](https://supernovacn.vercel.app/themes?theme=supernova-vercel&mode=light&view=application)
+  é a ferramenta do Supernova Shadcn para criar, visualizar e instalar presets.
+  Abra um tema abaixo nele, ajuste, e instale o resultado com o comando que o
+  estúdio gera. O uso da ferramenta e dos presets foi autorizado pelo
+  responsável em 2026-09-08.
+</Callout>
+
+## Temas disponíveis
+
+<ThemesGallery />
+
+## Trocar de tema ao vivo num projeto
+
+Cada tema também existe como arquivo CSS em `/themes/<slug>.css`, no formato que o shadcn, o tweakcn e o [shadcn-theme-provider](https://github.com/brokeboiflex/shadcn-theme-provider) (MIT) consomem: variáveis em `:root` para o claro e `.dark` para o escuro. Com o provider, a troca acontece em tempo de execução, sem rebuild:
+
+```tsx
+import { ThemeProvider } from "shadcn-theme-provider";
+
+const themes = {
+  supernova: "https://geistlabsds.vercel.app/themes/supernova.css",
+  "supernova-vercel":
+    "https://geistlabsds.vercel.app/themes/supernova-vercel.css",
+};
+
+export function App({ children }: { children: React.ReactNode }) {
+  return (
+    <ThemeProvider
+      themes={themes}
+      defaultMode="system"
+      defaultPalette="supernova"
+    >
+      {children}
+    </ThemeProvider>
+  );
+}
+```
+
+O seletor de paleta no cabeçalho deste site faz o mesmo, com os mesmos arquivos.
+
+## Como um tema nasce
+
+1. O tema do Supernova vem de `constants/tokens.ts`; `scripts/build-tokens.ts` gera o item `supernova-theme` do registry.
+2. Os presets do Supernova vêm do registry publicado em `supernovacn.vercel.app/r/`, copiados para `constants/themes.ts` com a atribuição de origem.
+3. `scripts/build-themes.ts` gera `styles/palettes.css` (troca ao vivo) e `public/themes/*.css` (arquivos para consumo externo). Nada é escrito à mão.
+
+## Origem e crédito
+
+Os presets do Supernova derivam do [DialectCN](https://dialectcn.xyz/), de Kapish Dima ([código](https://github.com/kapishdima/dialectcn)), a ferramenta de temas que serviu de referência ao Theme Studio, com uso autorizado e registrado no Supernova. Fontes Geist e Inter são carregadas pelos pacotes `@fontsource` indicados em cada tema.

@@ -1,5 +1,4 @@
-export const FALLBACK_SITE_ORIGIN =
-  "https://geistlabsds-danilos-projects-94eff717.vercel.app" as const;
+export const FALLBACK_SITE_ORIGIN = "https://geistlabsds.vercel.app" as const;
 
 const getBaseUrl = () => {
   if (process.env.NODE_ENV !== "production") {
@@ -20,26 +19,28 @@ export const SITE = {
     NAME: "LAB / DESIGN",
   },
   DESCRIPTION: {
-    LONG: "O design system do LAB / DESIGN: fundamentos, componentes com demonstração interativa e código instalável pelo shadcn, com referência visual no Geist.",
-    SHORT: "O nosso Geist",
+    LONG: "Fundamentos, componentes, blocos e temas com prévia real e código que entra no seu projeto pelo CLI do shadcn.",
+    SHORT: "Design system do LAB / DESIGN",
   },
   KEYWORDS: [
     "design system",
+    "supernova",
     "lab design",
-    "geist",
     "shadcn",
     "shadcn registry",
     "componentes",
+    "blocos",
+    "temas",
     "react",
     "next.js",
     "tailwindcss",
   ] as const,
   LOCALE: "pt-BR",
-  NAME: "LAB / DESIGN",
+  NAME: "Supernova",
   OG_IMAGE: `${baseUrl}/og`,
   REGISTRY: baseUrl,
   /** Identificador seguro para nomes de ferramenta, arquivos e chaves. */
-  SLUG: "lab-design",
+  SLUG: "supernova",
   URL: baseUrl,
 };
 

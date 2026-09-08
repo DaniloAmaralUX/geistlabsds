@@ -1,0 +1,80 @@
+/* Claude — gerado por scripts/build-themes.ts (Supernova). Não editar. */
+/* Formato: variáveis do shadcn em :root (claro) e .dark (escuro); serve ao shadcn-theme-provider. */
+
+:root {
+  --font-geist-mono: "Geist Mono Variable", monospace;
+  --font-heading: var(--font-instrument-serif);
+  --font-instrument-serif: "Instrument Serif", serif;
+  --font-inter: "Inter Variable", sans-serif;
+  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --media-well: oklch(0.145 0 0);
+  --media-well-foreground: oklch(0.72 0 0);
+  --radius: 0.625rem;
+  --spacing: 0.25rem;
+  --accent: oklch(0.97 0.001 106.424);
+  --accent-foreground: oklch(0.216 0.006 56.043);
+  --background: oklch(1 0 0);
+  --border: oklch(0.923 0.003 48.717);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.147 0.004 49.25);
+  --chart-1: oklch(0.869 0.005 56.366);
+  --chart-2: oklch(0.553 0.013 58.071);
+  --chart-3: oklch(0.444 0.011 73.639);
+  --chart-4: oklch(0.374 0.01 67.558);
+  --chart-5: oklch(0.268 0.007 34.298);
+  --destructive: oklch(0.577 0.245 27.325);
+  --foreground: oklch(0.147 0.004 49.25);
+  --input: oklch(0.923 0.003 48.717);
+  --muted: oklch(0.97 0.001 106.424);
+  --muted-foreground: oklch(0.553 0.013 58.071);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.147 0.004 49.25);
+  --primary: oklch(0.553 0.195 38.402);
+  --primary-foreground: oklch(0.98 0.016 73.684);
+  --ring: oklch(0.709 0.01 56.259);
+  --secondary: oklch(0.967 0.001 286.375);
+  --secondary-foreground: oklch(0.21 0.006 285.885);
+  --sidebar: oklch(0.985 0.001 106.423);
+  --sidebar-accent: oklch(0.97 0.001 106.424);
+  --sidebar-accent-foreground: oklch(0.216 0.006 56.043);
+  --sidebar-border: oklch(0.923 0.003 48.717);
+  --sidebar-foreground: oklch(0.147 0.004 49.25);
+  --sidebar-primary: oklch(0.646 0.222 41.116);
+  --sidebar-primary-foreground: oklch(0.98 0.016 73.684);
+  --sidebar-ring: oklch(0.709 0.01 56.259);
+}
+
+.dark {
+  --accent: oklch(0.268 0.007 34.298);
+  --accent-foreground: oklch(0.985 0.001 106.423);
+  --background: oklch(0.147 0.004 49.25);
+  --border: oklch(1 0 0 / 10%);
+  --card: oklch(0.216 0.006 56.043);
+  --card-foreground: oklch(0.985 0.001 106.423);
+  --chart-1: oklch(0.869 0.005 56.366);
+  --chart-2: oklch(0.553 0.013 58.071);
+  --chart-3: oklch(0.444 0.011 73.639);
+  --chart-4: oklch(0.374 0.01 67.558);
+  --chart-5: oklch(0.268 0.007 34.298);
+  --destructive: oklch(0.704 0.191 22.216);
+  --foreground: oklch(0.985 0.001 106.423);
+  --input: oklch(1 0 0 / 15%);
+  --muted: oklch(0.268 0.007 34.298);
+  --muted-foreground: oklch(0.709 0.01 56.259);
+  --popover: oklch(0.216 0.006 56.043);
+  --popover-foreground: oklch(0.985 0.001 106.423);
+  --primary: oklch(0.47 0.157 37.304);
+  --primary-foreground: oklch(0.98 0.016 73.684);
+  --ring: oklch(0.553 0.013 58.071);
+  --secondary: oklch(0.274 0.006 286.033);
+  --secondary-foreground: oklch(0.985 0 0);
+  --sidebar: oklch(0.216 0.006 56.043);
+  --sidebar-accent: oklch(0.268 0.007 34.298);
+  --sidebar-accent-foreground: oklch(0.985 0.001 106.423);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-foreground: oklch(0.985 0.001 106.423);
+  --sidebar-primary: oklch(0.705 0.213 47.604);
+  --sidebar-primary-foreground: oklch(0.98 0.016 73.684);
+  --sidebar-ring: oklch(0.553 0.013 58.071);
+}

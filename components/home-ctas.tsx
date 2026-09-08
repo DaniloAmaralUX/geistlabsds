@@ -52,7 +52,7 @@ const ComponentsButton = () => {
   return (
     <Button
       asChild
-      variant="outline"
+      variant="secondary"
       sound="click"
       className="px-4"
       onMouseEnter={handleMouseEnter}

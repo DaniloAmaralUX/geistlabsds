@@ -1,0 +1,70 @@
+---
+title: Painel administrativo
+description: Painel com barra lateral, cartões de indicadores, gráfico de área interativo e tabela de seções com reordenação, seleção e paginação.
+---
+
+<BlockPreview slug="admin-dashboard" />
+
+## Instalação
+
+<InstallCommand name="admin-dashboard" />
+
+O CLI copia a página, os nove componentes e o arquivo de dados para `components/blocos/admin-dashboard/` e instala, se ainda faltarem, os itens do registry que o bloco usa (Button, Badge, Input, Sidebar, Card, Chart, Select, Toggle Group, Checkbox, Drawer, Dropdown Menu, Label, Separator, Table, Tabs e Avatar) junto com os pacotes npm listados abaixo.
+
+<Callout title="Toaster do sonner">
+  As ações de salvar da tabela avisam pelo `toast` do sonner. Monte um `
+  <Toaster />` uma vez no layout do app que recebe o bloco; sem ele os avisos
+  não aparecem.
+</Callout>
+
+## Dependências
+
+| Item do registry                                                                              | Pacote npm                                                                                                                                                  |
+| --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `button`, `badge`                                                                             | `radix-ui`, `class-variance-authority`, `lucide-react`                                                                                                      |
+| `input`                                                                                       | —                                                                                                                                                           |
+| `sidebar`                                                                                     | `radix-ui`, `lucide-react` (traz `hooks/use-mobile`, que o bloco também usa)                                                                                |
+| `chart`                                                                                       | `recharts`                                                                                                                                                  |
+| `drawer`                                                                                      | `vaul`                                                                                                                                                      |
+| `select`, `toggle-group`, `checkbox`, `dropdown-menu`, `label`, `separator`, `tabs`, `avatar` | `radix-ui`                                                                                                                                                  |
+| `card`, `table`                                                                               | —                                                                                                                                                           |
+| bloco `admin-dashboard`                                                                       | `@tanstack/react-table` (v9), `@dnd-kit/core`, `@dnd-kit/modifiers`, `@dnd-kit/sortable`, `@dnd-kit/utilities`, `recharts`, `sonner`, `zod`, `lucide-react` |
+
+## Arquivos
+
+- `components/blocos/admin-dashboard/page.tsx` — página que compõe o bloco: provedor da barra lateral, cabeçalho, cartões, gráfico e tabela.
+- `components/blocos/admin-dashboard/components/app-sidebar.tsx` — barra lateral com marca, navegação principal, documentos, atalhos e usuário.
+- `components/blocos/admin-dashboard/components/nav-main.tsx` — grupo "Início" da navegação.
+- `components/blocos/admin-dashboard/components/nav-documents.tsx` — grupo "Documentos", com menu de ações por item.
+- `components/blocos/admin-dashboard/components/nav-secondary.tsx` — atalhos de configurações, ajuda e busca.
+- `components/blocos/admin-dashboard/components/nav-user.tsx` — rodapé com avatar de iniciais e menu da conta.
+- `components/blocos/admin-dashboard/components/site-header.tsx` — cabeçalho fixo com título e ação "Criar rápido".
+- `components/blocos/admin-dashboard/components/section-cards.tsx` — quatro cartões de indicadores com variação.
+- `components/blocos/admin-dashboard/components/chart-area-interactive.tsx` — gráfico de área empilhado com seletor de período.
+- `components/blocos/admin-dashboard/components/data-table.tsx` — tabela de seções com abas, seleção, colunas ocultáveis, arrastar e soltar, gaveta de detalhe e paginação.
+- `components/blocos/admin-dashboard/data.json` — 68 seções de exemplo que alimentam a tabela.
+
+## Origem e adaptações
+
+Base: pacote `admin-dashboard` exportado do `shadcn-examples`, cujo código base é o shadcn/ui (MIT). A licença do repositório de origem fica registrada como "a confirmar" até ser lida.
+
+O que mudou ao entrar no LAB / DESIGN:
+
+- Button, Badge e Input passaram à API do LAB / DESIGN: `default`/`outline`/`ghost`/`link` viraram `primary`/`secondary`/`tertiary`; os selos `outline` e `secondary` viraram `appearance="subtle" color="gray"` (os contadores das abas com `shape="pill"`); os ícones dos botões entraram por `prefix` e `suffix`.
+- Todos os botões só de ícone (alça de arrastar, menu de ações, paginação) usam `shape="square"`, `size="sm"` e `aria-label`, no lugar de `size="icon"` com texto `sr-only`.
+- Os campos editáveis da tabela usam o nosso Input com `size="sm"` e a moldura escondida até o foco; os campos da gaveta usam a prop `label`, que já liga rótulo e campo por `id` gerado com `useId`.
+- Ícones do `@tabler/icons-react` foram trocados pelos equivalentes do `lucide-react` (`IconDashboard` → `LayoutDashboardIcon`, `IconDots` → `EllipsisIcon`, `IconLayoutColumns` → `Columns3Icon` etc.), com sufixo `Icon` e `aria-hidden`.
+- A tabela foi migrada do TanStack Table v8 para a v9 instalada no repositório: `useReactTable` virou `useTable` com `tableFeatures()` (seleção, visibilidade, filtro, ordenação e paginação registradas explicitamente), `getState()` virou `table.state` e os tipos ganharam o parâmetro de recursos. A faceta, que nada usava, foi removida.
+- O aviso de salvamento deixou de criar uma `Promise` artificial: usa `toast.loading` seguido de `toast.success` com o mesmo `id`.
+- O avatar do usuário perdeu a imagem externa e mostra só as iniciais; o grupo `navClouds`, que o original definia sem renderizar, foi removido.
+- Textos, rótulos de colunas, abas, menus, datas (`pt-BR`) e os dados de exemplo (`data.json`) foram para pt-BR; os valores dos cartões ganharam formato brasileiro.
+- Os nomes de coluna no menu "Personalizar colunas" vêm de um mapa de rótulos, em vez do `id` técnico com `capitalize`.
+- Componentes em arrow function, sem `React.*` no namespace, com o estilo de código do repositório.
+
+## Acessibilidade
+
+- Todo botão só de ícone tem nome acessível por `aria-label` (arrastar, ações da linha, primeira/anterior/próxima/última página, "Adicionar seção" quando o texto some em telas estreitas); os ícones decorativos levam `aria-hidden`.
+- As caixas de seleção da tabela anunciam o que selecionam: "Selecionar todas as linhas da página" no cabeçalho e "Selecionar `<título>`" em cada linha; o estado indeterminado é calculado a partir de `getIsSomePageRowsSelected` e `getIsAllPageRowsSelected`.
+- Cada campo tem rótulo ligado por `id`: os Input da gaveta pela prop `label`, os campos editáveis e os Select por `Label htmlFor` (visível ou `sr-only`), incluindo o seletor de visualização e o de linhas por página.
+- Barra lateral, menus, abas, gaveta e Select vêm dos primitivos Radix e do vaul, com foco visível e navegação por teclado; a reordenação por arrastar também funciona pelo teclado, via `KeyboardSensor` do dnd-kit.
+- Cores só pelos tokens (`text-foreground`, `text-muted-foreground`, `bg-muted`, `border-input`) e pelo Badge cinza suave, com par claro/escuro definido no componente; o ícone de status concluído usa verde em ambos os temas.

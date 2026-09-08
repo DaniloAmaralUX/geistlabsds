@@ -1,0 +1,11 @@
+{
+  "title": "Blocos",
+  "pages": [
+    "index",
+    "authentication",
+    "profile-page",
+    "playground",
+    "admin-dashboard",
+    "acervo"
+  ]
+}

@@ -37,7 +37,7 @@ export const CodeCollapsibleWrapper = ({
           )}
         >
           <Button
-            variant="ghost"
+            variant="tertiary"
             size="sm"
             className="text-muted-foreground h-7 rounded-md px-2"
           >
@@ -55,7 +55,7 @@ export const CodeCollapsibleWrapper = ({
 
       <div className="absolute inset-x-0 -bottom-2 flex h-20 items-center justify-center rounded-b-lg bg-linear-to-b from-code/70 to-code group-data-[state=open]/collapsible:hidden">
         <CollapsibleTrigger asChild>
-          <Button variant="outline" size="sm">
+          <Button variant="secondary" size="sm">
             Expand
           </Button>
         </CollapsibleTrigger>

@@ -56,7 +56,7 @@ export const RegistryAddButton = ({
   className,
   registry,
   size = "sm",
-  variant = "ghost",
+  variant = "tertiary",
   onClick,
   ...props
 }: {

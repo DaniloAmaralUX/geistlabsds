@@ -7,6 +7,7 @@ import { LogoMark } from "@/components/logo";
 import { MainNav } from "@/components/main-nav";
 import { MobileNav } from "@/components/mobile-nav";
 import { ModeSwitcher } from "@/components/mode-switcher";
+import { PaletteMenu } from "@/components/palette-menu";
 import { SiteSettings } from "@/components/site-settings";
 import { Button } from "@/components/ui/button";
 import { LINK } from "@/constants/links";
@@ -18,7 +19,9 @@ const navItems = [
   { href: ROUTES.DOCS, label: "Docs" },
   { href: ROUTES.DOCS_FOUNDATIONS, label: "Fundamentos" },
   { href: ROUTES.DOCS_COMPONENTS, label: "Componentes" },
-  { href: ROUTES.DOCS_COVERAGE, label: "Cobertura" },
+  { href: ROUTES.DOCS_BLOCKS, label: "Blocos" },
+  { href: ROUTES.DOCS_THEMES, label: "Temas" },
+  { href: ROUTES.DOCS_ROADMAP, label: "Roteiro" },
 ];
 
 export const SiteHeader = () => (
@@ -36,9 +39,10 @@ export const SiteHeader = () => (
         <BrandContextMenu>
           <Button
             asChild
-            variant="ghost"
-            size="icon"
-            className="hidden size-8 lg:flex"
+            variant="tertiary"
+            shape="square"
+            size="sm"
+            className="hidden lg:flex"
             sound="click"
           >
             <Link href={ROUTES.HOME} transitionTypes={["nav-back"]}>
@@ -54,9 +58,10 @@ export const SiteHeader = () => (
           </div>
           <Button
             asChild
-            variant="ghost"
-            size="icon"
-            className="extend-touch-target size-8"
+            variant="tertiary"
+            shape="square"
+            size="sm"
+            className="extend-touch-target"
             sound="click"
           >
             <a href={LINK.GITHUB} target="_blank" rel="noreferrer">
@@ -64,6 +69,7 @@ export const SiteHeader = () => (
               <span className="sr-only">GitHub</span>
             </a>
           </Button>
+          <PaletteMenu />
           <ModeSwitcher />
           <SiteSettings />
         </div>

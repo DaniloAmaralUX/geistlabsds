@@ -12,21 +12,23 @@ O contexto (material do responsável, decisões, diário) vive em
 
 ## Fontes únicas
 
-- `constants/tokens.ts` gera `styles/tokens.css` e o item `lab-design-theme`
+- `constants/tokens.ts` gera `styles/tokens.css` e o item `supernova-theme`
   do `registry.json` via `pnpm tokens:build` (roda em `dev` e `build`). Não
   edite os gerados.
-- `constants/geist-inventory.ts` é o inventário do Geist (verificado pela
-  navegação colada pelo responsável em 2026-09-08). A página de cobertura e
-  toda contagem derivam dele. Nenhum número é escrito à mão.
+- `constants/roadmap.ts` é o roteiro de componentes do Supernova. A página do
+  roteiro e toda contagem derivam dele. Nenhum número é escrito à mão.
 
 ## Um componente ponta a ponta
+
+Guia completo, com o que aprendemos das bibliotecas de amostra:
+`content/docs/(root)/criar-componente.mdx` (`/docs/criar-componente`).
 
 `registry/new-york/<nome>.tsx` (só depende de `@/lib/utils`, `radix-ui`,
 `class-variance-authority`, `lucide-react`) → item em `registry.json` →
 `examples/<nome>*.tsx` → `content/docs/components/<nome>.mdx` com
 `ComponentPreview`, `InstallCommand`, props, acessibilidade e "diferenças em
 relação ao Geist" → `meta.json` da pasta → inventário com `estado: "publicado"`
-e `rota` → instalação validada num consumidor limpo → `instalacaoValidada`.
+e `rota` → instalação validada num consumidor limpo → `instalacao: "cli" | "build"` (veja o guia).
 
 ## Gates
 

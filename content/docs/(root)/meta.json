@@ -1,4 +1,8 @@
 {
   "title": "Começar",
-  "pages": ["index", "[Instalação](/docs/installation)"]
+  "pages": [
+    "index",
+    "[Instalação](/docs/installation)",
+    "[Criar um componente](/docs/criar-componente)"
+  ]
 }

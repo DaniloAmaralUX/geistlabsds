@@ -3,15 +3,17 @@ title: Espaçamento e raio
 description: Grade de 4px para espaçamento e raio base de 6px, com os passos derivados.
 ---
 
+Espaçamento e raio seguem a mesma lógica das cores: um valor base em `constants/tokens.ts` e passos derivados dele. Mudar o base muda tudo em proporção.
+
 ## Espaçamento
 
-Todo espaçamento é múltiplo de 4px. Os passos abaixo cobrem de 2px (ajuste fino entre ícone e texto) a 64px (separação entre seções). No Tailwind, `gap-1` é 4px, `p-4` é 16px.
+Todo espaçamento é múltiplo de 4px. Os passos abaixo vão de 2px, o ajuste fino entre ícone e texto, a 64px, a separação entre seções. No Tailwind, `gap-1` é 4px e `p-4` é 16px.
 
 <SpacingScale />
 
 ## Raio
 
-O raio base é 6px, definido em `--radius`. Os demais derivam dele no CSS, então mudar o base muda tudo em proporção.
+O raio base é 6px, definido em `--radius`. Os demais passos derivam dele no CSS: `sm` fica 2px abaixo, `lg` 2px acima e `xl` 6px acima. Pílulas e avatares usam `full`.
 
 <RadiusScale />
 
