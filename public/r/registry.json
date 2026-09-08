@@ -1,6 +1,6 @@
 {
   "name": "lab-design",
-  "homepage": "https://geistlabsds.vercel.app",
+  "homepage": "https://geistlabsds-danilos-projects-94eff717.vercel.app",
   "items": [
     {
       "name": "lab-design-theme",
@@ -100,11 +100,7 @@
       "type": "registry:ui",
       "title": "Button",
       "description": "Botão com cinco intenções, três tamanhos, formas circular e quadrada, carregamento e prefixo/sufixo.",
-      "dependencies": [
-        "class-variance-authority",
-        "lucide-react",
-        "radix-ui"
-      ],
+      "dependencies": ["class-variance-authority", "lucide-react", "radix-ui"],
       "files": [
         {
           "path": "registry/new-york/button.tsx",
@@ -118,10 +114,7 @@
       "type": "registry:ui",
       "title": "Badge",
       "description": "Rótulo curto com seis cores, aparência sólida ou suave, três tamanhos e forma de pílula.",
-      "dependencies": [
-        "class-variance-authority",
-        "radix-ui"
-      ],
+      "dependencies": ["class-variance-authority", "radix-ui"],
       "files": [
         {
           "path": "registry/new-york/badge.tsx",
@@ -161,9 +154,7 @@
       "type": "registry:ui",
       "title": "Snippet",
       "description": "Comando de terminal com prompt, várias linhas, fundo escuro e botão de copiar acessível.",
-      "dependencies": [
-        "lucide-react"
-      ],
+      "dependencies": ["lucide-react"],
       "files": [
         {
           "path": "registry/new-york/snippet.tsx",

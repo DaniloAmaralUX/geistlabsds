@@ -1,4 +1,5 @@
-export const FALLBACK_SITE_ORIGIN = "https://geistlabsds.vercel.app" as const;
+export const FALLBACK_SITE_ORIGIN =
+  "https://geistlabsds-danilos-projects-94eff717.vercel.app" as const;
 
 const getBaseUrl = () => {
   if (process.env.NODE_ENV !== "production") {

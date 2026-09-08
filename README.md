@@ -23,8 +23,8 @@ pnpm typecheck    # depois do build, como na CI
 ## Instalar um componente em outro projeto
 
 ```bash
-npx shadcn@latest add https://geistlabsds.vercel.app/r/lab-design-theme.json
-npx shadcn@latest add https://geistlabsds.vercel.app/r/button.json
+npx shadcn@latest add https://geistlabsds-danilos-projects-94eff717.vercel.app/r/lab-design-theme.json
+npx shadcn@latest add https://geistlabsds-danilos-projects-94eff717.vercel.app/r/button.json
 ```
 
 ## Onde as coisas vivem
